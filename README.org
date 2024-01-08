@@ -11,7 +11,6 @@
 
 This is used to mimic standard products such as Microsoft Office's Word.
 
-#+CAPTION: a table
-| heading | other |
-|---------+-------|
-| here    | there |
+#+BEGIN_SRC org
+#+SETUPFILE: https://raw.githubusercontent.com/johnstonskj/org-export-themes/main/html/office/office.setup
+#+END_SRC

@@ -231,7 +231,7 @@ div#postamble > p {
     margin-bottom: 0;
 }
 
-div#postamble p.validation {
+div#postamble > p.validation {
     display: none;
 }
 
