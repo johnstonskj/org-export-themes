@@ -355,8 +355,8 @@ Should be:
 # -*- mode: org; -*-
 ,#+OPTIONS: html-style:nil
 
-,#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/johnstonskj/org-export-themes/main/html/office/office.css"/>
-,#+HTML_HEAD: <script type="text/javascript" src="https://raw.githubusercontent.com/johnstonskj/org-export-themes/main/html/office/office.js"></script>
+,#+HTML_HEAD: <link rel="stylesheet" href="https://simonkjohnston.life/org-export-themes/html/office/office.css">
+,#+HTML_HEAD: <script type="text/javascript" src="https://simonkjohnston.life/org-export-themes/html/office/office.js"></script>
 #+END_SRC
 
 ** Local Install

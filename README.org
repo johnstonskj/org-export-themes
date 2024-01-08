@@ -1,7 +1,7 @@
 #+TITLE: Org-Export Themes
 #+SUBTITLE: By Me.
 #+AUTHOR: Simon
-#+SETUPFILE: https://raw.githubusercontent.com/johnstonskj/org-export-themes/main/html/office/office.setup
+#+SETUPFILE: https://simonkjohnston.life/org-export-themes/html/office/office.setup
 
 * HTML Themes
 
