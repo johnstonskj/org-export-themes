@@ -1,4 +1,7 @@
 #+TITLE: Org-Export Themes
+#+SUBTITLE: By Me.
+#+AUTHOR: Simon
+#+SETUPFILE: ./html/office/office-local.setup
 
 * HTML Themes
 
@@ -6,3 +9,9 @@
 
 ** Office
 
+This is used to mimic standard products such as Microsoft Office's Word.
+
+#+CAPTION: a table
+| heading | other |
+|---------+-------|
+| here    | there |

@@ -1,0 +1,301 @@
+# -*- mode: org;  -*-
+#+AUTHOR: Simon Johnston
+#+EMAIL: johnstonskj@gmail.com
+#+LANGUAGE: en
+#+STARTUP: overview hidestars inlineimages entitiespretty
+#+OPTIONS: num:t toc:2
+
+Introduction
+
+* CSS
+:PROPERTIES:
+:header-args: :tangle modern.css
+:END:
+
+** Typography
+
+#+BEGIN_SRC css
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Fira+Sans:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&display=swap');
+:root {
+    --code-font-family: 'Fira Code', sans-serif;
+    --text-font-family: 'Fira Sans', monospace;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-font-feature-settings: "kern" 1;
+    -o-font-feature-settings: "kern" 1;
+    -webkit-font-feature-settings: "kern" 1;
+    font-feature-settings: "kern" 1;
+    font-kerning: normal;
+}
+#+END_SRC
+
+Reset some basic elements.
+
+#+BEGIN_SRC css
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+#+END_SRC
+
+*** Colors
+
+#+BEGIN_SRC css
+:root {
+    --text-color:            #3c484e;
+    --background-color:      #fdfdfd;
+    --brand-color:           #2a7ae2;
+    --link-color:            #0037B3;
+    --code-background-color: #f6f8fa;
+    --grey-color:            #828282;
+    --grey-color-light:      #e8e8e8;
+    --grey-color-dark:       #f0f0f0;
+
+}
+#+END_SRC
+
+*** Body Content
+
+#+BEGIN_SRC css
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+    font-size: 16px/1.6;
+    font-weight: 200;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; }
+
+#+END_SRC
+
+Set ~margin-bottom~ to maintain vertical rhythm
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+    margin-bottom: 15px;
+}
+#+END_SRC
+
+Default value of ~display~ of ~main~ element is ~inline~ in IE 11.
+
+#+BEGIN_SRC css
+main {
+    display: block;
+}
+#+END_SRC
+
+*** Headings
+
+#+BEGIN_SRC css
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 200;
+}
+#+END_SRC
+
+*** Links
+
+#+BEGIN_SRC css
+a {
+    color: var(--brand-color);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--link-color);
+}
+a:hover {
+    color: var(--text-color);
+    text-decoration: underline;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+.social-media-list a:hover {
+    text-decoration: none;
+}
+.social-media-list a:hover .username {
+    text-decoration: underline;
+}
+#+END_SRC
+
+** Media Queries
+
+*** Screen
+
+#+BEGIN_SRC css
+@media screen and (max-width: 45px) {
+    .wrapper {
+        max-width: -webkit-calc(45em - (30px));
+        max-width: calc(45em - (30px));
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+#+END_SRC
+
+** Blocks
+
+*** Block Quotes
+
+#+BEGIN_SRC css
+blockquote {
+    color: #828282;
+    border-left: 4px solid #e8e8e8;
+    padding-left: 15px;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+#+END_SRC
+
+** Images
+
+#+BEGIN_SRC css
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+figure > img {
+    display: block;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+figcaption {
+    font-size: 0.8em;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+.svg-icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    fill: #828282;
+    padding-right: 5px;
+    vertical-align: text-top;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+.social-media-list li + li {
+    padding-top: 5px;
+}
+#+END_SRC
+
+** Lists
+
+#+BEGIN_SRC css
+ul, ol {
+    margin-left: 30px;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+li > ul, li > ol {
+    margin-bottom: 0;
+}
+#+END_SRC
+
+** Tables
+
+#+BEGIN_SRC css
+table { margin-bottom: 30px; width: 100%; text-align: left; color: #647882; border-collapse: collapse; border: 1px solid #e8e8e8; }
+table tr:nth-child(even) { background-color: #f7f7f7; }
+table th, table td { padding: 10px 15px; }
+table th { background-color: #f0f0f0; border: 1px solid #dedede; border-bottom-color: #c9c9c9; }
+table td { border: 1px solid #e8e8e8; }
+#+END_SRC
+
+** Code
+
+#+BEGIN_SRC css
+pre, code {
+    font-family: var(--code-font-family);
+    font-size: 0.9;
+    font-weight: 300;
+    line-height: 1.4;
+    border: 1px solid var(--grey-color-light);
+    border-radius: 3px;
+    background-color: var(--code-background-color);
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+pre {
+    padding: 0.5em .75em;
+    overflow-x: auto;
+}
+pre > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+code {
+    padding: 1px 5px;
+}
+#+END_SRC
+
+** Footnotes and References
+
+#+BEGIN_SRC css
+.footnote::before {
+    content: "[";
+}
+
+.footnote::after {
+    content: "]";
+}
+
+.footnotes {
+    font-size: $small-font-size;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+#+END_SRC
+
+#+BEGIN_SRC css
+#+END_SRC
+
+** More information
+
+#+BEGIN_SRC css
+#+END_SRC
+
+* Javascript
+:PROPERTIES:
+:header-args: :tangle modern.js
+:END:
+
+* Setup File
+:PROPERTIES:
+:header-args: :tangle modern.setup
+:END:
+
+#+BEGIN_SRC org
+,# -*- mode: org; -*-
+
+,#+OPTIONS: html-style:nil
+
+,#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="https://github.com/johnstonskj/org-export-themes/html/modern/modern.css"/>
+,#+HTML_HEAD: <script type="text/javascript" src="https://github.com/johnstonskj/org-export-themes/html/modern/modern.css""></script>
+,#+HTML_HEAD: <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+,#+HTML_HEAD: <script>MathJax = {tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };</script>
+,#+HTML_HEAD: <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+#+END_SRC
