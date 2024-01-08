@@ -12,5 +12,5 @@
 This is used to mimic standard products such as Microsoft Office's Word.
 
 #+BEGIN_SRC org
-#+SETUPFILE: https://raw.githubusercontent.com/johnstonskj/org-export-themes/main/html/office/office.setup
+#+SETUPFILE: https://simonkjohnston.life/org-export-themes/html/office/office.setup
 #+END_SRC
