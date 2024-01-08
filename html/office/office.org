@@ -17,8 +17,12 @@ Introduction
 #+BEGIN_SRC css
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&family=Fira+Sans:ital,wght@0,100;0,200;0,400;0,600;0,700;1,100;1,200;1,400;1,600;1,700&display=swap');
 :root {
-    --code-font-family: 'Fira Code', 'Helvetica Neue', Arial, sans-serif;;
-    --text-font-family: 'Fira Sans', monospace;
+    --code-font-family: 'Fira Code', monospace;
+    --code-weight-normal: 300;
+    --code-weight-semibold: 400;
+    --code-weight-bold: 600;
+
+    --text-font-family: 'Fira Sans', 'Helvetica Neue', Arial, sans-serif;
     --text-weight-light: 100;
     --text-weight-normal: 200;
     --text-weight-heading: 400;
@@ -60,6 +64,7 @@ html{
     --text-huge: 3.2em;
 
     --line-height-normal: 1.6em;
+    --line-height-code: 1.4em;
     --line-height-compressed: 1.2em;
 }
 #+END_SRC
@@ -120,7 +125,10 @@ h1, h2, h3, h4, h5 {
 
 #+BEGIN_SRC css
 :root {
-    --table-border: 1px solid var(--border-color);
+    --border-width: 1px;
+    --border-radius-small: 3px;
+    --border-style: solid;
+    --table-border: var(--border-width) var(--border-style) var(--border-color);
     --section-border: 1px solid var(--border-color);    
 }
 #+END_SRC
@@ -297,11 +305,11 @@ table caption {
 #+BEGIN_SRC css
 pre, code {
     font-family: var(--code-font-family);
-    font-size: 0.9;
-    font-weight: 300;
-    line-height: 1.4;
-    border: 1px solid var(--grey-color-light);
-    border-radius: 3px;
+    font-size: var(--text-small);
+    font-weight: var(--code-weight-normal);
+    line-height: var(--line-height-code);
+    border: var(--border-width) var(--border-style) var(--grey-color-light);
+    border-radius: var(--border-radius-small);
     background-color: var(--code-background-color);
 }
 #+END_SRC
