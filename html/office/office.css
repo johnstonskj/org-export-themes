@@ -207,7 +207,15 @@ table caption {
     font-weight: var(--text-weight-light);
 }
 
-
+pre, code {
+    font-family: var(--code-font-family);
+    font-size: 0.9;
+    font-weight: 300;
+    line-height: 1.4;
+    border: 1px solid var(--grey-color-light);
+    border-radius: 3px;
+    background-color: var(--code-background-color);
+}
 
 
 
