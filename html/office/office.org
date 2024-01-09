@@ -111,6 +111,12 @@ p, li, dd {
 }
 #+END_SRC
 
+#+BEGIN_SRC css
+div#content {
+    margin: auto;
+}
+#+END_SRC
+
 *** Text Styles
 
 Set what it means to be bold.
@@ -198,37 +204,52 @@ These are some simple reusable values across table and block borders as well as 
 Mobile
 
 #+BEGIN_SRC css
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
 	  body {
 		  font-size: 14px;
-		  min-width: 24em;
+		  min-width: 20em;
 	  }
 	  main {
-		  min-width: 22em;
-		  max-width: 34em;
+		  min-width: 18em;
+		  max-width: 24em;
 	  }
 }
 #+END_SRC
 
-Tablet or small screen
+Tablet 
 
 #+BEGIN_SRC css
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 481px) and (max-width: 768px)  {
+	body {
+		font-size: 14px;
+		min-width: 24em;
+	}
+	main {
+		min-width: 22em;
+		max-width: 30em;
+	}
+}
+#+END_SRC
+
+Small Laptop/Large tablet
+
+#+BEGIN_SRC css
+@media screen and (min-width: 769px) and (max-width: 1024px)  {
 	body {
 		font-size: 16px;
 		min-width: 30em;
 	}
 	main {
 		min-width: 28em;
-		max-width: 62em;
+		max-width: 40em;
 	}
 }
 #+END_SRC
 
-Large screen
+Desktop
 
 #+BEGIN_SRC css
-@media screen and (min-width: 1601px) {
+@media screen and (min-width: 1025px) and (max-width: 2048px) {
    	body {
 		font-size: 18px;
 		min-width: 60em;
@@ -236,6 +257,21 @@ Large screen
 	main {
 		min-width: 56em;
 		max-width: 126em;
+	}
+}
+#+END_SRC
+
+Large screen
+
+#+BEGIN_SRC css
+@media screen and (min-width: 2049px) {
+   	body {
+		font-size: 18px;
+		min-width: 80em;
+	}
+	main {
+		min-width: 76em;
+		max-width: 160em;
 	}
 }
 #+END_SRC
@@ -492,6 +528,16 @@ div.org-src-container > label.org-src-name {
     font-size: var(--caption-font-size);
     font-style: var(--caption-font-style);
     font-weight: var(--caption-font-weight);
+}
+#+END_SRC
+
+** Home and Up
+
+#+BEGIN_SRC css
+div#org-div-home-and-up {
+    text-align: right;
+    font-size: var(--text-smaller);
+    white-space: nowrap;
 }
 #+END_SRC
 
