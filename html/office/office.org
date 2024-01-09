@@ -201,7 +201,7 @@ Mobile
 	  body {
 		  font-size: 14px;
 		  min-width: 21em;
-		  max-width: 31em;
+		  max-width: 30em;
         padding-left: var(--text-normal);
         padding-right: var(--text-normal);
 	  }
@@ -222,8 +222,8 @@ Tablet
     div#content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 24em;
-        max-width: 50em;
+        min-width: 30em;
+        max-width: 48em;
     }
 }
 #+END_SRC
@@ -242,7 +242,7 @@ Small Laptop/Large tablet
     div#content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 42em;
+        min-width: 48em;
         max-width: 60em;
     }
 }
@@ -262,8 +262,8 @@ Desktop
     div#content {
         margin-left: auto;
         margin-right: auto;
-		  min-width: 30em;
-        max-width: 38em;
+		  min-width: 60em;
+        max-width: 128em;
     }
 }
 #+END_SRC
@@ -282,8 +282,8 @@ Large screen
     div#content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 34em;
-        max-width: 40em;
+        min-width: 128em;
+        max-width: 128em;
     }
 }
 #+END_SRC
