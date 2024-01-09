@@ -151,6 +151,8 @@ h1, h2, h3, h4, h5 {
 
 *** Captions
 
+As these properties are used to construct code, figure/image, and table captions it's worth naming them specifically.
+
 #+BEGIN_SRC css
 :root {
     --caption-font-size: var(--text-small);
@@ -192,7 +194,7 @@ h1.title {
 }
 #+END_SRC
 
-Mobile
+For mobile devices.
 
 #+BEGIN_SRC css
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -212,7 +214,7 @@ Mobile
 }
 #+END_SRC
 
-Tablet 
+For common tablet devices.
 
 #+BEGIN_SRC css
 @media screen and (min-width: 481px) and (max-width: 768px)  {
@@ -232,7 +234,7 @@ Tablet
 }
 #+END_SRC
 
-Small Laptop/Large tablet
+For small laptop or large tablet devices.
 
 #+BEGIN_SRC css
 @media screen and (min-width: 769px) and (max-width: 1024px)  {
@@ -252,7 +254,7 @@ Small Laptop/Large tablet
 }
 #+END_SRC
 
-Desktop
+For large laptop or desktop devices.
 
 #+BEGIN_SRC css
 @media screen and (min-width: 1025px) and (max-width: 2048px) {
@@ -272,7 +274,7 @@ Desktop
 }
 #+END_SRC
 
-Large screen
+For large displays.
 
 #+BEGIN_SRC css
 @media screen and (min-width: 2049px) {
@@ -519,6 +521,21 @@ table caption {
 
 ** Code
 
+Org-Export generates code of the following form. Note that it does not, as is more common, use a ~<code>~ element within
+the ~<pre>~. The class ~src~ is common to all source blocks and any language specified on the source block generates a class
+name of the form =src-{name}=.
+
+#+BEGIN_SRC html
+<div class="org-src-container">
+  <label class="org-src-name">
+    <span class="listing-number">Listing 2: </span>Directory-Local Variables
+  </label>
+  <pre class="src src-elisp"> 
+    <span style="color: #657b83;">(</span><span style="color: #657b83;">)</span>
+  </pre>
+</div>
+#+END_SRC
+
 #+BEGIN_SRC css
 pre, code {
     font-family: var(--code-font-family);
@@ -526,10 +543,6 @@ pre, code {
     font-weight: var(--code-weight-normal);
     line-height: var(--line-height-code);
 }
-#+END_SRC
-
-#+BEGIN_SRC css
-div.org-src-container {}
 #+END_SRC
 
 #+BEGIN_SRC css
@@ -543,6 +556,12 @@ div.org-src-container > pre {
 }
 #+END_SRC
 
+#+BEGIN_SRC css
+p > code {
+    background-color: var(--code-background-color);
+}
+#+END_SRC
+    
 #+BEGIN_SRC css
 div.org-src-container > label.org-src-name {
     font-size: var(--caption-font-size);
@@ -570,6 +589,8 @@ div#footnotes {
 }
 #+END_SRC
 
+** Postamble
+
 #+BEGIN_SRC css
 div#postamble {
     border-top: var(--section-border);
@@ -588,11 +609,6 @@ div#postamble > p.validation {
     display: none;
 }
 #+END_SRC
-
-#+BEGIN_SRC css
-#+END_SRC
-
-** More information
 
 #+BEGIN_SRC css
 #+END_SRC

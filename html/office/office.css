@@ -323,14 +323,21 @@ table caption {
     font-weight: var(--caption-font-weight);
 }
 
+<div class="org-src-container">
+  <label class="org-src-name">
+    <span class="listing-number">Listing 2: </span>Directory-Local Variables
+  </label>
+  <pre class="src src-elisp"> 
+    <span style="color: #657b83;">(</span><span style="color: #657b83;">)</span>
+  </pre>
+</div>
+
 pre, code {
     font-family: var(--code-font-family);
     font-size: var(--text-small);
     font-weight: var(--code-weight-normal);
     line-height: var(--line-height-code);
 }
-
-div.org-src-container {}
 
 div.org-src-container > pre {
     margin-top: var(--text-tiny);
@@ -339,6 +346,10 @@ div.org-src-container > pre {
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
     overflow: scroll;
+}
+
+p > code {
+    background-color: var(--code-background-color);
 }
 
 div.org-src-container > label.org-src-name {
@@ -374,7 +385,5 @@ div#postamble > p {
 div#postamble > p.validation {
     display: none;
 }
-
-
 
 
