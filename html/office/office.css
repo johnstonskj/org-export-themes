@@ -218,19 +218,22 @@ table caption {
     font-weight: var(--text-weight-light);
 }
 
-pre, code {
+pre {
     font-family: var(--code-font-family);
     font-size: var(--text-small);
     font-weight: var(--code-weight-normal);
     line-height: var(--line-height-code);
-    border: var(--border-width) var(--border-style) var(--grey-color-light);
-    border-radius: var(--border-radius-small);
+}
+
+pre {
+    padding: var(--text-normal);
     background-color: var(--code-background-color);
 }
 
-
-
-
+pre {
+    border: var(--border-width) var(--border-style) var(--code-border-color);
+    border-radius: var(--border-radius-small);
+}
 
 div#footnotes {
     border-top: var(--section-border);
