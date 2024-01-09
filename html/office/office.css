@@ -65,6 +65,7 @@ h1.title {
     font-weight: var(--text-weight-heading);
     font-size: var(--text-larger);
     color: var(--title-color);
+    text-align: center;
 }
 
 h1 > span.subtitle {
