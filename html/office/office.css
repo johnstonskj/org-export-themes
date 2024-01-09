@@ -25,6 +25,8 @@ html{
     --subtitle-color: #808080;
     --heading-color: #4F81BD;
     --border-color: #A0A0A0;
+    --code-color: #3c484e;
+    --code-background-color: #f6f8fa;
 }
 
 :root {
