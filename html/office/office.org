@@ -358,16 +358,23 @@ pre {
 #+END_SRC
 
 #+BEGIN_SRC css
-pre {
+div.org-src-container {}
+#+END_SRC
+
+#+BEGIN_SRC css
+div.org-src-container > pre {
     padding: var(--text-normal);
     background-color: var(--code-background-color);
+    border: var(--border-width) var(--border-style) var(--code-border-color);
+    border-radius: var(--border-radius-small);
 }
 #+END_SRC
 
 #+BEGIN_SRC css
-pre {
-    border: var(--border-width) var(--border-style) var(--code-border-color);
-    border-radius: var(--border-radius-small);
+div.org-src-container > label.org-src-container {
+    font-size: var(--text-small);
+    font-style: italic;
+    font-weight: var(--text-weight-light);
 }
 #+END_SRC
 

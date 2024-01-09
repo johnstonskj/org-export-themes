@@ -11,6 +11,7 @@
 
 This is used to mimic standard products such as Microsoft Office's Word.
 
+#+CAPTION: Some listing
 #+BEGIN_SRC org
 ,#+TITLE: An example file
 ,#+SETUPFILE: https://simonkjohnston.life/org-export-themes/html/office/office.setup
