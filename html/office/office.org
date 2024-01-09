@@ -312,6 +312,14 @@ div.abstract > p::before, div.ABSTRACT > p::before {
 }
 #+END_SRC
 
+*** Table of Contents
+
+#+BEGIN_SRC css
+div#text-table-of-contents ul {
+    list-style-type: none;
+}
+#+END_SRC
+
 *** Block Quotes
 
 #+BEGIN_SRC css

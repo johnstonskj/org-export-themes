@@ -202,6 +202,10 @@ div.abstract > p::before, div.ABSTRACT > p::before {
     font-weight: var(--text-weight-heading);
 }
 
+div#text-table-of-contents ul {
+    list-style-type: none;
+}
+
 
 
 div.NOTE {
