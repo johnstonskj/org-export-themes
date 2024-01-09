@@ -349,7 +349,7 @@ table caption {
 ** Code
 
 #+BEGIN_SRC css
-pre {
+pre, code {
     font-family: var(--code-font-family);
     font-size: var(--text-small);
     font-weight: var(--code-weight-normal);
@@ -363,6 +363,7 @@ div.org-src-container {}
 
 #+BEGIN_SRC css
 div.org-src-container > pre {
+    margin-top: var(--text-smaller);
     padding: var(--text-normal);
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
