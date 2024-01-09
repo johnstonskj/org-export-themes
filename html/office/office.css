@@ -51,8 +51,10 @@ body {
     font-family: var(--text-font-family);
     font-weight: var(--text-weight-normal);
     line-height: var(--line-height-normal);
-    margin-left: var(--text-normal);
-    margin-right: var(--text-normal);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--text-normal);
+    padding-right: var(--text-normal);
     min-height: 100%;
 }
 
@@ -117,9 +119,6 @@ h1, h2, h3, h4, h5 {
 	  body {
 		  font-size: 14px;
 		  min-width: 20em;
-	  }
-	  main {
-		  min-width: 18em;
 		  max-width: 24em;
 	  }
 }
@@ -128,9 +127,6 @@ h1, h2, h3, h4, h5 {
 	body {
 		font-size: 14px;
 		min-width: 24em;
-	}
-	main {
-		min-width: 22em;
 		max-width: 30em;
 	}
 }
@@ -139,33 +135,24 @@ h1, h2, h3, h4, h5 {
 	body {
 		font-size: 16px;
 		min-width: 30em;
-	}
-	main {
-		min-width: 28em;
 		max-width: 40em;
 	}
 }
 
 @media screen and (min-width: 1025px) and (max-width: 2048px) {
-   	body {
-		font-size: 18px;
-		min-width: 60em;
-	}
-	main {
-		min-width: 56em;
-		max-width: 126em;
-	}
+    body {
+		  font-size: 18px;
+		  min-width: 60em;
+        max-width: 126em;
+	  }
 }
 
 @media screen and (min-width: 2049px) {
-   	body {
-		font-size: 18px;
-		min-width: 80em;
-	}
-	main {
-		min-width: 76em;
-		max-width: 160em;
-	}
+    body {
+        font-size: 18px;
+        min-width: 80em;
+        max-width: 160em;
+	  }
 }
 
 @media print {
