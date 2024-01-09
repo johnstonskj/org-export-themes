@@ -265,7 +265,7 @@ div.org-src-container > pre {
     border-radius: var(--border-radius-small);
 }
 
-div.org-src-container > label.org-src-container {
+div.org-src-container > label.org-src-name {
     font-size: var(--text-small);
     font-style: italic;
     font-weight: var(--text-weight-light);
