@@ -317,6 +317,11 @@ div.abstract > p::before, div.ABSTRACT > p::before {
 #+BEGIN_SRC css
 div#text-table-of-contents ul {
     list-style-type: none;
+    margin-left: var(--text-normal);
+    padding: 0;
+}
+div#text-table-of-contents ul li:last-child {
+    margin-bottom: var(--text-small);
 }
 #+END_SRC
 
