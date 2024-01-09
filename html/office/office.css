@@ -210,7 +210,11 @@ div.NOTE p::before {
     font-weight: var(--text-weight-heading);
 }
 
-div.figure :nth-child(2) {
+div.figure > p {
+    text-align: center;
+}
+
+div.figure > p:nth-of-type(2) {
     font-weight: var(--text-weight-light);
     font-size: var(--text-small);
     font-style: italic;
@@ -259,7 +263,7 @@ pre, code {
 div.org-src-container {}
 
 div.org-src-container > pre {
-    margin-top: var(--text-smaller);
+    margin-top: var(--text-tiny);
     padding: var(--text-normal);
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);

@@ -300,7 +300,13 @@ div.NOTE p::before {
 ** Images
 
 #+BEGIN_SRC css
-div.figure :nth-child(2) {
+div.figure > p {
+    text-align: center;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+div.figure > p:nth-of-type(2) {
     font-weight: var(--text-weight-light);
     font-size: var(--text-small);
     font-style: italic;
@@ -363,7 +369,7 @@ div.org-src-container {}
 
 #+BEGIN_SRC css
 div.org-src-container > pre {
-    margin-top: var(--text-smaller);
+    margin-top: var(--text-tiny);
     padding: var(--text-normal);
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
