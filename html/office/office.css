@@ -51,8 +51,6 @@ body {
     font-family: var(--text-font-family);
     font-weight: var(--text-weight-normal);
     line-height: var(--line-height-normal);
-    min-height: 100%;
-    margin: 0;
 }
 
 p, li, dd {
@@ -97,88 +95,93 @@ h1, h2, h3, h4, h5 {
     --section-border: var(--border-width) var(--border-style) var(--border-color);    
 }
 
-@media screen {
-    h1.title {
-        margin-top: var(--text-normal);
-        margin-bottom: var(--text-smaller);
-    }
+body {
+    min-height: 100%;
+    padding-left: var(--text-large);
+    padding-right: var(--text-large)
+}
+h1.title {
+    margin-top: var(--text-normal);
+    margin-bottom: var(--text-smaller);
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+	  body {
+		  font-size: 14px;
+	  }
+    div#content {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 21em;
+        max-width: 30em;
+    }
     img {
         max-width: 420px;
         height: auto;
     }
-	  body {
-		  font-size: 14px;
-		  min-width: 21em;
-		  max-width: 31em;
-        padding-left: var(--text-normal);
-        padding-right: var(--text-normal);
-	  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px)  {
-    img {
-        max-width: 640px;
-        height: auto;
-    }
     body {
         font-size: 14px;
     }
     div#content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 24em;
-        max-width: 50em;
+        min-width: 30em;
+        max-width: 48em;
+    }
+    img {
+        max-width: 640px;
+        height: auto;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px)  {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
     body {
         font-size: 16px;
     }
     div#content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 42em;
-        max-width: 60em;
+        min-width: 28em;
+        max-width: 58em;
     }
-}
-
-@media screen and (min-width: 1025px) and (max-width: 2048px) {
     img {
         max-width: 100%;
         height: auto;
     }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 2048px) {
     body {
 		  font-size: 18px;
 	  }
     div#content {
         margin-left: auto;
         margin-right: auto;
-		  min-width: 30em;
-        max-width: 38em;
+		  min-width: 52em;
+        max-width: 68em;
     }
-}
-
-@media screen and (min-width: 2049px) {
     img {
         max-width: 100%;
         height: auto;
     }
+}
+
+@media screen and (min-width: 2049px) {
     body {
         font-size: 18px;
 	  }
     div#content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 34em;
-        max-width: 40em;
+        min-width: 68em;
+        max-width: 72em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
@@ -334,6 +337,7 @@ div.org-src-container > pre {
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
+    overflow: scroll;
 }
 
 div.org-src-container > label.org-src-name {

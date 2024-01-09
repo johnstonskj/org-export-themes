@@ -99,8 +99,6 @@ body {
     font-family: var(--text-font-family);
     font-weight: var(--text-weight-normal);
     line-height: var(--line-height-normal);
-    min-height: 100%;
-    margin: 0;
 }
 #+END_SRC
 
@@ -182,11 +180,14 @@ These are some simple reusable values across table and block borders as well as 
 *** Screen
 
 #+BEGIN_SRC css
-@media screen {
-    h1.title {
-        margin-top: var(--text-normal);
-        margin-bottom: var(--text-smaller);
-    }
+body {
+    min-height: 100%;
+    padding-left: var(--text-large);
+    padding-right: var(--text-large)
+}
+h1.title {
+    margin-top: var(--text-normal);
+    margin-bottom: var(--text-smaller);
 }
 #+END_SRC
 
@@ -194,17 +195,19 @@ Mobile
 
 #+BEGIN_SRC css
 @media screen and (min-width: 320px) and (max-width: 480px) {
+	  body {
+		  font-size: 14px;
+	  }
+    div#content {
+        margin-left: auto;
+        margin-right: auto;
+        min-width: 21em;
+        max-width: 30em;
+    }
     img {
         max-width: 420px;
         height: auto;
     }
-	  body {
-		  font-size: 14px;
-		  min-width: 21em;
-		  max-width: 30em;
-        padding-left: var(--text-normal);
-        padding-right: var(--text-normal);
-	  }
 }
 #+END_SRC
 
@@ -212,10 +215,6 @@ Tablet
 
 #+BEGIN_SRC css
 @media screen and (min-width: 481px) and (max-width: 768px)  {
-    img {
-        max-width: 640px;
-        height: auto;
-    }
     body {
         font-size: 14px;
     }
@@ -225,6 +224,10 @@ Tablet
         min-width: 30em;
         max-width: 48em;
     }
+    img {
+        max-width: 640px;
+        height: auto;
+    }
 }
 #+END_SRC
 
@@ -232,18 +235,18 @@ Small Laptop/Large tablet
 
 #+BEGIN_SRC css
 @media screen and (min-width: 769px) and (max-width: 1024px)  {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
     body {
         font-size: 16px;
     }
     div#content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 48em;
-        max-width: 60em;
+        min-width: 28em;
+        max-width: 58em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 #+END_SRC
@@ -252,18 +255,18 @@ Desktop
 
 #+BEGIN_SRC css
 @media screen and (min-width: 1025px) and (max-width: 2048px) {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
     body {
 		  font-size: 18px;
 	  }
     div#content {
         margin-left: auto;
         margin-right: auto;
-		  min-width: 60em;
-        max-width: 128em;
+		  min-width: 52em;
+        max-width: 68em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 #+END_SRC
@@ -272,18 +275,18 @@ Large screen
 
 #+BEGIN_SRC css
 @media screen and (min-width: 2049px) {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
     body {
         font-size: 18px;
 	  }
     div#content {
         margin-left: auto;
         margin-right: auto;
-        min-width: 128em;
-        max-width: 128em;
+        min-width: 68em;
+        max-width: 72em;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 #+END_SRC
@@ -535,6 +538,7 @@ div.org-src-container > pre {
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
+    overflow: scroll;
 }
 #+END_SRC
 
