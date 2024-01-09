@@ -124,9 +124,9 @@ The front-page title should be rather larger than normal.
 
 #+BEGIN_SRC css
 h1.title {
-    font-weight: var(--text-weight-heading);
-    font-size: var(--text-larger);
     color: var(--title-color);
+    font-size: var(--text-larger);
+    font-weight: var(--text-weight-heading);
     text-align: center;
 }
 #+END_SRC
@@ -134,9 +134,9 @@ h1.title {
 Although the embedded subtitle should appear diminished.
 #+BEGIN_SRC css
 h1 > span.subtitle {
-    font-weight: var(--text-weight-heading);
-    font-size: var(--text-tiny);
     color: var(--subtitle-color);
+    font-size: var(--text-tiny);
+    font-weight: var(--text-weight-heading);
 }
 #+END_SRC
 
@@ -144,8 +144,8 @@ The rest of the headings should share common colors and weight only.
 
 #+BEGIN_SRC css
 h1, h2, h3, h4, h5 {
-    font-weight: var(--text-weight-heading);
     color: var(--heading-color);
+    font-weight: var(--text-weight-heading);
 }
 #+END_SRC
 
