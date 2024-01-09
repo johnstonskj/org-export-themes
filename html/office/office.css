@@ -44,6 +44,9 @@ html {
     --line-height-normal: 1.6em;
     --line-height-code: 1.4em;
     --line-height-compressed: 1.2em;
+    --line-extension-normal: 0.6em;
+    --line-extension-code: 0.4em;
+    --line-extension-compressed: 0.2em;
 }
 
 body {
@@ -339,10 +342,10 @@ div.org-src-container > pre.src {
     overflow: scroll;
 }
 
-p > code {
+p, li, dt, dd code {
     background-color: var(--code-background-color);
-    padding-left: 0.1em;
-    padding-right: 0.1em;
+    padding-left: var(--line-extension-compressed);
+    padding-right: var(--line-extension-compressed);
 }
 
 div.org-src-container > label.org-src-name {
