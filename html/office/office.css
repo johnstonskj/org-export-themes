@@ -10,11 +10,13 @@
     --text-weight-normal: 200;
     --text-weight-heading: 400;
     --text-weight-bold: 600;
+    --text-weight-heavy: 700;
 }
 
-html{
+html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    font-kerning: normal;
     font-size: 100%;
     height: 100%;
 }
@@ -49,8 +51,8 @@ body {
     font-family: var(--text-font-family);
     font-weight: var(--text-weight-normal);
     line-height: var(--line-height-normal);
-    margin-left: 1.0em;
-    margin-right: 1.0em;
+    margin-left: var(--text-normal);
+    margin-right: var(--text-normal);
     min-height: 100%;
 }
 
@@ -80,11 +82,20 @@ h1, h2, h3, h4, h5 {
 }
 
 :root {
+    --caption-font-size: var(--text-small);
+    --caption-font-style: italic;
+    --caption-font-weight: var(--text-weight-light);
+}
+
+:root {
     --border-width: 1px;
+    --border-width-thick: 2px;
+    --border-width-block: 0.25em;
     --border-radius-small: 3px;
+    --border-radius-normal: 0.25em;
     --border-style: solid;
     --table-border: var(--border-width) var(--border-style) var(--border-color);
-    --section-border: 1px solid var(--border-color);    
+    --section-border: var(--border-width) var(--border-style) var(--border-color);    
 }
 
 @media screen {
@@ -180,10 +191,10 @@ h1, h2, h3, h4, h5 {
 }
 
 div.abstract, div.ABSTRACT {
-    margin-top: 3em;
-    margin-left: 6em;
-    margin-right: 6em;
-    margin-bottom: 2em;
+    margin-top: var(--text-huge);
+    margin-left: calc(var(--text-huge) * 2);
+    margin-right: calc(var(--text-huge) * 2);
+    margin-bottom: var(--text-large);
 }
 
 div.abstract > p::before, div.ABSTRACT > p::before {
@@ -194,10 +205,10 @@ div.abstract > p::before, div.ABSTRACT > p::before {
 
 
 div.NOTE {
-    margin: 1rem;
-    padding: 1rem;
-    border: 2px solid var(--heading-color);
-    border-radius: 0.25rem;
+    margin: var(--text-normal);
+    padding: var(--text-normal);
+    border: var(--border-width-thick) var(--border-style) var(--heading-color);
+    border-radius: var(--border-radius-normal);
 }
 
 div.NOTE p {
@@ -215,9 +226,9 @@ div.figure > p {
 }
 
 div.figure > p:nth-of-type(2) {
-    font-weight: var(--text-weight-light);
-    font-size: var(--text-small);
-    font-style: italic;
+    font-size: var(--caption-font-size);
+    font-style: var(--caption-font-style);
+    font-weight: var(--caption-font-weight);
 }
 
 div.figure > p:nth-of-type(1) {
@@ -233,21 +244,17 @@ table {
     margin-left: auto;
     margin-right: auto;
     min-width: 50%;
+    font-size: var(--text-small);
+    line-height: var(--line-height-compressed);
 }
 
 table > thead {
     color: var(--heading-color);
     font-weight: var(--text-weight-heading);
-    line-height: var(--line-height-compressed);
 }
 
 table > thead th {
     border: var(--table-border);
-}
-
-table > tbody {
-    font-size: var(--text-small);
-    line-height: var(--line-height-compressed);
 }
 
 table > tbody td {
@@ -255,9 +262,9 @@ table > tbody td {
 }
 
 table caption {
-    font-size: var(--text-small);
-    font-style: italic;
-    font-weight: var(--text-weight-light);
+    font-size: var(--caption-font-size);
+    font-style: var(--caption-font-style);
+    font-weight: var(--caption-font-weight);
 }
 
 pre, code {
@@ -278,9 +285,9 @@ div.org-src-container > pre {
 }
 
 div.org-src-container > label.org-src-name {
-    font-size: var(--text-small);
-    font-style: italic;
-    font-weight: var(--text-weight-light);
+    font-size: var(--caption-font-size);
+    font-style: var(--caption-font-style);
+    font-weight: var(--caption-font-weight);
 }
 
 div#footnotes {
