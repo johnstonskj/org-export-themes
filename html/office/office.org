@@ -560,7 +560,7 @@ div.org-src-container > pre.src {
 #+END_SRC
 
 #+BEGIN_SRC css
-p, li, dt, dd code {
+p code, li code, dt code, dd code {
     background-color: var(--code-background-color);
     padding-left: var(--line-extension-compressed);
     padding-right: var(--line-extension-compressed);
