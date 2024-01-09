@@ -371,7 +371,7 @@ div.org-src-container > pre {
 #+END_SRC
 
 #+BEGIN_SRC css
-div.org-src-container > label.org-src-container {
+div.org-src-container > label.org-src-name {
     font-size: var(--text-small);
     font-style: italic;
     font-weight: var(--text-weight-light);
