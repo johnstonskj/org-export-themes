@@ -410,7 +410,7 @@ div.NOTE p::before {
 
 ** Images
 
-Images are output by the HTML exporter according to the layout in the example shown below.
+Org-mode images are output by the HTML exporter according to the layout in the example shown below.
 
 #+CAPTION: Org-Exported Figure
 #+BEGIN_SRC html :tangle no
@@ -455,7 +455,7 @@ div.figure > p:nth-of-type(2) {
 
 ** Tables
 
-Tables are output by the HTML exporter according to the layout in the example shown below.
+Org-mode tables are output by the HTML exporter according to the layout in the example shown below.
 
 #+CAPTION: Org-Exported Table
 #+BEGIN_SRC html :tangle no
@@ -525,7 +525,7 @@ Org-Export generates code of the following form. Note that it does not, as is mo
 the ~<pre>~. The class ~src~ is common to all source blocks and any language specified on the source block generates a class
 name of the form =src-{name}=.
 
-#+BEGIN_SRC html
+#+BEGIN_SRC html :tangle no
 <div class="org-src-container">
   <label class="org-src-name">
     <span class="listing-number">Listing 2: </span>Directory-Local Variables
@@ -546,7 +546,7 @@ pre, code {
 #+END_SRC
 
 #+BEGIN_SRC css
-div.org-src-container > pre {
+div.org-src-container > pre.src {
     margin-top: var(--text-tiny);
     padding: var(--text-normal);
     background-color: var(--code-background-color);
@@ -559,6 +559,8 @@ div.org-src-container > pre {
 #+BEGIN_SRC css
 p > code {
     background-color: var(--code-background-color);
+    padding-left: 0.1em;
+    padding-right: 0.1em;
 }
 #+END_SRC
     
