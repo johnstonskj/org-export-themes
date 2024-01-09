@@ -210,7 +210,7 @@ div.NOTE p::before {
     font-weight: var(--text-weight-heading);
 }
 
-div.figure {
+div.figure > p {
     text-align: center;
 }
 

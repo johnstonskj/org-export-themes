@@ -299,8 +299,20 @@ div.NOTE p::before {
 
 ** Images
 
+#+CAPTION: Org-Exported Figure
+#+BEGIN_SRC html :tangle no
+<div id="org559bb8e" class="figure">
+  <p>
+    <img src="amethyst-ia.svg" alt="amethyst-ia.svg" class="org-svg">
+  </p>
+  <p>
+    <span class="figure-number">Figure 1: </span>Amethyst Information Architecture
+  </p>
+</div>
+#+END_SRC
+
 #+BEGIN_SRC css
-div.figure {
+div.figure > p {
     text-align: center;
 }
 #+END_SRC
@@ -323,6 +335,30 @@ div.figure > p:nth-of-type(2) {
 #+END_SRC
 
 ** Tables
+
+#+CAPTION: Org-Exported Table
+#+BEGIN_SRC html :tangle no
+<table border="0" cellspacing="0" cellpadding="6" rules="none" frame="none">
+  <caption class="t-above">
+    <span class="table-number">Table 2:</span> FTP Log-in Details</caption>
+  <colgroup>
+    <col class="org-left">
+    <col class="org-left">
+  </colgroup>
+  <thead>
+    <tr>
+      <th scope="col" class="org-left">&nbsp;</th>
+      <th scope="col" class="org-left">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="org-left"><b>URL</b></td>
+      <td class="org-left"><code>ftp.eros-events.org</code></td>
+    </tr>
+  </tbody>
+</table>
+#+END_SRC
 
 #+BEGIN_SRC css
 table {
