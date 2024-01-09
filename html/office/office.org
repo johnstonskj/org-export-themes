@@ -49,7 +49,8 @@ html{
     --heading-color: #4F81BD;
     --border-color: #A0A0A0;
     --code-color: #3c484e;
-    --code-background-color: #f6f8fa;
+    --code-background-color: #f0f0f0;
+    --code-border-color: #e8e8e8;
 }
 #+END_SRC
 
@@ -305,21 +306,26 @@ table caption {
 ** Code
 
 #+BEGIN_SRC css
-pre, code {
+pre {
     font-family: var(--code-font-family);
     font-size: var(--text-small);
     font-weight: var(--code-weight-normal);
     line-height: var(--line-height-code);
-    border: var(--border-width) var(--border-style) var(--grey-color-light);
-    border-radius: var(--border-radius-small);
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+pre {
+    padding: var(--text-normal);
     background-color: var(--code-background-color);
 }
 #+END_SRC
 
 #+BEGIN_SRC css
-#+END_SRC
-
-#+BEGIN_SRC css
+pre {
+    border: var(--border-width) var(--border-style) var(--code-border-color);
+    border-radius: var(--border-radius-small);
+}
 #+END_SRC
 
 ** Footnotes and References
