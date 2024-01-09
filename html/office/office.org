@@ -192,10 +192,6 @@ These are some simple reusable values across table and block borders as well as 
 
 #+BEGIN_SRC css
 @media screen {
-    img {
-        max-width: 900px;
-        height: auto;
-    }
     h1.title {
         margin-top: var(--text-normal);
         margin-bottom: var(--text-smaller);
@@ -207,10 +203,14 @@ Mobile
 
 #+BEGIN_SRC css
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    img {
+        max-width: 420px;
+        height: auto;
+    }
 	  body {
 		  font-size: 14px;
-		  min-width: 20em;
-		  max-width: 24em;
+		  min-width: 21em;
+		  max-width: 29em;
 	  }
 }
 #+END_SRC
@@ -219,11 +219,15 @@ Tablet
 
 #+BEGIN_SRC css
 @media screen and (min-width: 481px) and (max-width: 768px)  {
-	body {
-		font-size: 14px;
-		min-width: 24em;
-		max-width: 30em;
-	}
+    img {
+        max-width: 640px;
+        height: auto;
+    }
+    body {
+        font-size: 14px;
+        min-width: 24em;
+        max-width: 34em;
+    }
 }
 #+END_SRC
 
@@ -231,11 +235,11 @@ Small Laptop/Large tablet
 
 #+BEGIN_SRC css
 @media screen and (min-width: 769px) and (max-width: 1024px)  {
-	body {
-		font-size: 16px;
-		min-width: 30em;
-		max-width: 40em;
-	}
+    body {
+        font-size: 16px;
+        min-width: 27em;
+        max-width: 36em;
+    }
 }
 #+END_SRC
 
@@ -243,10 +247,14 @@ Desktop
 
 #+BEGIN_SRC css
 @media screen and (min-width: 1025px) and (max-width: 2048px) {
+    img {
+        max-width: 1800px;
+        height: auto;
+    }
     body {
 		  font-size: 18px;
-		  min-width: 60em;
-        max-width: 126em;
+		  min-width: 30em;
+        max-width: 38em;
 	  }
 }
 #+END_SRC
@@ -255,10 +263,14 @@ Large screen
 
 #+BEGIN_SRC css
 @media screen and (min-width: 2049px) {
+    img {
+        max-width: 2048px;
+        height: auto;
+    }
     body {
         font-size: 18px;
-        min-width: 80em;
-        max-width: 160em;
+        min-width: 34em;
+        max-width: 40em;
 	  }
 }
 #+END_SRC
