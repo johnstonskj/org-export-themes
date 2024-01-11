@@ -575,11 +575,18 @@ div.org-src-container > label.org-src-name {
 }
 #+END_SRC
 
-** Math
+** Math (KaTeX)
 
 #+BEGIN_SRC css
 .katex {
-    font-size: 1.1em;
+    color: var(--text-color);
+    font-size: var(--text-small);
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+.katex .tag {
+    color: var(--border-color);
 }
 #+END_SRC
 
@@ -626,10 +633,26 @@ div#postamble > p.validation {
 #+BEGIN_SRC css
 #+END_SRC
 
+
 * Javascript
 :PROPERTIES:
 :header-args: :tangle office.js
 :END:
+
+** Math (KaTeX)
+
+#+BEGIN_SRC js
+function initMath() {
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            macros: {
+                "\\Saft": "\\operatorname{\\blacksquare}",
+                "\\Sbef": "\\operatorname{\\square}"
+            }
+        });
+    });
+}
+#+END_SRC
 
 * Setup File
 :PROPERTIES:
@@ -641,22 +664,21 @@ Should be:
 KaTeX requires the use of the HTML5 doctype; without it, KaTeX may not render properly. The loading of KaTeX is deferred
 to speed up page rendering, and to automatically render math in text elements, include the auto-render extension.
 
+
 #+BEGIN_SRC org
 # -*- mode: org; -*-
-,#+OPTIONS: html-style:nil
+,#+BEGIN_SRC emacs-lisp :exports none
 
 ,#+HTML_DOCTYPE: xhtml5
-,#+OPTIONS: html5-fancy:t
+,#+OPTIONS: html-style:nil html5-fancy:t
 
-,#+HTML_HEAD: <link rel="stylesheet"
-,#+HTML_HEAD:       href="https://simonkjohnston.life/org-export-themes/html/office/office.css">
 ,#+HTML_HEAD: <link rel="stylesheet"
 ,#+HTML_HEAD:       href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
 ,#+HTML_HEAD:       integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
 ,#+HTML_HEAD:       crossorigin="anonymous">
+,#+HTML_HEAD: <link rel="stylesheet"
+,#+HTML_HEAD:       href="https://simonkjohnston.life/org-export-themes/html/office/office.css">
 
-,#+HTML_HEAD: <script type="text/javascript"
-,#+HTML_HEAD:         src="https://simonkjohnston.life/org-export-themes/html/office/office.js"></script>
 ,#+HTML_HEAD: <script defer
 ,#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
 ,#+HTML_HEAD:         integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
@@ -664,8 +686,12 @@ to speed up page rendering, and to automatically render math in text elements, i
 ,#+HTML_HEAD: <script defer
 ,#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
 ,#+HTML_HEAD:         integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
-,#+HTML_HEAD:         crossorigin="anonymous"
-,#+HTML_HEAD:         onload="renderMathInElement(document.body);"></script>
+,#+HTML_HEAD:         crossorigin="anonymous"></script>
+,#+HTML_HEAD: <script type="text/javascript"
+,#+HTML_HEAD:         src="https://simonkjohnston.life/org-export-themes/html/office/office.js"></script>
+,#+HTML_HEAD: <script>
+,#+HTML_HEAD:     initMath();
+,#+HTML_HEAD: </script>
 #+END_SRC
 
 ** Local Install
@@ -675,10 +701,10 @@ to speed up page rendering, and to automatically render math in text elements, i
 
 #+BEGIN_SRC org
 # -*- mode: org; -*-
-,#+OPTIONS: html-style:nil
+,#+BEGIN_SRC emacs-lisp :exports none
 
 ,#+HTML_DOCTYPE: xhtml5
-,#+OPTIONS: html5-fancy:t
+,#+OPTIONS: html-style:nil html5-fancy:t mathjax-template:nil
 
 ,#+HTML_HEAD: <link rel="stylesheet"
 ,#+HTML_HEAD:       href="./themes/office/office.css">

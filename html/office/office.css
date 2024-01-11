@@ -355,7 +355,12 @@ div.org-src-container > label.org-src-name {
 }
 
 .katex {
-    font-size: 1.1em;
+    color: var(--text-color);
+    font-size: var(--text-small);
+}
+
+.katex .tag {
+    color: var(--border-color);
 }
 
 div#org-div-home-and-up {
