@@ -200,13 +200,17 @@ h1.title {
     h1.title span.subtitle {
         display: inline-block;
         margin-top: var(--text-normal);
+        margin-top: var(--text-large);
+    }
+    div#org-div-home-and-up {
+        display: none;
+    }
+    nav#table-of-contents {
+        display: none;
     }
     img {
         max-width: 100%;
         height: auto;
-    }
-    div#org-div-home-and-up {
-        display: none;
     }
     div#content {
         margin: auto;
@@ -252,12 +256,12 @@ div.abstract > p::before, div.ABSTRACT > p::before {
     font-weight: var(--text-weight-heading);
 }
 
-div#text-table-of-contents ul {
+nav#table-of-contents > div#text-table-of-contents ul {
     list-style-type: none;
     margin-left: var(--text-normal);
     padding: 0;
 }
-div#text-table-of-contents ul li:last-child {
+nav#table-of-contents > div#text-table-of-contents ul li:last-child {
     margin-bottom: var(--text-small);
 }
 

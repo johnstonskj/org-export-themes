@@ -12,6 +12,26 @@ relies on the Fira Sans for text and Fira Code for pre-formatted and code conten
 Generation of the files from this source is via the ~org-babel-tangle~ function, or =C-c C-v t=, which tangles all the code
 blocks into corresponding CSS, JavaScript, and setup files.
 
+* Generated Top-Level Structure
+
+#+CAPTION: Org-Exported TOC
+#+BEGIN_SRC html :tangle no
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>...</head>
+  <body>
+    <div id="org-div-home-and-up">...</div>
+    <div id="table-of-contents" role="doc-toc">
+    <header>...</header>
+    <nav  id="table-of-contents" role="doc-toc">...</nav>
+    ...
+    </div>
+    <div id"postamble" class="status">...</div>
+  </body>
+</html>
+#+END_SRC
+
+
 * CSS
 :PROPERTIES:
 :header-args: :tangle office.css
@@ -123,6 +143,16 @@ b, strong {
 
 *** Headings
 
+#+CAPTION: Org-Exported Header
+#+BEGIN_SRC html :tangle no
+<header>
+  <h1 class="title">
+    ...
+    <span class="subtitle">...</span>
+  </h1>
+</header>
+#+END_SRC
+
 The front-page title should be rather larger than normal.
 
 #+BEGIN_SRC css
@@ -177,7 +207,7 @@ These are some simple reusable values across table and block borders as well as 
     --border-radius-normal: 0.25em;
     --border-style: solid;
     --table-border: var(--border-width) var(--border-style) var(--border-color);
-    --section-border: var(--border-width) var(--border-style) var(--border-color);    
+    --section-border: var(--border-width) var(--border-style) var(--border-color);
 }
 #+END_SRC
 
@@ -311,13 +341,17 @@ For large displays.
     h1.title span.subtitle {
         display: inline-block;
         margin-top: var(--text-normal);
+        margin-top: var(--text-large);
+    }
+    div#org-div-home-and-up {
+        display: none;
+    }
+    nav#table-of-contents {
+        display: none;
     }
     img {
         max-width: 100%;
         height: auto;
-    }
-    div#org-div-home-and-up {
-        display: none;
     }
     div#content {
         margin: auto;
@@ -374,13 +408,30 @@ div.abstract > p::before, div.ABSTRACT > p::before {
 
 *** Table of Contents
 
+#+CAPTION: Org-Exported TOC
+#+BEGIN_SRC html :tangle no
+<nav id="table-of-contents" role="doc-toc">
+  <h2>Table of Contents</h2>
+  <div id="text-table-of-contents" role="doc-toc">
+    <ul>
+      <li><a href="#org289a925">1. Basic Terms</a>
+        <ul>
+          <li><a href="#org98111a5">1.1. Data Model</a></li>
+        </ul>
+      </li>
+      <li><a href="#org7bc4e5f">2. Collection Resources</a></li>
+    </ul>
+  </div>
+</nav>
+#+END_SRC
+
 #+BEGIN_SRC css
-div#text-table-of-contents ul {
+nav#table-of-contents > div#text-table-of-contents ul {
     list-style-type: none;
     margin-left: var(--text-normal);
     padding: 0;
 }
-div#text-table-of-contents ul li:last-child {
+nav#table-of-contents > div#text-table-of-contents ul li:last-child {
     margin-bottom: var(--text-small);
 }
 #+END_SRC
