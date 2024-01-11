@@ -354,13 +354,20 @@ div.org-src-container > label.org-src-name {
     font-weight: var(--caption-font-weight);
 }
 
+:root {
+    --math-color: var(--text-color);
+    --math-font-size: 1.1em;
+}
+
 .katex {
-    color: var(--text-color);
-    font-size: var(--text-small);
+    color: var(--math-color);
+    font-size: var(--math-font-size);
 }
 
 .katex .tag {
-    color: var(--border-color);
+    font-size: var(--caption-font-size);
+    font-style: var(--caption-font-style);
+    font-weight: var(--caption-font-weight);
 }
 
 div#org-div-home-and-up {

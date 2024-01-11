@@ -71,7 +71,7 @@ additional colors without *really good* reasons.
 }
 #+END_SRC
 
-*** Relative Sizes
+*** <<sec:relative-sizes>>Relative Sizes
 
 These may be used not only for font sizing but for margins and padding also.
 
@@ -578,15 +578,33 @@ div.org-src-container > label.org-src-name {
 ** Math (KaTeX)
 
 #+BEGIN_SRC css
-.katex {
-    color: var(--text-color);
-    font-size: var(--text-small);
+:root {
+    --math-color: var(--text-color);
+    --math-font-size: 1.1em;
 }
 #+END_SRC
 
+The /math font size/ is a specific value, not one of those defined in [[sec:relative-sizes]], as it is very dependent on the math renderer
+(MathJax for example really needs a size less than =1.0em=) and some fine tuning as math fonts tend to have rounder
+characters and so bringing the vertical heights close results in wide looking text.
+
+The math color should match the body text color, by default it's black and tends to jump out,m especially as the weight
+of the math font tends to be heavier.
+
+#+BEGIN_SRC css
+.katex {
+    color: var(--math-color);
+    font-size: var(--math-font-size);
+}
+#+END_SRC
+
+Treat tags on equations in the same manner as captions.
+
 #+BEGIN_SRC css
 .katex .tag {
-    color: var(--border-color);
+    font-size: var(--caption-font-size);
+    font-style: var(--caption-font-style);
+    font-weight: var(--caption-font-weight);
 }
 #+END_SRC
 
