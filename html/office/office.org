@@ -231,9 +231,9 @@ For mobile devices.
 
 #+BEGIN_SRC css
 @media screen and (min-width: 320px) and (max-width: 480px) {
-	  body {
-		  font-size: 14px;
-	  }
+    body {
+        font-size: 14px;
+    }
     div#content {
         margin-left: auto;
         margin-right: auto;
@@ -292,8 +292,8 @@ For large laptop or desktop devices.
 #+BEGIN_SRC css
 @media screen and (min-width: 1025px) and (max-width: 2048px) {
     body {
-		  font-size: 18px;
-	  }
+        font-size: 18px;
+    }
     div#content {
         margin-left: auto;
         margin-right: auto;
@@ -313,7 +313,7 @@ For large displays.
 @media screen and (min-width: 2049px) {
     body {
         font-size: 18px;
-	  }
+    }
     div#content {
         margin-left: auto;
         margin-right: auto;
