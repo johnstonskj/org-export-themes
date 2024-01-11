@@ -354,6 +354,10 @@ div.org-src-container > label.org-src-name {
     font-weight: var(--caption-font-weight);
 }
 
+.katex {
+    font-size: 1.1em;
+}
+
 div#org-div-home-and-up {
     text-align: right;
     font-size: var(--text-smaller);
