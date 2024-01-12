@@ -585,12 +585,24 @@ table > thead {
     font-weight: var(--text-weight-heading);
 }
 
-table > thead th {
-    border: var(--table-border);
-}
-
+table > thead th,
 table > tbody td {
     border: var(--table-border);
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+table > thead th.org-left,
+table > tbody td.org-left {
+    text-align: left;
+}
+table > thead th.org-center,
+table > tbody td.org-center {
+    text-align: center;
+}
+table > thead th.org-right,
+table > tbody td.org-right {
+    text-align: right;
 }
 #+END_SRC
 

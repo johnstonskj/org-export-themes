@@ -340,12 +340,14 @@ table > thead {
     font-weight: var(--text-weight-heading);
 }
 
-table > thead th {
+table > thead th,
+table > tbody td {
     border: var(--table-border);
 }
 
-table > tbody td {
-    border: var(--table-border);
+table > thead th.org-right,
+table > tbody td.org-right {
+    text-align: right;
 }
 
 table caption {
