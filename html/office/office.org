@@ -371,8 +371,10 @@ For large displays.
     nav#table-of-contents {
         display: none;
     }
-    margin-left: var(--text-huge);
-    margin-right: var(--text-huge);
+    div.abstract, div.ABSTRACT {
+        margin-left: var(--text-huge);
+        margin-right: var(--text-huge);
+    }
     img {
         max-width: 100%;
         height: auto;
