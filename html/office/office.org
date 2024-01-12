@@ -167,7 +167,7 @@ Although the embedded subtitle should appear diminished.
 #+BEGIN_SRC css
 h1 > span.subtitle {
     color: var(--subtitle-color);
-    font-size: var(--text-tiny);
+    font-size: var(--text-smaller);
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
