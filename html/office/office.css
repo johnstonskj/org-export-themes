@@ -13,6 +13,12 @@
     --text-weight-heavy: 700;
 }
 
+:root {
+    --root-font-size-small: 14px;
+    --root-font-size-normal: 16px;
+    --root-font-size-large: 18px;
+}
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -99,12 +105,6 @@ h1, h2, h3, h4, h5 {
     --border-style: solid;
     --table-border: var(--border-width) var(--border-style) var(--border-color);
     --section-border: var(--border-width) var(--border-style) var(--border-color);
-}
-
-:root {
-    --root-font-size-small: 14px;
-    --root-font-size-normal: 16px;
-    --root-font-size-large: 18px;
 }
 
 @media screen {
@@ -241,10 +241,6 @@ h1.title {
     nav#table-of-contents {
         display: none;
     }
-    div.abstract, div.ABSTRACT {
-        margin-left: var(--text-huge);
-        margin-right: var(--text-huge);
-    }
     img {
         max-width: 100%;
         height: auto;
@@ -294,8 +290,8 @@ h1.title {
 
 div.abstract, div.ABSTRACT {
     margin-top: var(--text-huge);
-    margin-left: calc(var(--text-huge) * 2);
-    margin-right: calc(var(--text-huge) * 2);
+    margin-left: var(--abstract-margin);
+    margin-right: var(--abstract-margin);
     margin-bottom: var(--text-large);
 }
 
