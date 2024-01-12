@@ -451,6 +451,7 @@ See also:
 
 #+BEGIN_SRC css
 div.abstract, div.ABSTRACT {
+    font-size: var(--text-small);
     margin-top: var(--text-huge);
     margin-left: var(--abstract-margin);
     margin-right: var(--abstract-margin);
