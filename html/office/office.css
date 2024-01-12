@@ -64,14 +64,14 @@ b, strong {
     font-weight: var(--text-weight-bold);
 }
 
-h1.title {
+header > h1.title {
     color: var(--title-color);
     font-size: var(--text-larger);
     font-weight: var(--text-weight-heading);
     text-align: center;
 }
 
-h1 > span.subtitle {
+header > p.subtitle {
     color: var(--subtitle-color);
     font-size: var(--text-smaller);
     font-weight: var(--text-weight-heading);
@@ -205,18 +205,18 @@ h1.title {
         width: 100%! important;
         padding: 0 !important;
     }
-    h1.title {
+    header > h1.title {
         margin-top: var(--text-huge);
         margin-bottom: var(--text-normal);
     }
-    h1.title span.subtitle {
+    header > p.subtitle {
         display: inline-block;
         margin-top: var(--text-large);
     }
     div#org-div-home-and-up {
         display: none;
     }
-    div#table-of-contents, nav#table-of-contents {
+    nav#table-of-contents {
         display: none;
     }
     img {
