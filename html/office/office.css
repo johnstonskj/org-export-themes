@@ -204,7 +204,6 @@ h1.title {
 @media print {    
     body {
         font-size: 12px;
-        width: 100%! important;
         padding: 0 !important;
     }
     header > h1.title {
@@ -226,9 +225,6 @@ h1.title {
     }
     div#content {
         margin: auto;
-    }
-    pre {
-        width: 100%;
     }
 }
 
@@ -310,20 +306,21 @@ div.NOTE p::before {
     font-weight: var(--text-weight-heading);
 }
 
-div.figure > p {
+figure {
     text-align: center;
+    break-inside: avoid;
 }
 
-div.figure > p:nth-of-type(2) {
+figure > figcaption {
     font-size: var(--caption-font-size);
     font-style: var(--caption-font-style);
     font-weight: var(--caption-font-weight);
 }
 
-div.figure > p:nth-of-type(1) {
+figure > img {
     margin-bottom: var(--text-tiny);
 }
-div.figure > p:nth-of-type(2) {
+figure > figcaption {
     margin-top: 0;
 }
 
@@ -335,6 +332,7 @@ table {
     min-width: 50%;
     font-size: var(--text-small);
     line-height: var(--line-height-compressed);
+    break-inside: avoid; 
 }
 
 table > thead {
@@ -363,13 +361,16 @@ pre, code {
     line-height: var(--line-height-code);
 }
 
+div.org-src-container {
+    break-inside: avoid;
+}
+
 div.org-src-container > pre.src {
     margin-top: var(--text-tiny);
     padding: var(--text-normal);
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
-    overflow: clip;
 }
 
 div.org-src-container > pre.src.scroll {

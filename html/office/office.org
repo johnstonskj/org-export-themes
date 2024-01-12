@@ -36,7 +36,8 @@ blocks into corresponding CSS, JavaScript, and setup files.
 :header-args: :tangle office.css
 :END:
 
-All CSS content will be written to the file =office.css= which is referenced by the =office.setup= and =office-local.setup= files.
+All CSS content will be written to the file =office.css= which is referenced by the =office.setup= and =office-local.setup=
+files.
 
 ** Typography
 
@@ -346,7 +347,6 @@ For large displays.
 @media print {    
     body {
         font-size: 12px;
-        width: 100%! important;
         padding: 0 !important;
     }
     header > h1.title {
@@ -368,9 +368,6 @@ For large displays.
     }
     div#content {
         margin: auto;
-    }
-    pre {
-        width: 100%;
     }
 }
 #+END_SRC
@@ -502,28 +499,27 @@ Org-mode images are output by the HTML exporter according to the layout in the e
 
 #+CAPTION: Org-Exported Figure
 #+BEGIN_SRC html :tangle no
-<div id="org559bb8e" class="figure">
-  <p>
-    <img src="amethyst-ia.svg" alt="amethyst-ia.svg" class="org-svg">
-  </p>
-  <p>
+<figure id="org559bb8e">
+  <img src="amethyst-ia.svg" alt="amethyst-ia.svg" class="org-svg">
+  <figcaption>
     <span class="figure-number">Figure 1: </span>Amethyst Information Architecture
-  </p>
-</div>
+  </figcaption>
+</figure>
 #+END_SRC
 
 First, we want all elements of the figure to be centered.
 
 #+BEGIN_SRC css
-div.figure > p {
+figure {
     text-align: center;
+    break-inside: avoid;
 }
 #+END_SRC
 
 Setup the text style of the caption.
 
 #+BEGIN_SRC css
-div.figure > p:nth-of-type(2) {
+figure > figcaption {
     font-size: var(--caption-font-size);
     font-style: var(--caption-font-style);
     font-weight: var(--caption-font-weight);
@@ -533,10 +529,10 @@ div.figure > p:nth-of-type(2) {
 Bring the image and caption closer together.
 
 #+BEGIN_SRC css
-div.figure > p:nth-of-type(1) {
+figure > img {
     margin-bottom: var(--text-tiny);
 }
-div.figure > p:nth-of-type(2) {
+figure > figcaption {
     margin-top: 0;
 }
 #+END_SRC
@@ -581,6 +577,7 @@ table {
     min-width: 50%;
     font-size: var(--text-small);
     line-height: var(--line-height-compressed);
+    break-inside: avoid; 
 }
 
 table > thead {
@@ -634,13 +631,18 @@ pre, code {
 #+END_SRC
 
 #+BEGIN_SRC css
+div.org-src-container {
+    break-inside: avoid;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
 div.org-src-container > pre.src {
     margin-top: var(--text-tiny);
     padding: var(--text-normal);
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
-    overflow: clip;
 }
 #+END_SRC
 
