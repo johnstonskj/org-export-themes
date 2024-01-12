@@ -101,6 +101,18 @@ h1, h2, h3, h4, h5 {
     --section-border: var(--border-width) var(--border-style) var(--border-color);
 }
 
+:root {
+    --root-font-size-small: 14px;
+    --root-font-size-normal: 16px;
+    --root-font-size-large: 18px;
+}
+
+@media screen {
+    :root {
+        --abstract-margin: calc(var(--text-huge) * 2);;
+    }
+}
+
 body {
     min-height: 100%;
     padding-left: var(--text-large);
@@ -113,7 +125,7 @@ h1.title {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     body {
-        font-size: 14px;
+        font-size: var(--root-font-size-small);
     }
     div#content {
         margin-left: auto;
@@ -129,7 +141,7 @@ h1.title {
 
 @media screen and (min-width: 481px) and (max-width: 768px)  {
     body {
-        font-size: 14px;
+        font-size: var(--root-font-size-small);
     }
     div#content {
         margin-left: auto;
@@ -145,7 +157,7 @@ h1.title {
 
 @media screen and (min-width: 769px) and (max-width: 1024px)  {
     body {
-        font-size: 16px;
+        font-size: var(--root-font-size-normal);
     }
     div#content {
         margin-left: auto;
@@ -161,7 +173,7 @@ h1.title {
 
 @media screen and (min-width: 1025px) and (max-width: 2048px) {
     body {
-        font-size: 18px;
+        font-size: var(--root-font-size-large);
     }
     div#content {
         margin-left: auto;
@@ -177,7 +189,7 @@ h1.title {
 
 @media screen and (min-width: 2049px) {
     body {
-        font-size: 18px;
+        font-size: var(--root-font-size-large);
     }
     div#content {
         margin-left: auto;
@@ -198,20 +210,21 @@ h1.title {
         --print-margin-top: var(--print-margin-outer);
         --print-margin-bottom: var(--print-margin-inner);
         --print-margin-equal: calc((var(--print-margin-outer) + var(--print-margin-inner)) / 2);
+        --abstract-margin: var(--text-huge)
     }
 }
 
 @media print {    
     body {
-        font-size: 16px !important;
+        font-size: var(--root-font-size-normal) !important;
         padding: 0 !important;
     }
     body.small-print {
-        font-size: 14px !important;
+        font-size: var(--root-font-size-small) !important;
         padding: 0 !important;
     }
     body.large-print {
-        font-size: 18px !important;
+        font-size: var(--root-font-size-large) !important;
         padding: 0 !important;
     }
     header > h1.title {

@@ -215,7 +215,23 @@ These are some simple reusable values across table and block borders as well as 
 
 ** Media Queries
 
+#+BEGIN_SRC css
+:root {
+    --root-font-size-small: 14px;
+    --root-font-size-normal: 16px;
+    --root-font-size-large: 18px;
+}
+#+END_SRC
+
 *** Screen
+
+#+BEGIN_SRC css
+@media screen {
+    :root {
+        --abstract-margin: calc(var(--text-huge) * 2);;
+    }
+}
+#+END_SRC
 
 #+BEGIN_SRC css
 body {
@@ -234,7 +250,7 @@ For mobile devices.
 #+BEGIN_SRC css
 @media screen and (min-width: 320px) and (max-width: 480px) {
     body {
-        font-size: 14px;
+        font-size: var(--root-font-size-small);
     }
     div#content {
         margin-left: auto;
@@ -254,7 +270,7 @@ For common tablet devices.
 #+BEGIN_SRC css
 @media screen and (min-width: 481px) and (max-width: 768px)  {
     body {
-        font-size: 14px;
+        font-size: var(--root-font-size-small);
     }
     div#content {
         margin-left: auto;
@@ -274,7 +290,7 @@ For small laptop or large tablet devices.
 #+BEGIN_SRC css
 @media screen and (min-width: 769px) and (max-width: 1024px)  {
     body {
-        font-size: 16px;
+        font-size: var(--root-font-size-normal);
     }
     div#content {
         margin-left: auto;
@@ -294,7 +310,7 @@ For large laptop or desktop devices.
 #+BEGIN_SRC css
 @media screen and (min-width: 1025px) and (max-width: 2048px) {
     body {
-        font-size: 18px;
+        font-size: var(--root-font-size-large);
     }
     div#content {
         margin-left: auto;
@@ -314,7 +330,7 @@ For large displays.
 #+BEGIN_SRC css
 @media screen and (min-width: 2049px) {
     body {
-        font-size: 18px;
+        font-size: var(--root-font-size-large);
     }
     div#content {
         margin-left: auto;
@@ -339,6 +355,7 @@ For large displays.
         --print-margin-top: var(--print-margin-outer);
         --print-margin-bottom: var(--print-margin-inner);
         --print-margin-equal: calc((var(--print-margin-outer) + var(--print-margin-inner)) / 2);
+        --abstract-margin: var(--text-huge)
     }
 }
 #+END_SRC
@@ -346,15 +363,15 @@ For large displays.
 #+BEGIN_SRC css
 @media print {    
     body {
-        font-size: 16px !important;
+        font-size: var(--root-font-size-normal) !important;
         padding: 0 !important;
     }
     body.small-print {
-        font-size: 14px !important;
+        font-size: var(--root-font-size-small) !important;
         padding: 0 !important;
     }
     body.large-print {
-        font-size: 18px !important;
+        font-size: var(--root-font-size-large) !important;
         padding: 0 !important;
     }
     header > h1.title {
