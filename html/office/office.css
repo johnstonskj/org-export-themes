@@ -191,7 +191,7 @@ h1.title {
 
 @media print {
     :root {
-        --print-margin-inner: 3cm;
+        --print-margin-inner: 4cm;
         --print-margin-outer: 2cm;
         --print-margin-top: var(--print-margin-outer);
         --print-margin-bottom: var(--print-margin-inner);
@@ -202,6 +202,8 @@ h1.title {
 @media print {    
     body {
         font-size: 12px;
+        width: 100%! important;
+        padding: 0 !important;
     }
     h1.title {
         margin-top: var(--text-huge);
@@ -228,8 +230,17 @@ h1.title {
 }
 
 @media print {
-    margin-top: var(--print-margin-top);
-    margin-bottom: var(--print-margin-bottom);
+    h1.title { 
+        string-set: doctitle content(); 
+    }
+    header, div.figure, td, th {
+        page-break-inside: avoid;
+    } 
+    @page {
+        size: letter portrait;
+        margin-top:var(--print-margin-top);
+        margin-bottom: var(--print-margin-equal);
+    }
     @page :first {
         margin-left: var(--print-margin-equal);
         margin-right: var(--print-margin-equal);
@@ -248,7 +259,7 @@ h1.title {
         margin-left: var(--print-margin-inner);
         margin-right: var(--print-margin-outer);
         @bottom-right {
-             content: counter(page);
+            content: counter(page);
         }
         @top-right {
             content: string(doctitle);
@@ -355,6 +366,10 @@ div.org-src-container > pre.src {
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
+    overflow: clip;
+}
+
+div.org-src-container > pre.src.scroll {
     overflow: scroll;
 }
 

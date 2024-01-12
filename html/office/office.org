@@ -31,7 +31,6 @@ blocks into corresponding CSS, JavaScript, and setup files.
 </html>
 #+END_SRC
 
-
 * CSS
 :PROPERTIES:
 :header-args: :tangle office.css
@@ -332,7 +331,7 @@ For large displays.
 #+BEGIN_SRC css
 @media print {
     :root {
-        --print-margin-inner: 3cm;
+        --print-margin-inner: 4cm;
         --print-margin-outer: 2cm;
         --print-margin-top: var(--print-margin-outer);
         --print-margin-bottom: var(--print-margin-inner);
@@ -345,6 +344,8 @@ For large displays.
 @media print {    
     body {
         font-size: 12px;
+        width: 100%! important;
+        padding: 0 !important;
     }
     h1.title {
         margin-top: var(--text-huge);
@@ -373,8 +374,17 @@ For large displays.
 
 #+BEGIN_SRC css
 @media print {
-    margin-top: var(--print-margin-top);
-    margin-bottom: var(--print-margin-bottom);
+    h1.title { 
+        string-set: doctitle content(); 
+    }
+    header, div.figure, td, th {
+        page-break-inside: avoid;
+    } 
+    @page {
+        size: letter portrait;
+        margin-top:var(--print-margin-top);
+        margin-bottom: var(--print-margin-equal);
+    }
     @page :first {
         margin-left: var(--print-margin-equal);
         margin-right: var(--print-margin-equal);
@@ -393,7 +403,7 @@ For large displays.
         margin-left: var(--print-margin-inner);
         margin-right: var(--print-margin-outer);
         @bottom-right {
-             content: counter(page);
+            content: counter(page);
         }
         @top-right {
             content: string(doctitle);
@@ -401,6 +411,13 @@ For large displays.
     }
 }
 #+END_SRC
+
+See also:
+
+- https://www.w3.org/TR/css-page-3/#margin-boxes
+- https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/
+- https://printcss.net/articles/page-margin-boxes
+- https://printcss.net/articles/running-headers-and-footers
 
 ** Blocks
 
@@ -620,6 +637,12 @@ div.org-src-container > pre.src {
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
+    overflow: clip;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+div.org-src-container > pre.src.scroll {
     overflow: scroll;
 }
 #+END_SRC
@@ -715,7 +738,6 @@ div#postamble > p.validation {
 
 #+BEGIN_SRC css
 #+END_SRC
-
 
 * Javascript
 :PROPERTIES:
