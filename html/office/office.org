@@ -789,14 +789,13 @@ div#postamble > p.validation {
 
 ** Math (KaTeX)
 
+This allows you to add your own macros in the constant src_js[:exports code]{KATEX_MACROS}.
 #+BEGIN_SRC js
 function initMath() {
+    const KATEX_MACROS = KATEX_MACROS || {};
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
-            macros: {
-                "\\Saft": "\\operatorname{\\blacksquare}",
-                "\\Sbef": "\\operatorname{\\square}"
-            }
+            macros: KATEX_MACROS
         });
     });
 }
