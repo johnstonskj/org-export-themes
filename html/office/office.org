@@ -331,6 +331,18 @@ For large displays.
 
 #+BEGIN_SRC css
 @media print {
+    :root {
+        --print-margin-inner: 3cm;
+        --print-margin-outer: 2cm;
+        --print-margin-top: var(--print-margin-outer);
+        --print-margin-bottom: var(--print-margin-inner);
+        --print-margin-equal: calc((var(--print-margin-outer) + var(--print-margin-inner)) / 2);
+    }
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+@media print {    
     body {
         font-size: 12px;
     }
@@ -361,13 +373,15 @@ For large displays.
 
 #+BEGIN_SRC css
 @media print {
+    margin-top: var(--print-margin-top);
+    margin-bottom: var(--print-margin-bottom);
     @page :first {
-        margin-left: 2.5cm;
-        margin-right: 2.5cm;
+        margin-left: var(--print-margin-equal);
+        margin-right: var(--print-margin-equal);
     }
     @page :left {
-        margin-left: 2cm;
-        margin-right: 3cm;
+        margin-left: var(--print-margin-outer);
+        margin-right: var(--print-margin-inner);
         @bottom-left {
             content: counter(page);
         }
@@ -376,8 +390,8 @@ For large displays.
         }
     }
     @page :right {
-        margin-left: 3cm;
-        margin-right: 2cm;
+        margin-left: var(--print-margin-inner);
+        margin-right: var(--print-margin-outer);
         @bottom-right {
              content: counter(page);
         }
