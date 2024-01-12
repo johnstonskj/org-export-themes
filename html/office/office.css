@@ -13,12 +13,6 @@
     --text-weight-heavy: 700;
 }
 
-:root {
-    --root-font-size-small: 14px;
-    --root-font-size-normal: 16px;
-    --root-font-size-large: 18px;
-}
-
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -109,6 +103,9 @@ h1, h2, h3, h4, h5 {
 
 @media screen {
     :root {
+        --root-font-size-small: 14px;
+        --root-font-size-normal: 16px;
+        --root-font-size-large: 18px;
         --abstract-margin: calc(var(--text-huge) * 2);;
     }
 }
@@ -205,6 +202,9 @@ h1.title {
 
 @media print {
     :root {
+        --root-font-size-small: 12px;
+        --root-font-size-normal: 14px;
+        --root-font-size-large: 16px;
         --print-margin-inner: 4cm;
         --print-margin-outer: 2cm;
         --print-margin-top: var(--print-margin-outer);
@@ -404,10 +404,11 @@ div.org-src-container > pre.src {
     background-color: var(--code-background-color);
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
+    overflow-x: hidden;
 }
 
 div.org-src-container > pre.src.scroll {
-    overflow: scroll;
+    overflow-x: scroll;
 }
 
 p code, li code, dt code, dd code {
