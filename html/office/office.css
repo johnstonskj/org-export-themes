@@ -73,8 +73,9 @@ header > h1.title {
 
 header > p.subtitle {
     color: var(--subtitle-color);
-    font-size: var(--text-smaller);
+    font-size: var(--text-large);
     font-weight: var(--text-weight-heading);
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5 {
