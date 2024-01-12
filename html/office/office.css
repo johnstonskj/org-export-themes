@@ -217,7 +217,7 @@ h1.title {
     div#org-div-home-and-up {
         display: none;
     }
-    nav#table-of-contents {
+    div#table-of-contents, nav#table-of-contents {
         display: none;
     }
     img {
