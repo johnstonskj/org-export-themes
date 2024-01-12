@@ -206,6 +206,14 @@ h1.title {
         font-size: 16px !important;
         padding: 0 !important;
     }
+    body.small-print {
+        font-size: 14px !important;
+        padding: 0 !important;
+    }
+    body.large-print {
+        font-size: 18px !important;
+        padding: 0 !important;
+    }
     header > h1.title {
         margin-top: var(--text-huge);
         margin-bottom: var(--text-small);
@@ -220,6 +228,8 @@ h1.title {
     nav#table-of-contents {
         display: none;
     }
+    margin-left: var(--text-huge);
+    margin-right: var(--text-huge);
     img {
         max-width: 100%;
         height: auto;
