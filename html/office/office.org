@@ -796,9 +796,9 @@ div#postamble > p.validation {
 This allows you to add your own macros in the constant src_js[:exports code]{KATEX_MACROS}.
 
 #+BEGIN_SRC js
-import renderMathInElement from 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.mjs';
+import renderMathInElement from 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.mjs';
 
-export default function initMath(options) {
+export function initMath(options) {
     const KATEX_MACROS = document.KATEX_MACROS || {};
     document.addEventListener("DOMContentLoaded", function() {
         renderMathInElement(document.body, {
@@ -831,7 +831,8 @@ to speed up page rendering, and to automatically render math in text elements, i
 ,#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.js"
 ,#+HTML_HEAD:         integrity="sha384-ImWHyYvDPlRzwFnvLhG9Jcpm/7qL4SVIuJK0C6Rj+Mf7fpeNJCLCynC+EVz4kCSA"
 ,#+HTML_HEAD:         crossorigin="anonymous"></script>
-,#+HTML_HEAD: <script defer
+,#+HTML_HEAD: <script nomodule
+,#+HTML_HEAD:         defer
 ,#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
 ,#+HTML_HEAD:         integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
 ,#+HTML_HEAD:         crossorigin="anonymous"></script>
