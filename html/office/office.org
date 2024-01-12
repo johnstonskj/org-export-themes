@@ -843,7 +843,7 @@ to speed up page rendering, and to automatically render math in text elements, i
 ,#+HTML_HEAD: <link rel="stylesheet"
 ,#+HTML_HEAD:       href="https://simonkjohnston.life/org-export-themes/html/office/office.css">
 ,#+HTML_HEAD: <script type="module" type="text/javascript">
-,#+HTML_HEAD:     import office from 'https://simonkjohnston.life/org-export-themes/html/office/office.mjs';
+,#+HTML_HEAD:     import initMath from 'https://simonkjohnston.life/org-export-themes/html/office/office.mjs';
 ,#+HTML_HEAD:     initMath();
 ,#+HTML_HEAD: </script>
 #+END_SRC
