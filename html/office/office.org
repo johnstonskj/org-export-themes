@@ -104,6 +104,7 @@ These may be used not only for font sizing but for margins and padding also.
     --text-larger: 2.4em;
     --text-huge: 3.2em;
 
+    --line-height-none: 0;
     --line-height-normal: 1.6em;
     --line-height-code: 1.4em;
     --line-height-compressed: 1.2em;
@@ -353,8 +354,7 @@ For large displays.
         margin-bottom: var(--text-normal);
     }
     header > p.subtitle {
-        display: inline-block;
-        margin-top: var(--text-large);
+        margin-top: var(--line-height-none);
     }
     div#org-div-home-and-up {
         display: none;
