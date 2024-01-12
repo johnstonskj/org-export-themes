@@ -227,6 +227,9 @@ h1.title {
     div#content {
         margin: auto;
     }
+    pre {
+        width: 100%;
+    }
 }
 
 @media print {
