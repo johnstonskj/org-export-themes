@@ -208,10 +208,11 @@ h1.title {
     }
     header > h1.title {
         margin-top: var(--text-huge);
-        margin-bottom: var(--text-normal);
+        margin-bottom: var(--text-smaller);
     }
     header > p.subtitle {
         margin-top: var(--line-height-none);
+        margin-bottom: var(--text-larger);
     }
     div#org-div-home-and-up {
         display: none;
