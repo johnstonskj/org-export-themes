@@ -203,7 +203,7 @@ h1.title {
 
 @media print {    
     body {
-        font-size: 14px;
+        font-size: 14px !important;
         padding: 0 !important;
     }
     header > h1.title {
