@@ -369,6 +369,9 @@ For large displays.
     div#content {
         margin: auto;
     }
+    pre {
+        width: 100%;
+    }
 }
 #+END_SRC
 
