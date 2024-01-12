@@ -1,11 +1,11 @@
 "use strict";
 
-import katex from 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.mjs';
+import renderMathInElement from 'https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.mjs';
 
 export default function initMath(options) {
     const KATEX_MACROS = document.KATEX_MACROS || {};
     document.addEventListener("DOMContentLoaded", function() {
-        katex.renderMathInElement(document.body, {
+        renderMathInElement(document.body, {
             macros: KATEX_MACROS
         });
     });
