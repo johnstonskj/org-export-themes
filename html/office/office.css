@@ -292,10 +292,35 @@ ol li:last-child, ul li:last-child {
     margin-bottom: var(--text-small);
 }
 
-dl > dt {
-    font-weight: --code-weight-semibold;
+:root {
+    --dl-term-width-normal: 8em;
+    --dl-term-width-wide: calc(var(--dl-term-width-normal) * 2);
+
+    --dl-padding-normal: var(--text-normal);
 }
-dl > dd {}
+
+dl.org-dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: var(--dl-padding-normal);
+}
+
+dl.org-dl > dt {
+    grid-column-start: 1;
+    font-weight: var(--code-weight-semibold);
+}
+dl.org-dl > dt {
+    max-width: var(--dl-term-width-normal);
+    min-width: calc(var(--dl-term-width-normal) * 0.75)
+}
+dl.org-dl.wide > dt {
+    max-width: var(--dl-term-width-wide);
+    min-width: calc(var(--dl-term-width-wide) * 0.75)
+}
+
+dl.org-dl > dd {
+    grid-column-start: 1;
+}
 
 div.abstract, div.ABSTRACT {
     font-size: var(--text-small);
