@@ -399,7 +399,7 @@ table > thead th,
 table > tbody td {
     padding-top: var(--text-tiny);
     padding-left: var(--text-smaller);
-    padding-bottom: var(--text-tiny);
+    padding-bottom: calc(var(--text-tiny) * 0.5);
     padding-right: var(--text-smaller);
     border: var(--table-border);
 }
