@@ -312,16 +312,15 @@ dl.org-dl {
 dl.org-dl > dt {
     grid-column-start: 1;
     font-weight: var(--code-weight-semibold);
-    max-width: var(--dl-term-width-normal);
-    min-width: calc(var(--dl-term-width-normal) * 0.75);
+    width: var(--dl-term-width-normal);
 }
 dl.org-dl.wide > dt {
-    max-width: var(--dl-term-width-wide);
-    min-width: calc(var(--dl-term-width-wide) * 0.75);
+    width: var(--dl-term-width-wide);
 }
 
 dl.org-dl > dd {
     grid-column-start: 2;
+    margin-left: 0;
 }
 
 div.abstract, div.ABSTRACT {
