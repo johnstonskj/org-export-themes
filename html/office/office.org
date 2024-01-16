@@ -88,6 +88,8 @@ additional colors without *really good* reasons.
     --code-color: #3c484e;
     --code-background-color: #f0f0f0;
     --code-border-color: #e8e8e8;
+
+    --code-hover-brightness: 1.05;
 }
 #+END_SRC
 
@@ -750,6 +752,9 @@ div.org-src-container > pre.src {
     border-radius: var(--border-radius-small);
     overflow-x: hidden;
 }
+div.org-src-container > pre.src:hover {
+    filter: brightness(var(--code-hover-brightness));
+}
 #+END_SRC
 
 #+BEGIN_SRC css
@@ -782,6 +787,9 @@ pre.example {
     border: var(--border-width) var(--border-style) var(--code-border-color);
     border-radius: var(--border-radius-small);
     overflow-x: hidden;
+}
+pre.example:hover {
+    filter: brightness(var(--code-hover-brightness));
 }
 #+END_SRC
 
