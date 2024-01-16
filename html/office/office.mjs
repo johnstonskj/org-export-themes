@@ -12,5 +12,5 @@ export function initMath(options) {
 }
 
 export default function init(options) {
-    initMath(options.math || {});
+    console.log("office::init");
 }
