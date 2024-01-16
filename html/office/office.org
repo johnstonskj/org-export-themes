@@ -774,6 +774,17 @@ div.org-src-container > label.org-src-name {
 }
 #+END_SRC
 
+#+BEGIN_SRC css
+pre.example {
+    margin-top: var(--text-tiny);
+    padding: var(--text-normal);
+    background-color: var(--code-background-color);
+    border: var(--border-width) var(--border-style) var(--code-border-color);
+    border-radius: var(--border-radius-small);
+    overflow-x: hidden;
+}
+#+END_SRC
+
 ** Math (KaTeX)
 
 #+BEGIN_SRC css

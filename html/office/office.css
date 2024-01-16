@@ -459,6 +459,15 @@ div.org-src-container > label.org-src-name {
     font-weight: var(--caption-font-weight);
 }
 
+pre.example {
+    margin-top: var(--text-tiny);
+    padding: var(--text-normal);
+    background-color: var(--code-background-color);
+    border: var(--border-width) var(--border-style) var(--code-border-color);
+    border-radius: var(--border-radius-small);
+    overflow-x: hidden;
+}
+
 :root {
     --math-color: var(--text-color);
     --math-font-size: 1.1em;
