@@ -872,6 +872,12 @@ export function initMath(options) {
 }
 #+END_SRC
 
+#+BEGIN_SRC js
+export default function init(options) {
+    initMath(options);
+}
+#+END_SRC
+
 * Setup File
 :PROPERTIES:
 :header-args: :tangle office.setup
