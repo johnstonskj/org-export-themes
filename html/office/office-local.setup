@@ -2,23 +2,25 @@
 #+BEGIN_SRC emacs-lisp :exports none
 
 #+HTML_DOCTYPE: xhtml5
-#+OPTIONS: html-style:nil html5-fancy:t mathjax-template:nil
+#+OPTIONS: html-style:nil html5-fancy:t
 
-#+HTML_HEAD: <link rel="stylesheet"
-#+HTML_HEAD:       href="./themes/office/office.css">
+#+HTML_HEAD: <script nomodule
+#+HTML_HEAD:         defer
+#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.js"
+#+HTML_HEAD:         integrity="sha384-ImWHyYvDPlRzwFnvLhG9Jcpm/7qL4SVIuJK0C6Rj+Mf7fpeNJCLCynC+EVz4kCSA"
+#+HTML_HEAD:         crossorigin="anonymous"></script>
+#+HTML_HEAD: <script nomodule
+#+HTML_HEAD:         defer
+#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+#+HTML_HEAD:         integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+#+HTML_HEAD:         crossorigin="anonymous"></script>
 #+HTML_HEAD: <link rel="stylesheet"
 #+HTML_HEAD:       href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
 #+HTML_HEAD:       integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
 #+HTML_HEAD:       crossorigin="anonymous">
-
-#+HTML_HEAD: <script type="text/javascript"
-#+HTML_HEAD:         src="./themes/office/office.js"></script>
-#+HTML_HEAD: <script defer
-#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
-#+HTML_HEAD:         integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
-#+HTML_HEAD:         crossorigin="anonymous"></script>
-#+HTML_HEAD: <script defer
-#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-#+HTML_HEAD:         integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
-#+HTML_HEAD:         crossorigin="anonymous"
-#+HTML_HEAD:         onload="renderMathInElement(document.body);"></script>
+#+HTML_HEAD: 
+#+HTML_HEAD: <link rel="stylesheet" href="/static/html/office/office.css">
+#+HTML_HEAD: <script type="module" type="text/javascript">
+#+HTML_HEAD:     import init from '/static/html/office/office.mjs';
+#+HTML_HEAD:     init();
+#+HTML_HEAD: </script>
