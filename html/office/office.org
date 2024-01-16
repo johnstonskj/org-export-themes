@@ -445,15 +445,29 @@ See also:
 
 ** Lists
 
-Uses class =org-ol= and =org-ul=.
+*** Ordered (Numbered) Lists
+
+Org-export applies the CSS class =org-ol=.
 
 #+BEGIN_SRC css
-ol li:last-child, ul li:last-child {
+ol li:last-child {
     margin-bottom: var(--text-small);
 }
 #+END_SRC
 
-Uses class =org-dl=.
+*** Unordered (Bulleted) Lists
+
+Org-export applies the CSS class =org-ul=.
+
+#+BEGIN_SRC css
+ul li:last-child {
+    margin-bottom: var(--text-small);
+}
+#+END_SRC
+
+*** Definition Lists
+
+Org-export applies the CSS class =org-dl=.
 
 #+BEGIN_SRC css
 :root {
@@ -464,6 +478,9 @@ Uses class =org-dl=.
 }
 #+END_SRC
 
+Set the outer src_html[:exports code]{<dl>} to use a grid layout, this allows easy setup of a one-row per definition
+layout. While the CSS attribute is actually =gap= here we use a /padding/ variable as it seems more generic.
+
 #+BEGIN_SRC css
 dl.org-dl {
     display: grid;
@@ -472,24 +489,25 @@ dl.org-dl {
 }
 #+END_SRC
 
+Highlight the definition text, allowing for the CSS class =wide= to override the default width for more term and
+less definition space.
+
 #+BEGIN_SRC css
 dl.org-dl > dt {
     grid-column-start: 1;
     font-weight: var(--code-weight-semibold);
-}
-dl.org-dl > dt {
     max-width: var(--dl-term-width-normal);
-    min-width: calc(var(--dl-term-width-normal) * 0.75)
+    min-width: calc(var(--dl-term-width-normal) * 0.75);
 }
 dl.org-dl.wide > dt {
     max-width: var(--dl-term-width-wide);
-    min-width: calc(var(--dl-term-width-wide) * 0.75)
+    min-width: calc(var(--dl-term-width-wide) * 0.75);
 }
 #+END_SRC
 
 #+BEGIN_SRC css
 dl.org-dl > dd {
-    grid-column-start: 1;
+    grid-column-start: 2;
 }
 #+END_SRC
 
