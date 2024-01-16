@@ -443,6 +443,25 @@ See also:
 - https://printcss.net/articles/page-margin-boxes
 - https://printcss.net/articles/running-headers-and-footers
 
+** Lists
+
+Uses class =org-ol= and =org-ul=.
+
+#+BEGIN_SRC css
+ol li:last-child, ul li:last-child {
+    margin-bottom: var(--text-small);
+}
+#+END_SRC
+
+Uses class =org-dl=.
+
+#+BEGIN_SRC css
+dl > dt {
+    font-weight: --code-weight-semibold;
+}
+dl > dd {}
+#+END_SRC
+
 ** Blocks
 
 *** Abstract
@@ -486,9 +505,6 @@ nav#table-of-contents > div#text-table-of-contents ul {
     list-style-type: none;
     margin-left: var(--text-normal);
     padding: 0;
-}
-nav#table-of-contents > div#text-table-of-contents ul li:last-child {
-    margin-bottom: var(--text-small);
 }
 #+END_SRC
 

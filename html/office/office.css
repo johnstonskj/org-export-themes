@@ -288,6 +288,15 @@ h1.title {
     }
 }
 
+ol li:last-child, ul li:last-child {
+    margin-bottom: var(--text-small);
+}
+
+dl > dt {
+    font-weight: --code-weight-semibold;
+}
+dl > dd {}
+
 div.abstract, div.ABSTRACT {
     font-size: var(--text-small);
     margin-top: var(--text-huge);
@@ -305,9 +314,6 @@ nav#table-of-contents > div#text-table-of-contents ul {
     list-style-type: none;
     margin-left: var(--text-normal);
     padding: 0;
-}
-nav#table-of-contents > div#text-table-of-contents ul li:last-child {
-    margin-bottom: var(--text-small);
 }
 
 
