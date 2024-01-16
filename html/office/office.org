@@ -12,9 +12,9 @@ relies on the Fira Sans for text and Fira Code for pre-formatted and code conten
 Generation of the files from this source is via the ~org-babel-tangle~ function, or =C-c C-v t=, which tangles all the code
 blocks into corresponding CSS, JavaScript, and setup files.
 
-* Generated Top-Level Structure
+* Overview of Generated HTML
 
-#+CAPTION: Org-Exported TOC
+#+CAPTION: Org-Exported File
 #+BEGIN_SRC html :tangle no
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
@@ -676,6 +676,10 @@ table > thead {
 
 table > thead th,
 table > tbody td {
+    padding-top: var(--text-tiny);
+    padding-left: var(--text-smaller);
+    padding-bottom: var(--text-tiny);
+    padding-right: var(--text-smaller);
     border: var(--table-border);
 }
 #+END_SRC
