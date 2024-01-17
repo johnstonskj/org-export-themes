@@ -838,10 +838,61 @@ div#org-div-home-and-up {
 
 ** Footnotes and References
 
+#+CAPTION: Generated Footnote section
+#+BEGIN_SRC html
+<div id="footnotes">
+  <h2 class="footnotes">Footnotes: </h2>
+  <div id="text-footnotes">
+    <div class="footdef">
+      <sup>
+        <a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a>
+      </sup>
+      <div class="footpara" role="doc-footnote">
+        <p class="footpara">
+          Some text
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+#+END_SRC
+
+#+CAPTION: Generated Footnote reference
+#+BEGIN_SRC html
+<sup>
+  <a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a>
+</sup>
+#+END_SRC
+
 #+BEGIN_SRC css
 div#footnotes {
     border-top: var(--section-border);
     font-size: var(--text-small);
+}
+div#footnotes > div#text-footnotes div.footdef {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: var(--dl-padding-normal);
+}
+div#footnotes > div#text-footnotes div.footdef > sup {
+    grid-column-start: 1;
+    width: var(--text-larger);
+}
+div#footnotes > div#text-footnotes div.footdef > div.footpara {
+    grid-column-start: 2;
+    margin: 0;
+}
+div#footnotes > div#text-footnotes div.footdef > div.footpara p.footpara {
+    margin: 0;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+sup:has(a.footref)::before {
+    content: "[";
+}
+sup:has(a.footref)::after {
+    content: "]";
 }
 #+END_SRC
 
