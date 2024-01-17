@@ -839,7 +839,7 @@ div#org-div-home-and-up {
 ** Footnotes and References
 
 #+CAPTION: Generated Footnote section
-#+BEGIN_SRC html
+#+BEGIN_SRC html :tangle no
 <div id="footnotes">
   <h2 class="footnotes">Footnotes: </h2>
   <div id="text-footnotes">
@@ -858,7 +858,7 @@ div#org-div-home-and-up {
 #+END_SRC
 
 #+CAPTION: Generated Footnote reference
-#+BEGIN_SRC html
+#+BEGIN_SRC html :tangle no
 <sup>
   <a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a>
 </sup>
@@ -886,6 +886,10 @@ div#footnotes > div#text-footnotes div.footdef > div.footpara p.footpara {
     margin: 0;
 }
 #+END_SRC
+
+Here we want to style the footnote reference, but want to add the "[" and "]" /around/ the src_html[:exports code]{<a>}
+and not a part of the clickable link. So, we want to style the parent src_html[:exports code]{<sup>} element and have to
+use the CSS src_css[:exports code]{:has()} selector.
 
 #+BEGIN_SRC css
 sup:has(a.footref)::before {

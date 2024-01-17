@@ -498,26 +498,6 @@ div#org-div-home-and-up {
     white-space: nowrap;
 }
 
-<div id="footnotes">
-  <h2 class="footnotes">Footnotes: </h2>
-  <div id="text-footnotes">
-    <div class="footdef">
-      <sup>
-        <a id="fn.1" class="footnum" href="#fnr.1" role="doc-backlink">1</a>
-      </sup>
-      <div class="footpara" role="doc-footnote">
-        <p class="footpara">
-          Some text
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
-
-<sup>
-  <a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a>
-</sup>
-
 div#footnotes {
     border-top: var(--section-border);
     font-size: var(--text-small);
