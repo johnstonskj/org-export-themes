@@ -314,6 +314,7 @@ dl.org-dl {
 dl.org-dl > dt {
     grid-column-start: 1;
     font-weight: var(--code-weight-semibold);
+    text-align: left;
     width: var(--dl-term-width-normal);
 }
 dl.org-dl.wide > dt {
