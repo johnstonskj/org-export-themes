@@ -961,18 +961,36 @@ export default function init(options) {
 :header-args: :tangle office.setup
 :END:
 
-Should be:
+This section creates the actual setup files used in document headers. This is easily referenced in an org-mode document
+in the following manner.
+
+#+BEGIN_EXAMPLE org
+,#+TITLE: Fancy Document
+,#+AUTHOR: Good Writer
+,#+EMAIL: writes-good@example.com
+,#+STARTUP: overview hidestars inlineimages entitiespretty
+,#+SETUPFILE: https://simonkjohnston.life/org-export-themes/html/office/office.setup
+#+END_EXAMPLE
+
+#+NAME: tbl:html-settings
+| Name        | Purpose                                                  |
+|-------------+----------------------------------------------------------|
+| DOCTYPE     | Set to =xhtml5= which works best with KaTeX.               |
+| html-style  | Stops org-export adding the default style into the page. |
+| html5-fancy | Turns on more modern structures.                         |
+| toc         | Turn off TOC, this can be turned on again by the client. |
+| author      | Add author name to postamble.                            |
+| email       | Add author email to postamble.                           |
 
 KaTeX requires the use of the HTML5 doctype; without it, KaTeX may not render properly. The loading of KaTeX is deferred
 to speed up page rendering, and to automatically render math in text elements, include the auto-render extension.
 
-
-#+BEGIN_SRC org
+#+BEGIN_SRC org :noweb yes
 # -*- mode: org; -*-
-,#+BEGIN_SRC emacs-lisp :exports none
 
 ,#+HTML_DOCTYPE: xhtml5
 ,#+OPTIONS: html-style:nil html5-fancy:t
+,#+OPTIONS: toc:nil author:t email:t
 
 ,#+HTML_HEAD: <script nomodule
 ,#+HTML_HEAD:         defer
@@ -1002,26 +1020,27 @@ to speed up page rendering, and to automatically render math in text elements, i
 :header-args: :tangle office-local.setup
 :END:
 
-#+BEGIN_SRC org
+This setup file assumes that all the resources required for your page are local to some web application. This assumes
+that static resources such as javascript, css, or fonts, are in the path starting with =/static/=, with KaTeX installed in
+=/static/katex= and the export templates in =/static/html=.
+
+#+BEGIN_SRC org :noweb yes
 # -*- mode: org; -*-
-,#+BEGIN_SRC emacs-lisp :exports none
 
 ,#+HTML_DOCTYPE: xhtml5
 ,#+OPTIONS: html-style:nil html5-fancy:t
+,#+OPTIONS: toc:nil author:t email:t
 
 ,#+HTML_HEAD: <script nomodule
 ,#+HTML_HEAD:         defer
-,#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.js"
-,#+HTML_HEAD:         integrity="sha384-ImWHyYvDPlRzwFnvLhG9Jcpm/7qL4SVIuJK0C6Rj+Mf7fpeNJCLCynC+EVz4kCSA"
+,#+HTML_HEAD:         src="/static/katex/katex.js"
 ,#+HTML_HEAD:         crossorigin="anonymous"></script>
 ,#+HTML_HEAD: <script nomodule
 ,#+HTML_HEAD:         defer
-,#+HTML_HEAD:         src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
-,#+HTML_HEAD:         integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+,#+HTML_HEAD:         src="/static/katex/contrib/auto-render.min.js"
 ,#+HTML_HEAD:         crossorigin="anonymous"></script>
 ,#+HTML_HEAD: <link rel="stylesheet"
-,#+HTML_HEAD:       href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
-,#+HTML_HEAD:       integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+,#+HTML_HEAD:       href="/static/katex/katex.min.css"
 ,#+HTML_HEAD:       crossorigin="anonymous">
 ,#+HTML_HEAD: 
 ,#+HTML_HEAD: <link rel="stylesheet" href="/static/html/office/office.css">

@@ -1,8 +1,8 @@
 # -*- mode: org; -*-
-#+BEGIN_SRC emacs-lisp :exports none
 
 #+HTML_DOCTYPE: xhtml5
 #+OPTIONS: html-style:nil html5-fancy:t
+#+OPTIONS: toc:nil author:t email:t
 
 #+HTML_HEAD: <script nomodule
 #+HTML_HEAD:         defer
