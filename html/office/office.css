@@ -103,6 +103,26 @@ h1, h2, h3, h4, h5 {
     --section-border: var(--border-width) var(--border-style) var(--border-color);
 }
 
+:root {
+    --kbd-spacing-none: 0;     /* top and bottom */
+    --kbd-spacing-some: 0.2em; /* left and right */
+    --kbd-box-shadow: 0 0.0625rem 0 var(--code-border-color);     /* 0.0625 = 1/16 */
+    --kbd-box-inset: 0 0 0 0.125rem var(--code-background-color); /* 0.125  = 1/8 */
+}
+
+kbd:not(:has(kbd)) {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    display: inline-block;
+    font-size: var(--text-smaller);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius-normal);
+    box-shadow: var(--kbd-box-shadow), inset var(--kbd-box-inset);
+    margin: var(--kbd-spacing-none) var(--kbd-spacing-some);
+    padding: var(--kbd-spacing-none) var(--kbd-spacing-some);
+    vertical-align: text-bottom;
+}
+
 @media screen {
     :root {
         --root-font-size-small: 14px;

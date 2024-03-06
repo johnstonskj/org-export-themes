@@ -215,6 +215,30 @@ These are some simple reusable values across table and block borders as well as 
 }
 #+END_SRC
 
+*** Keyboard elements
+
+#+BEGIN_SRC css
+:root {
+    --kbd-spacing-none: 0;     /* top and bottom */
+    --kbd-spacing-some: 0.2em; /* left and right */
+    --kbd-box-shadow: 0 0.0625rem 0 var(--code-border-color);     /* 0.0625 = 1/16 */
+    --kbd-box-inset: 0 0 0 0.125rem var(--code-background-color); /* 0.125  = 1/8 */
+}
+
+kbd:not(:has(kbd)) {
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+    display: inline-block;
+    font-size: var(--text-smaller);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius-normal);
+    box-shadow: var(--kbd-box-shadow), inset var(--kbd-box-inset);
+    margin: var(--kbd-spacing-none) var(--kbd-spacing-some);
+    padding: var(--kbd-spacing-none) var(--kbd-spacing-some);
+    vertical-align: text-bottom;
+}
+#+END_SRC
+
 ** Media Queries
 
 *** Screen
