@@ -27,11 +27,11 @@ html {
     --subtitle-color: #808080;
     --heading-color: #4F81BD;
     --border-color: #A0A0A0;
-    --code-color: #3c484e;
+    
+    --code-color: var(--text-color);
     --code-background-color: #f0f0f0;
+    --code-light-background-color: color-mix(in srgb, var(--code-background-color) 20%, white);
     --code-border-color: #e8e8e8;
-
-    --code-hover-brightness: 1.05;
 }
 
 :root {
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5 {
     --kbd-spacing-none: 0;      /* top and bottom */
     --kbd-spacing-some: 0.4rem; /* left and right */
     --kbd-box-shadow: 0 0.15rem 0 var(--code-border-color);
-    --kbd-box-inset: 0 0 0 0.3rem var(--code-background-color);
+    --kbd-box-inset: 0 0 0 0.015rem var(--code-background-color);
 }
 
 kbd:not(:has(kbd)) {
@@ -794,7 +794,7 @@ div.org-src-container > pre.src {
     overflow-x: hidden;
 }
 div.org-src-container > pre.src:hover {
-    filter: brightness(var(--code-hover-brightness));
+    background-color: var(--code-light-background-color);
 }
 
 div.org-src-container > pre.src.scroll {
