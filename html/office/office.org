@@ -240,6 +240,7 @@ inset within the border.
 :root {
     --kbd-line-height: 1.4rem;
     --kbd-spacing-none: 0;      /* top and bottom */
+    --kbd-spacing-between: 0.2rem; /* between individuals */
     --kbd-spacing-some: 0.4rem; /* left and right */
     --kbd-box-shadow: 0 0.1rem 0 var(--code-border-color);
     --kbd-box-inset: 0 0 0 0.03rem var(--code-light-background-color);
@@ -259,6 +260,10 @@ kbd:not(:has(kbd)) {
     box-shadow: var(--kbd-box-shadow), inset var(--kbd-box-inset);
     vertical-align: text-bottom;
 }
+
+kbd > kbd:not(:first-child) {
+    margin-left: var(--kbd-spacing-between);
+}
 #+END_SRC
 
 The following classes when applied to the =kbd= element will set the correct/common glyph for that key action. Note that
@@ -271,69 +276,69 @@ similar, or acceptable, alternative exists.
 /* common, OS-agnostic, key names */
 kbd.arrow-up::before {
     /* U+2191: Upwards Arrow ↑ */
-    content: "&#8593; ";
+    content: "\2191 ";
 }
-kbd.text-arrow-up {
-    content: "Up";
+kbd.text-arrow-up::after {
+    content: " Up";
 }
 kbd.arrow-down::before {
     /* U+2193: Downwards Arrow ↓ */
-    content: "&#8595; ";
+    content: "\2193 ";
 }
-kbd.text-arrow-down {
-    content: "Down";
+kbd.text-arrow-down::after {
+    content: " Down";
 }
 kbd.arrow-left::before {
     /* U+2190: Leftwards Arrow ← */
-    content: "&#8592; ";
+    content: "\2190 ";
 }
-kbd.text-arrow-left {
-    content: "Down";
+kbd.text-arrow-left::after {
+    content: " Left";
 }
 kbd.arrow-right::before {
     /* U+2192: Rightwards Arrow → */
-    content: "&#8594; ";
+    content: "\2192 ";
 }
-kbd.text-arrow-right {
-    content: "Right";
+kbd.text-arrow-right::after {
+    content: " Right";
 }
 kbd.page-up::before {
     /* U+21DE: Upwards Arrow with Double Stroke ⇞ */
-    content: "&#8670; ";
+    content: "\21DE ";
 }
-kbd.text-page-up {
-    content: "Pg&nbsp;Up";
+kbd.text-page-up::after {
+    content: " Pg Up";
 }
 kbd.page-down::before {
     /* U+21DF: Downwards Arrow with Double Stroke ⇟ */
-    content: "&#8671; ";
+    content: "\21DF ";
 }
-kbd.text-page-down {
-    content: "Pg&nbsp;Dn";
+kbd.text-page-down::after {
+    content: " Pg Dn";
 }
 kbd.home::before {
-    /* &#8598;/U+2196: North West Arrow ↖ */
-    /* &#11126;/U+2B76: North West Triangle-Headed Arrow To Bar ⭶ */
-    content: "&#11126; ";
+    /* U+2196: North West Arrow ↖ */
+    /* U+2B76: North West Triangle-Headed Arrow To Bar ⭶ [ official standard ] */
+    content: "\2196 ";
 }
-kbd.text-home {
-    content: "Home";
+kbd.text-home::after {
+    content: " Home";
 }
 kbd.mac-home::before {
     /* U+2912: Upwards Arrow To Bar ⤒ */
-    content: "&#10514; ";
+    content: "\2912 ";
 }
 kbd.end::before {
-    /* &#8600;/U+2198: South East Arrow Emoji ↘ */
-    /* &#11128;/U+2B78: South East Triangle-Headed Arrow To Bar ⭸ */
-    content: "&#11128; ";
+    /* &U+2198: South East Arrow Emoji ↘ */
+    /* U+2B78: South East Triangle-Headed Arrow To Bar ⭸ [ official standard ] */
+    content: "\2198 ";
 }
-kbd.text-end {
-    content: "End";
+kbd.text-end::after {
+    content: " End";
 }
 kbd.mac-end::before {
     /* U+2913: Downwards Arrow To Bar ⤒ */
-    content: "&#10515; ";
+    content: "\2913 ";
 }
 #+END_SRC
 
@@ -342,61 +347,57 @@ kbd.mac-end::before {
 #+BEGIN_SRC css
 kbd.shift::before {
     /* U+21E7: Upwards White Arrow ⇧ */
-    content: "&#8679; ";
+    content: "\21E7 ";
 }
-kbd.text-shift {
-    content: "Shift";
+kbd.text-shift::after {
+    content: " Shift";
 }
 kbd.caps-lock::before {
     /* U+21EA: Upwards White Arrow from Bar ⇪ */
-    content: "&#8682; ";
+    content: "\21EA ";
 }
-kbd.text-caps-lock {
-    content: "Caps&nbsp;Lock";
+kbd.text-caps-lock::after {
+    content: " Caps Lock";
 }
 kbd.control::before {
     /* U+2303: Up Arrowhead ⌃ */
-    content: "&#8963; ";
+    content: "\2303 ";
 }
-kbd.text-control {
-    content: "Ctrl";
-}
-kbd.win-legacy-control::before {
-    /* U+2732: Open Centre Asterisk ✲ */
-   content: "&#10034; ";
+kbd.text-control::after {
+    content: " Ctrl";
 }
 kbd.alt::before {
     /* U+2387: Alternative Key Symbol ⎇ */
-    content: "&#9095; ";
+    content: "\2387 ";
 }
-kbd.text-alt {
-    content: "Alt";
+kbd.text-alt::after {
+    content: " Alt";
 }
 kbd.insert::before {
     /* U+2380: Insertion Symbol ⎀ */
-    content: "&#9088; ";
+    content: "\2380 ";
 }
-kbd.text-insert {
-    content: "Insert";
+kbd.text-insert::after {
+    content: " Insert";
 }
 kbd.num-lock::before {
     /* U+21ED: Upwards White Arrow On Pedestal with Vertical Bar ⇭ */
-    content: "&#8685; ";
+    content: "\21ED ";
 }
-kbd.text-num-lock {
-    content: "Num&nbsp;Lock";
+kbd.text-num-lock::after {
+    content: " Num Lock";
 }
-kbd.text-scroll-lock {
-    content: "Scroll&nbsp;Lock";
+kbd.text-scroll-lock::after {
+    content: " Scroll Lock";
 }
-kbd.text-alt-graph {
-    content: "AltGr";
+kbd.text-alt-graph::after {
+    content: " AltGr";
 }
-kbd.text-print-screen {
-    content: "Prt&nbsp;Sc";
+kbd.text-print-screen::after {
+    content: " Prt Sc";
 }
-kbd.text-function {
-    content: "Fn";
+kbd.text-function::after {
+    content: " Fn";
 }
 #+END_SRC
 
@@ -405,83 +406,80 @@ kbd.text-function {
 #+BEGIN_SRC css
 kbd.space::before {
     /* U+2423: Open Box ␣ */
-    content: "&#9251; ";
+    content: "\2423 ";
 }
-kbd.text-space {
-    content: "Space";
+kbd.text-space::after {
+    content: " Space";
 }
 kbd.tab::before {
-    /* &#8633;/U+21B9: Leftwards Arrow To Bar Over Rightwards Arrow To Bar ↹ */
-    /* &#11134;/U+2B7E: Horizontal Tab Key ⭾ */
-    content: "&#8633; ";
+    /* U+21B9: Leftwards Arrow To Bar Over Rightwards Arrow To Bar ↹ */
+    /* U+2B7E: Horizontal Tab Key ⭾ */
+    content: "\21B9 ";
 }
-kbd.text-tab {
-    content: "Tab";
+kbd.text-tab::after {
+    content: " Tab";
 }
 kbd.tab-right::before {
     /* U+21E5: Rightwards Arrow To Bar ⇥ */
-    content: "&#8677; ";
+    content: "\21E5 ";
 }
-kbd.text-tab-right {
-    content: "Tab&nbsp;Right";
+kbd.text-tab-right::after {
+    content: " Tab Right";
 }
 kbd.tab-left::before {
     /* U+21E4: Leftwards Arrow To Bar ⇤ */
-    content: "&#8676; ";
+    content: "\21E4 ";
 }
-kbd.text-tab-left {
-    content: "Tab&nbsp;Left";
+kbd.text-tab-left::after {
+    content: "Tab Left";
 }
 kbd.backspace::before {
     /* U+2190: Leftwards Arrow ← */
-    content: "&#8592; ";
+    content: "\2190 ";
 }
-kbd.text-backspace {
-    content: "Backspace";
+kbd.text-backspace::after {
+    content: " Backspace";
 }
-kbd.mac-backspace::before {
+kbd.mac > kbd.backspace::before {
     /* U+232B: Erase To the Left ⌫ */
-    content: "&#9003; ";
+    content: "\232B ";
 }
-kbd.text-mac-backspace {
-    content: "Back&nbsp;Space";
+kbd.mac > kbd.text-backspace::after {
+    content: " Back Space";
 }
 kbd.delete::before {
     /* U+2326: Erase To the Right ⌦ */
-    content: "&#8998; ";
+    content: "\2326 ";
 }
-kbd.text-delete {
-    content: "Delete";
+kbd.text-delete::after {
+    content: " Delete";
 }
 kbd.enter::before {
-    /* &#9094;/U+2386: Enter Symbol ⎆ */
-    /* &#8629;/U+21B5: Downwards Arrow with Corner Leftwards ↵ */
-    content: "&#8629; ";
+    /* U+2386: Enter Symbol ⎆ [official standard] */
+    /* U+21B5: Downwards Arrow with Corner Leftwards ↵ */
+    content: "\21B5 ";
 }
-kbd.text-enter {
-    content: "Enter";
+kbd.text-enter::after {
+    content: " Enter";
 }
-kbd.mac-enter::before {
+kbd.mac > kbd.enter::before {
     /* U+2305: Projective ⌅ */
-    content: "&#8965; ";
+    content: "\2305 ";
 }
-kbd.text-mac-enter {
-    content: "enter";
+kbd.mac > kbd.text-enter::after {
+    content: " enter";
     font-weight: bold;
 }
 kbd.return::before {
-    /* U+23CE: Return Symbol ⏎ */
-    content: "&#9166; "; /* the official */
+    /* U+23CE: Return Symbol ⏎ [official standard] */
+    content: "\23CE ";
 }
-kbd.text-return {
-    content: "Return";
+kbd.text-return::after {
+    content: " Return";
 }
-kbd.win-return::before {
+kbd.win > kbd.return::before {
     /* U+21B5: Downwards Arrow with Corner Leftwards ↵ */
-    content: "&#8629; ";
-}
-kbd.text-win-return {
-   content: "Return";
+    content: "\21B5 ";
 }
 #+END_SRC
 
@@ -490,135 +488,169 @@ kbd.text-win-return {
 #+BEGIN_SRC css
 kbd.escape::before {
     /* U+238B: Broken Circle with Northwest Arrow ⎋ */
-    content: "&#9099; ";
+    content: "\238B ";
 }
-kbd.text-escape {
-    content: "Esc";
+kbd.text-escape::after {
+    content: " Esc";
 }
 kbd.undo::before {
-    /* &#8630;/U+21B6: Anticlockwise Top Semicircle Arrow ↶ */
-    /* &#9100;/U+238C: Undo Symbol ⎌ */
-    content: "&#8630; ";
+    /* U+21B6: Anticlockwise Top Semicircle Arrow ↶ */
+    /* U+238C: Undo Symbol ⎌ */
+    content: "\238C ";
+}
+kbd.text-undo::after {
+    content: " Undo";
 }
 kbd.redo::before {
     /* U+21B7: Clockwise Top Semicircle Arrow ↶ */
-    content: "&#8631; ";
+    content: "\21B7 ";
+}
+kbd.text-redo::after {
+    content: " Redo";
 }
 kbd.break::before {
     /* U+238A: Circled Triangle Down ⎊ */
-    content: "&#9098; ";
+    content: "\238A ";
+}
+kbd.text-break::after {
+    content: " Break";
 }
 kbd.power::before {
-    /* &#9212;/U+23FC: Power On-Off Symbol ⏼ */
-    /* &#9211;/U+23FB: Power Symbol ⏻ */
-    content: "&#9211; ";
+    /* U+23FC: Power On-Off Symbol ⏼ */
+    /* U+23FB: Power Symbol ⏻ */
+    content: "\23FB ";
+}
+kbd.text-power::after {
+    content: " Power";
 }
 kbd.sleep::before {
     /* U+23FE: Power Sleep Symbol ⏾ */
-    content: "&#9214; ";
+    content: "\23FE ";
+}
+kbd.text-sleep::after {
+    content: " Sleep";
 }
 #+END_SRC
 
 *O/S Keys - Windows*
 
 #+BEGIN_SRC css
-kbd.win-windows::before {
+kbd.win > kbd.windows::before {
     /* :U+229E: Squared Plus ⊞ */
-   content: "&#8862; ";
+   content: "\229E ";
 }
-kbd.text-win-windows {
-   content: "Win";
+kbd.win > kbd.text-windows::after {
+   content: " Win";
 }
-kbd.win-menu::before {
-    /* &#8801;/U+2261: Identical To ≡ */
-    /* &#9776;/U+2630: Trigram for Heaven ☰ */
-   content: "&#8801; ";
+kbd.win > kbd.menu::before {
+    /* U+2261: Identical To ≡ */
+    /* U+2630: Trigram for Heaven ☰ */
+   content: "\2630 ";
 }
-kbd.text-win-menu {
-   content: "Menu";
+kbd.win > kbd.text-menu::after {
+   content: " Menu";
 }
 #+END_SRC
 
 *O/S Keys - macos*
 
 #+BEGIN_SRC css
-kbd.mac-option:before {
+kbd.mac > kbd.option:before {
     /* U+2325: Option Key ⌥ */
-    content: "&#8997; ";
+    content: "\2325 ";
 }
-kbd.text-mac-option {
-    content: "Option";
+kbd.mac > kbd.text-option::after {
+    content: " Option";
 }
-kbd.mac-command::before {
+kbd.mac > kbd.command::before {
     /* U+2318: Place of Interest Sign ⌘ */
-    content: "&#8984; ";
+    content: "\2318 ";
 }
-kbd.text-mac-command {
-    content: "Cmd";
+kbd.mac > kbd.text-command::after {
+    content: " Cmd";
 }
-kbd.mac-globe::before {
+kbd.mac > kbd.globe::before {
     /* U+1F310: Globe with Meridians Emoji 🌐 */
-    content: "&#127760; ";
+    content: "\1F310 ";
 }
 #+END_SRC
 
 *O/S Keys - Legacy*
 
 #+BEGIN_SRC css
-kbd.legacy-meta::before {
+kbd.legacy > kbd.meta::before {
     /* U+25C6: Black Diamond ◆ */
-    content: "&#25C6;";
+    content: "\25C6 ";
 }
-kbd.text-legacy-meta {
-    content: "Meta";
+kbd.legacy > kbd.text-meta::after {
+    content: " Meta";
 }
-kbd.legacy-super::before {
+kbd.legacy > kbd.super::before {
     /* U+2756: Black Diamond Minus White X ❖ */
-    content: "&#2756;";
+    content: "\2756 ";
 }
-kbd.text-legacy-super {
-    content: "Super";
+kbd.legacy > kbd.text-super::after {
+    content: " Super";
 }
-kbd.legacy-hyper::before {
+kbd.legacy > kbd.hyper::before {
     /* U+2727: White Four Pointed Star ✧ */
     /* U+2726: Black Four Pointed Star ✦ */
-    content: "&#10022;";
+    content: "\2726 ";
 }
-kbd.text-legacy-hyper {
-    content: "Hyper";
+kbd.legacy > kbd.text-hyper::after {
+    content: " Hyper";
 }
-kbd.legacy-control::before {
+kbd.legacy > kbd.control::before {
     /* U+2388: Helm Symbol ⎈ */
-    content: "&#2388;";
+    content: "\2388 ";
+}
+kbd.win.legacy > kbd.control::before {
+    /* U+2732: Open Centre Asterisk ✲ */
+   content: "\2732 ";
 }
 #+END_SRC
 
 *Emacs - Because*
 
 #+BEGIN_SRC css
-kbd.emacs-space {
-    content: "SPC"
+kbd.emacs > kbd.text-arrow-up::after {
+    content: " [up key]";
 }
-kbd.text-emacs-shift {
-    content: "S-"
+kbd.emacs > kbd.text-arrow-down::after {
+    content: " [down key]";
 }
-kbd.text-emacs-ctrl {
-    content: "C-";
+kbd.emacs > kbd.text-arrow-left::after {
+    content: " [left key]";
 }
-kbd.text-emacs-meta {
-    content: "M-";
+kbd.emacs > kbd.text-arrow-right::after {
+    content: " [right key]";
 }
-kbd.text-emacs-return {
-    content: "RET";
+kbd.emacs > kbd.text-space::after {
+    content: " SPC"
 }
-kbd.text-emacs-backspace {
-    content: "BS";
+kbd.emacs > kbd.text-shift::after {
+    content: " S-"
 }
-kbd.text-emacs-delete {
-    content: "DEL";
+kbd.emacs > kbd.text-control::after {
+    content: " C-";
 }
-kbd.text-emacs-escape {
-    content: "ESC";
+kbd.emacs > kbd.text-alt::after {
+    content: " A-";
+}
+kbd.emacs > kbd.text-meta::after {
+    content: " M-";
+}
+kbd.emacs > kbd.text-return::after {
+    content: " RET";
+}
+kbd.emacs > kbd.text-backspace::after {
+    content: " BS";
+}
+kbd.emacs > kbd.text-delete::after {
+    content: " DEL";
+}
+kbd.emacs > kbd.text-escape::after {
+    content: " ESC";
 }
 #+END_SRC
 

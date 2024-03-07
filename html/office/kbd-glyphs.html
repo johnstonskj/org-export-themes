@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sample KBD Classes</title>
+    <link rel="stylesheet" href="./office.css">
+  </head>
+  <body>
+    <header>
+      <h1>Sample KBD Classes</h1>
+    </header>
+    <main>
+      <table style="font-size: 1.0em">
+        <thead>
+          <tr>
+            <th>Kind</th>
+            <th>Class</th>
+            <th>Glyph</th>
+            <th>Text</th>
+            <th>Both</th>
+            <th>Windows Variant</th>
+            <th>Apple Variant</th>
+            <th>Other Variant(s)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Movement</td>
+            <td><code>kbd.arrow-up</code></td>
+            <td><kbd class="arrow-up"></kbd></td>
+            <td><kbd class="text-arrow-up"></kbd></td>
+            <td><kbd class="arrow-up text-arrow-up"></kbd></td>
+            <td><kbd class="win"><kbd class="arrow-up text-arrow-up"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="arrow-up text-arrow-up"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-arrow-up"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Movement</td>
+            <td><code>kbd.arrow-down</code></td>
+            <td><kbd class="arrow-down"></kbd></td>
+            <td><kbd class="text-arrow-down"></kbd></td>
+            <td><kbd class="arrow-down text-arrow-down"></kbd></td>
+            <td><kbd class="win"><kbd class="arrow-down text-arrow-down"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="arrow-down text-arrow-down"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-arrow-down"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Movement</td>
+            <td><code>kbd.arrow-left</code></td>
+            <td><kbd class="arrow-left"></kbd></td>
+            <td><kbd class="text-arrow-left"></kbd></td>
+            <td><kbd class="arrow-left text-arrow-left"></kbd></td>
+            <td><kbd class="win"><kbd class="arrow-left text-arrow-left"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="arrow-left text-arrow-left"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-arrow-left"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Movement</td>
+            <td><code>kbd.arrow-right</code></td>
+            <td><kbd class="arrow-right"></kbd></td>
+            <td><kbd class="text-arrow-right"></kbd></td>
+            <td><kbd class="arrow-right text-arrow-right"></kbd></td>
+            <td><kbd class="win"><kbd class="arrow-right text-arrow-right"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="arrow-right text-arrow-right"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-arrow-right"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Movement</td>
+            <td><code>kbd.page-up</code></td>
+            <td><kbd class="page-up"></kbd></td>
+            <td><kbd class="text-page-up"></kbd></td>
+            <td><kbd class="page-up text-page-up"></kbd></td>
+            <td><kbd class="win"><kbd class="page-up text-page-up"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="page-up text-page-up"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-page-up"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Movement</td>
+            <td><code>kbd.page-down</code></td>
+            <td><kbd class="page-down"></kbd></td>
+            <td><kbd class="text-page-down"></kbd></td>
+            <td><kbd class="page-down text-page-down"></kbd></td>
+            <td><kbd class="win"><kbd class="page-down text-page-down"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="page-down text-page-down"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-page-down"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Movement</td>
+            <td><code>kbd.home</code></td>
+            <td><kbd class="home"></kbd></td>
+            <td><kbd class="text-home"></kbd></td>
+            <td><kbd class="home text-home"></kbd></td>
+            <td><kbd class="win"><kbd class="home text-home"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="home text-home"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-home"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Movement</td>
+            <td><code>kbd.end</code></td>
+            <td><kbd class="end"></kbd></td>
+            <td><kbd class="text-end"></kbd></td>
+            <td><kbd class="end text-end"></kbd></td>
+            <td><kbd class="win"><kbd class="end text-end"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="end text-end"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-end"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.shift</code></td>
+            <td><kbd class="shift"></kbd></td>
+            <td><kbd class="text-shift"></kbd></td>
+            <td><kbd class="shift text-shift"></kbd></td>
+            <td><kbd class="win"><kbd class="shift text-shift"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="shift text-shift"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-shift"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.control</code></td>
+            <td><kbd class="control"></kbd></td>
+            <td><kbd class="text-control"></kbd></td>
+            <td><kbd class="control text-control"></kbd></td>
+            <td><kbd class="win"><kbd class="control text-control"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="control text-control"></kbd></kbd></td>
+            <td>
+              <kbd class="emacs"><kbd class="text-control"></kbd></kbd> <code>legacy</code>
+              <kbd class="legacy"><kbd class="control"></kbd></kbd> <code>win, legacy</code>
+              <kbd class="win legacy"><kbd class="control"></kbd></kbd>
+            </td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.alt</code></td>
+            <td><kbd class="alt"></kbd></td>
+            <td><kbd class="text-alt"></kbd></td>
+            <td><kbd class="alt text-alt"></kbd></td>
+            <td><kbd class="win"><kbd class="alt text-alt"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="alt text-alt"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-alt"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.alt-graph</code></td>
+            <td></td>
+            <td><kbd class="text-alt-graph"></kbd></td>
+            <td><kbd class="alt-graph text-alt-graph"></kbd></td>
+            <td><kbd class="win"><kbd class="alt-graph text-alt-graph"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="alt-graph text-alt-graph"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-alt-graph"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.function</code></td>
+            <td></td>
+            <td><kbd class="text-function"></kbd></td>
+            <td><kbd class="function text-function"></kbd></td>
+            <td><kbd class="win"><kbd class="function text-function"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="function text-function"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-function"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.win.windows</code></td>
+            <td></td>
+            <td></td>
+            <td></kbd></td>
+            <td><kbd class="win"><kbd class="windows text-windows"></kbd></kbd></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.mac.option</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><kbd class="mac"><kbd class="option text-option"></kbd></kbd></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.mac.command</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><kbd class="mac"><kbd class="command text-command"></kbd></kbd></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.legacy.meta</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><kbd class="legacy"><kbd class="meta text-meta"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.legacy.super</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><kbd class="legacy"><kbd class="super text-super"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modifier</td>
+            <td><code>kbd.legacy.hyper</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><kbd class="legacy"><kbd class="hyper text-hyper"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modal</td>
+            <td><code>kbd.insert</code></td>
+            <td><kbd class="insert"></kbd></td>
+            <td><kbd class="text-insert"></kbd></td>
+            <td><kbd class="insert text-insert"></kbd></td>
+            <td><kbd class="win"><kbd class="insert text-insert"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="insert text-insert"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-insert"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modal</td>
+            <td><code>kbd.caps-lock</code></td>
+            <td><kbd class="caps-lock"></kbd></td>
+            <td><kbd class="text-caps-lock"></kbd></td>
+            <td><kbd class="caps-lock text-caps-lock"></kbd></td>
+            <td><kbd class="win"><kbd class="caps-lock text-caps-lock"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="caps-lock text-caps-lock"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-caps-lock"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modal</td>
+            <td><code>kbd.num-lock</code></td>
+            <td><kbd class="num-lock"></kbd></td>
+            <td><kbd class="text-num-lock"></kbd></td>
+            <td><kbd class="num-lock text-num-lock"></kbd></td>
+            <td><kbd class="win"><kbd class="num-lock text-num-lock"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="num-lock text-num-lock"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-num-lock"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Modal</td>
+            <td><code>kbd.scroll-lock</code></td>
+            <td></kbd></td>
+            <td><kbd class="text-scroll-lock"></kbd></td>
+            <td><kbd class="scroll-lock text-scroll-lock"></kbd></td>
+            <td><kbd class="win"><kbd class="scroll-lock text-scroll-lock"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="scroll-lock text-scroll-lock"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-scroll-lock"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.space</code></td>
+            <td><kbd class="space"></kbd></td>
+            <td><kbd class="text-space"></kbd></td>
+            <td><kbd class="space text-space"></kbd></td>
+            <td><kbd class="win"><kbd class="space text-space"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="space text-space"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-space"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.tab</code></td>
+            <td><kbd class="tab"></kbd></td>
+            <td><kbd class="text-tab"></kbd></td>
+            <td><kbd class="tab text-tab"></kbd></td>
+            <td><kbd class="win"><kbd class="tab text-tab"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="tab text-tab"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-tab"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.tab-right</code></td>
+            <td><kbd class="tab-right"></kbd></td>
+            <td><kbd class="text-tab-right"></kbd></td>
+            <td><kbd class="tab-right text-tab-right"></kbd></td>
+            <td><kbd class="win"><kbd class="tab-right text-tab-right"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="tab-right text-tab-right"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-tab-right"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.tab-left</code></td>
+            <td><kbd class="tab-left"></kbd></td>
+            <td><kbd class="text-tab-left"></kbd></td>
+            <td><kbd class="tab-left text-tab-left"></kbd></td>
+            <td><kbd class="win"><kbd class="tab-left text-tab-left"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="tab-left text-tab-left"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-tab-left"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.backspace</code></td>
+            <td><kbd class="backspace"></kbd></td>
+            <td><kbd class="text-backspace"></kbd></td>
+            <td><kbd class="backspace text-backspace"></kbd></td>
+            <td><kbd class="win"><kbd class="backspace text-backspace"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="backspace text-backspace"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-backspace"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.delete</code></td>
+            <td><kbd class="delete"></kbd></td>
+            <td><kbd class="text-delete"></kbd></td>
+            <td><kbd class="delete text-delete"></kbd></td>
+            <td><kbd class="win"><kbd class="delete text-delete"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="delete text-delete"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-delete"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.enter</code></td>
+            <td><kbd class="enter"></kbd></td>
+            <td><kbd class="text-enter"></kbd></td>
+            <td><kbd class="enter text-enter"></kbd></td>
+            <td><kbd class="win"><kbd class="enter text-enter"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="enter text-enter"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-enter"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.return</code></td>
+            <td><kbd class="return"></kbd></td>
+            <td><kbd class="text-return"></kbd></td>
+            <td><kbd class="return text-return"></kbd></td>
+            <td><kbd class="win"><kbd class="return text-return"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="return text-return"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-return"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Text</td>
+            <td><code>kbd.escape</code></td>
+            <td><kbd class="escape"></kbd></td>
+            <td><kbd class="text-escape"></kbd></td>
+            <td><kbd class="escape text-escape"></kbd></td>
+            <td><kbd class="win"><kbd class="escape text-escape"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="escape text-escape"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-escape"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td><code>kbd.undo</code></td>
+            <td><kbd class="undo"></kbd></td>
+            <td><kbd class="text-undo"></kbd></td>
+            <td><kbd class="undo text-undo"></kbd></td>
+            <td><kbd class="win"><kbd class="undo text-undo"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="undo text-undo"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-undo"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td><code>kbd.redo</code></td>
+            <td><kbd class="redo"></kbd></td>
+            <td><kbd class="text-redo"></kbd></td>
+            <td><kbd class="redo text-redo"></kbd></td>
+            <td><kbd class="win"><kbd class="redo text-redo"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="redo text-redo"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-redo"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td><code>kbd.break</code></td>
+            <td><kbd class="break"></kbd></td>
+            <td><kbd class="text-break"></kbd></td>
+            <td><kbd class="break text-break"></kbd></td>
+            <td><kbd class="win"><kbd class="break text-break"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="break text-break"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-break"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td><code>kbd.power</code></td>
+            <td><kbd class="power"></kbd></td>
+            <td><kbd class="text-power"></kbd></td>
+            <td><kbd class="power text-power"></kbd></td>
+            <td><kbd class="win"><kbd class="power text-power"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="power text-power"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-power"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td><code>kbd.sleep</code></td>
+            <td><kbd class="sleep"></kbd></td>
+            <td><kbd class="text-sleep"></kbd></td>
+            <td><kbd class="sleep text-sleep"></kbd></td>
+            <td><kbd class="win"><kbd class="sleep text-sleep"></kbd></kbd></td>
+            <td><kbd class="mac"><kbd class="sleep text-sleep"></kbd></kbd></td>
+            <td><kbd class="emacs"><kbd class="text-sleep"></kbd></kbd></td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td><code>kbd.win.menu</code></td>
+            <td></td>
+            <td></td>
+            <td></kbd></td>
+            <td><kbd class="win"><kbd class="menu text-menu"></kbd></kbd></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Action</td>
+            <td><code>kbd.mac.globe</code></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><kbd class="mac"><kbd class="globe"></kbd></kbd></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Here's the save a file keys for Windows,
+        <kbd class="win"><kbd class="text-control"></kbd><kbd>S</kbd></kbd>
+        and Mac
+         <kbd class="mac"><kbd class="text-control"></kbd><kbd>S</kbd></kbd>
+      </p>
+      <p>
+        Emacs is a little more complicated
+        <kbd class="emacs"><kbd class="text-control "></kbd><kbd>xs</kbd></kbd>
+      </p>
+    </main>
+  </body>
+</html>
+
