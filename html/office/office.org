@@ -230,15 +230,19 @@ or as a sequence of key presses together, as in the following.
 #+END_EXAMPLE
 
 The sequence consists of an outer, /compound/, element which should really have no formatting of it's own, but contains
-the set of formatted individual keys. 
+the set of formatted individual keys.
+
+The rule in the CSS below ignores any =<kbd>= with nested =<kbd>= elements, only applying the /key shape/ to the individual
+key elements. The key shape uses the code colors as well as providing a drop shadow on the bottom and a subtle light
+inset within the border.
 
 #+BEGIN_SRC css
 :root {
     --kbd-line-height: 1.4rem;
     --kbd-spacing-none: 0;      /* top and bottom */
     --kbd-spacing-some: 0.4rem; /* left and right */
-    --kbd-box-shadow: 0 0.15rem 0 var(--code-border-color);
-    --kbd-box-inset: 0 0 0 0.015rem var(--code-light-background-color);
+    --kbd-box-shadow: 0 0.1rem 0 var(--code-border-color);
+    --kbd-box-inset: 0 0 0 0.03rem var(--code-light-background-color);
 }
 
 kbd:not(:has(kbd)) {
@@ -257,7 +261,9 @@ kbd:not(:has(kbd)) {
 }
 #+END_SRC
 
-The following classes when applied to the =kbd= element will set the correct/common glyph for that key action.
+The following classes when applied to the =kbd= element will set the correct/common glyph for that key action. Note that
+some will list alternative glyphs, this is useful where the correct glyph does not have broad font support but a
+similar, or acceptable, alternative exists.
 
 *Movement Keys*
 

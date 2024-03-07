@@ -107,8 +107,8 @@ h1, h2, h3, h4, h5 {
     --kbd-line-height: 1.4rem;
     --kbd-spacing-none: 0;      /* top and bottom */
     --kbd-spacing-some: 0.4rem; /* left and right */
-    --kbd-box-shadow: 0 0.15rem 0 var(--code-border-color);
-    --kbd-box-inset: 0 0 0 0.015rem var(--code-light-background-color);
+    --kbd-box-shadow: 0 0.1rem 0 var(--code-border-color);
+    --kbd-box-inset: 0 0 0 0.03rem var(--code-light-background-color);
 }
 
 kbd:not(:has(kbd)) {
