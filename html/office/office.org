@@ -80,16 +80,16 @@ additional colors without *really good* reasons.
 
 #+BEGIN_SRC css
 :root {
-    --text-color: #3c484e;
+    --text-color: #002b36;
     --title-color: #365F91;
     --subtitle-color: #808080;
     --heading-color: #4F81BD;
-    --border-color: #A0A0A0;
+    --border-color: #586e75;
     
     --code-color: var(--text-color);
-    --code-background-color: #f0f0f0;
-    --code-light-background-color: color-mix(in srgb, var(--code-background-color) 20%, white);
-    --code-border-color: #e8e8e8;
+    --code-background-color: #eee8d5;
+    --code-light-background-color: #fdf6e3;
+    --code-border-color: #93a1a1;
 }
 #+END_SRC
 
@@ -238,21 +238,24 @@ inset within the border.
 
 #+BEGIN_SRC css
 :root {
-    --kbd-line-height: 1.4rem;
+    --kbd-line-height: 1.8em;
     --kbd-spacing-none: 0;      /* top and bottom */
-    --kbd-spacing-between: 0.2rem; /* between individuals */
-    --kbd-spacing-some: 0.4rem; /* left and right */
-    --kbd-box-shadow: 0 0.1rem 0 var(--code-border-color);
-    --kbd-box-inset: 0 0 0 0.03rem var(--code-light-background-color);
+    --kbd-spacing-between: 0.2em; /* between individuals */
+    --kbd-spacing-some: 0.5em; /* left and right */
+    --kbd-box-shadow: 0 0.15em 0 var(--code-border-color);
+    --kbd-box-inset: 0 0 0 0.03em var(--code-light-background-color);
+}
+
+kbd {
+    font-family: var(--code-font-family);
+    font-weight: var(--code-weight-normal);
+    color: var(--code-color);
 }
 
 kbd:not(:has(kbd)) {
-    font-family: var(--code-font-family);
-    font-weight: var(--code-weight-normal);
     font-size: var(--text-smaller);
     line-height: var(--kbd-line-height);
     background-color: var(--code-background-color);
-    color: var(--code-color);
     display: inline-block;
     padding: var(--kbd-spacing-none) var(--kbd-spacing-some);
     border: var(--border-width) var(--border-style) var(--border-color);
@@ -263,6 +266,13 @@ kbd:not(:has(kbd)) {
 
 kbd > kbd:not(:first-child) {
     margin-left: var(--kbd-spacing-between);
+}
+
+kbd > span.cmd {
+    font-size: var(--text-smaller);
+    line-height: var(--kbd-line-height);
+    margin-left: var(--kbd-spacing-between);
+    vertical-align: text-bottom;
 }
 #+END_SRC
 
