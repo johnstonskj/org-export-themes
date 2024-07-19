@@ -86,10 +86,20 @@ additional colors without *really good* reasons.
     --heading-color: #4F81BD;
     --border-color: #586e75;
     
-    --code-color: var(--text-color);
+    --: var(--text-color);
     --code-background-color: #eee8d5;
     --code-light-background-color: #fdf6e3;
     --code-border-color: #93a1a1;
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+:root {
+    --print-text-color: black;
+    
+    --print-code-color: var(--print-text-color);
+    --print-code-background-color: white;
+    --print-code-light-background-color: var(--print-code-background-color);
 }
 #+END_SRC
 
@@ -810,8 +820,9 @@ For large displays.
 #+END_SRC
 
 #+BEGIN_SRC css
-@media print {    
+@media print {
     body {
+        color: var(--print-text-color) !important;
         font-size: var(--root-font-size-normal) !important;
         padding: 0 !important;
     }
@@ -1180,6 +1191,7 @@ name of the form =src-{name}=.
 
 #+BEGIN_SRC css
 pre, code {
+    color: var(--code-color);
     font-family: var(--code-font-family);
     font-size: var(--text-small);
     font-weight: var(--code-weight-normal);
@@ -1240,6 +1252,23 @@ pre.example {
 }
 pre.example:hover {
     filter: brightness(var(--code-hover-brightness));
+}
+#+END_SRC
+
+#+BEGIN_SRC css
+@media print {
+    pre, code {
+        color: var(--print-code-color);
+    }
+    div.org-src-container > pre.src {
+        background-color: var(--print-code-background-color);
+    }       
+    p code, li code, dt code, dd code {
+        background-color: var(--print-code-background-color);
+    }  
+    pre.example {
+        background-color: var(--print-code-background-color);
+    }   
 }
 #+END_SRC
 
