@@ -1022,6 +1022,9 @@ nav#table-of-contents > div#text-table-of-contents ul {
 
 *** Block Quotes
 
+This section sets up the basics of a block quote with a simple margin all around but a larger padding left and right.
+This padding allows us later to adjust this in favor of other uses of the margin.
+
 #+BEGIN_SRC css
 blockquote {
     display: block;
@@ -1039,8 +1042,8 @@ blockquote {
 }
 #+END_SRC
 
-A /quoted/ block will always be placed in italic, with a stylized open and close quote at the beginning and end.
-At this using =#+ATTR_HTML: :class quoted=.
+A /quoted/ block will have it's text in italic, with a stylized open and close quote at the beginning and end.
+To enable this, use =#+ATTR_HTML: :class quoted=.
 
 #+BEGIN_SRC css
 blockquote.quoted p {
@@ -1061,6 +1064,7 @@ blockquote.quoted p:last-child:after {
 #+END_SRC
 
 A /leader/ block has the initial character of the first paragraph turned into a drop character spanning two lines.
+To enable this, use =#+ATTR_HTML: :class leader=.
 
 #+BEGIN_SRC css
 blockquote.leader p:first-child:first-letter {
@@ -1069,21 +1073,34 @@ blockquote.leader p:first-child:first-letter {
 }
 #+END_SRC
 
-1. Swap margin for border.
+An /edged/ block has a solid left border that clearly delineates the indented nature of the block and causes it to stand
+out from surrounding text.
+To enable this, use =#+ATTR_HTML: :class edged=.
 
 #+BEGIN_SRC css
 blockquote.edged  {
     margin-left: 0;
     border-left-width: var(--text-normal);
     border-left-style: solid;
-    border-left-color: var(--blockquote-border-color-dark);
+    border-left-color: var(--blockquote-border-color-light);
 }
 #+END_SRC
 
 *** Notes
 
+A note block denotes a call-out inline in the text.
+
+#+BEGIN_EXAMPLE org :eval:never
+Here is an example note block in some org-mode document:
+
+,#+BEGIN_NOTE
+Some text I want to appear as a note with a nice margin around it.
+,#+END_NOTE
+#+END_EXAMPLE
+
 #+BEGIN_SRC css
 div.NOTE {
+    display: block;
     margin: var(--text-normal);
     padding: var(--text-normal);
     border: var(--border-width-thick) var(--border-style) var(--heading-color);
@@ -1096,7 +1113,7 @@ div.NOTE p {
 }
 
 div.NOTE p::before {
-    content: "Note: ";
+    content: "NOTE ";
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
