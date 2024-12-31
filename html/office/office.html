@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-12-20 Fri 17:02 -->
+<!-- 2024-12-31 Tue 08:35 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>&lrm;</title>
@@ -200,30 +200,30 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgcaf8dc9">1. Overview of Generated HTML</a></li>
-<li><a href="#org1b3d7ef">2. CSS</a>
+<li><a href="#orgf91dd46">1. Overview of Generated HTML</a></li>
+<li><a href="#orgb0030d1">2. CSS</a>
 <ul>
-<li><a href="#orgc390be1">2.1. Typography</a></li>
-<li><a href="#orgc89572b">2.2. Media Queries</a></li>
-<li><a href="#org7976136">2.3. Lists</a></li>
-<li><a href="#orgeda5847">2.4. Blocks</a></li>
-<li><a href="#org56d7f1e">2.5. Images</a></li>
-<li><a href="#org3dc92d3">2.6. Tables</a></li>
-<li><a href="#orgd51f73b">2.7. Code</a></li>
-<li><a href="#org20b1dfc">2.8. Math (KaTeX)</a></li>
-<li><a href="#orgceef2b5">2.9. Home and Up</a></li>
-<li><a href="#org5a571a1">2.10. Footnotes and References</a></li>
-<li><a href="#orge283714">2.11. Postamble</a></li>
+<li><a href="#orgc61f5bd">2.1. Typography</a></li>
+<li><a href="#orgdb6e8ae">2.2. Media Queries</a></li>
+<li><a href="#orge42ca7c">2.3. Lists</a></li>
+<li><a href="#orge6fcb6a">2.4. Blocks</a></li>
+<li><a href="#orgfd57c0a">2.5. Images</a></li>
+<li><a href="#org66a48b8">2.6. Tables</a></li>
+<li><a href="#orgac1f5e1">2.7. Code</a></li>
+<li><a href="#org39c62ee">2.8. Math (KaTeX)</a></li>
+<li><a href="#orge07fb06">2.9. Home and Up</a></li>
+<li><a href="#org499159a">2.10. Footnotes and References</a></li>
+<li><a href="#orgbaece0f">2.11. Postamble</a></li>
 </ul>
 </li>
-<li><a href="#org7dbfaa4">3. Javascript</a>
+<li><a href="#org38c3da6">3. Javascript</a>
 <ul>
-<li><a href="#org8b86f91">3.1. Math (KaTeX)</a></li>
+<li><a href="#org8afe4cd">3.1. Math (KaTeX)</a></li>
 </ul>
 </li>
-<li><a href="#org6b3be23">4. Setup File</a>
+<li><a href="#org56d52ad">4. Setup File</a>
 <ul>
-<li><a href="#org5d94a50">4.1. Local Install</a></li>
+<li><a href="#org8c97ce0">4.1. Local Install</a></li>
 </ul>
 </li>
 </ul>
@@ -240,8 +240,8 @@ Generation of the files from this source is via the <code>org-babel-tangle</code
 blocks into corresponding CSS, JavaScript, and setup files.
 </p>
 
-<div id="outline-container-orgcaf8dc9" class="outline-2">
-<h2 id="orgcaf8dc9"><span class="section-number-2">1.</span> Overview of Generated HTML</h2>
+<div id="outline-container-orgf91dd46" class="outline-2">
+<h2 id="orgf91dd46"><span class="section-number-2">1.</span> Overview of Generated HTML</h2>
 <div class="outline-text-2" id="text-1">
 <div class="org-src-container">
 <label class="org-src-name"><span class="listing-number">Listing 1: </span>Org-Exported File</label><pre class="src src-html">&lt;<span style="color: #859900;">!DOCTYPE</span> html&gt;
@@ -262,8 +262,8 @@ blocks into corresponding CSS, JavaScript, and setup files.
 </div>
 </div>
 
-<div id="outline-container-org1b3d7ef" class="outline-2">
-<h2 id="org1b3d7ef"><span class="section-number-2">2.</span> CSS</h2>
+<div id="outline-container-orgb0030d1" class="outline-2">
+<h2 id="orgb0030d1"><span class="section-number-2">2.</span> CSS</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 All CSS content will be written to the file <code>office.css</code> which is referenced by the <code>office.setup</code> and <code>office-local.setup</code>
@@ -271,8 +271,8 @@ files.
 </p>
 </div>
 
-<div id="outline-container-orgc390be1" class="outline-3">
-<h3 id="orgc390be1"><span class="section-number-3">2.1.</span> Typography</h3>
+<div id="outline-container-orgc61f5bd" class="outline-3">
+<h3 id="orgc61f5bd"><span class="section-number-3">2.1.</span> Typography</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 This block imports the two major fonts used in this theme. It also sets up variables for the specific weights and their
@@ -313,8 +313,8 @@ This block is included to setup font features globally.
 </div>
 </div>
 
-<div id="outline-container-org4d77bb5" class="outline-4">
-<h4 id="org4d77bb5"><span class="section-number-4">2.1.1.</span> Colors</h4>
+<div id="outline-container-org823e116" class="outline-4">
+<h4 id="org823e116"><span class="section-number-4">2.1.1.</span> Colors</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 These are the base colors used throughout; local names introduced in sections below should shadow these values not add
@@ -350,8 +350,8 @@ additional colors without <b>really good</b> reasons.
 </div>
 </div>
 
-<div id="outline-container-org4e3cac4" class="outline-4">
-<h4 id="org4e3cac4"><span class="section-number-4">2.1.2.</span> <a id="org9107e15"></a>Relative Sizes</h4>
+<div id="outline-container-orgd785578" class="outline-4">
+<h4 id="orgd785578"><span class="section-number-4">2.1.2.</span> <a id="orgbd929fb"></a>Relative Sizes</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 These may be used not only for font sizing but for margins and padding also.
@@ -380,8 +380,8 @@ These may be used not only for font sizing but for margins and padding also.
 </div>
 </div>
 
-<div id="outline-container-org003970e" class="outline-4">
-<h4 id="org003970e"><span class="section-number-4">2.1.3.</span> Body Content</h4>
+<div id="outline-container-orgfaf3aeb" class="outline-4">
+<h4 id="orgfaf3aeb"><span class="section-number-4">2.1.3.</span> Body Content</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">body</span> <span style="color: #657b83;">{</span>
@@ -402,8 +402,8 @@ These may be used not only for font sizing but for margins and padding also.
 </div>
 </div>
 
-<div id="outline-container-org906e6ee" class="outline-4">
-<h4 id="org906e6ee"><span class="section-number-4">2.1.4.</span> Text Styles</h4>
+<div id="outline-container-org56d2617" class="outline-4">
+<h4 id="org56d2617"><span class="section-number-4">2.1.4.</span> Text Styles</h4>
 <div class="outline-text-4" id="text-2-1-4">
 <p>
 Set what it means to be bold.
@@ -418,8 +418,8 @@ Set what it means to be bold.
 </div>
 </div>
 
-<div id="outline-container-org5f4a317" class="outline-4">
-<h4 id="org5f4a317"><span class="section-number-4">2.1.5.</span> Headings</h4>
+<div id="outline-container-orgcf5a78b" class="outline-4">
+<h4 id="orgcf5a78b"><span class="section-number-4">2.1.5.</span> Headings</h4>
 <div class="outline-text-4" id="text-2-1-5">
 <div class="org-src-container">
 <label class="org-src-name"><span class="listing-number">Listing 2: </span>Org-Exported Header</label><pre class="src src-html">&lt;<span style="color: #b58900;">header</span>&gt;
@@ -472,8 +472,8 @@ The rest of the headings should share common colors and weight only.
 </div>
 </div>
 
-<div id="outline-container-orgfa31b1f" class="outline-4">
-<h4 id="orgfa31b1f"><span class="section-number-4">2.1.6.</span> Captions</h4>
+<div id="outline-container-orgff81ad6" class="outline-4">
+<h4 id="orgff81ad6"><span class="section-number-4">2.1.6.</span> Captions</h4>
 <div class="outline-text-4" id="text-2-1-6">
 <p>
 As these properties are used to construct code, figure/image, and table captions it&rsquo;s worth naming them specifically.
@@ -490,8 +490,8 @@ As these properties are used to construct code, figure/image, and table captions
 </div>
 </div>
 
-<div id="outline-container-org7b4712e" class="outline-4">
-<h4 id="org7b4712e"><span class="section-number-4">2.1.7.</span> Borders and Rules</h4>
+<div id="outline-container-org0daeb7b" class="outline-4">
+<h4 id="org0daeb7b"><span class="section-number-4">2.1.7.</span> Borders and Rules</h4>
 <div class="outline-text-4" id="text-2-1-7">
 <p>
 These are some simple reusable values across table and block borders as well as <code>&lt;hr&gt;</code> elements.
@@ -513,14 +513,14 @@ These are some simple reusable values across table and block borders as well as 
 </div>
 </div>
 
-<div id="outline-container-org686e1fb" class="outline-4">
-<h4 id="org686e1fb"><span class="section-number-4">2.1.8.</span> Keyboard elements</h4>
+<div id="outline-container-orgdcc0568" class="outline-4">
+<h4 id="orgdcc0568"><span class="section-number-4">2.1.8.</span> Keyboard elements</h4>
 <div class="outline-text-4" id="text-2-1-8">
 <p>
 Keyboard elements are wrapped in the <code>kbd</code> tag, and represent pressed keys, as in the following,
 </p>
 
-<pre class="example" id="org216ec6f">
+<pre class="example" id="org3e695f9">
 &lt;kbd&gt;SPC&lt;/kbd&gt;
 </pre>
 
@@ -528,7 +528,7 @@ Keyboard elements are wrapped in the <code>kbd</code> tag, and represent pressed
 or as a sequence of key presses together, as in the following.
 </p>
 
-<pre class="example" id="org0e00d0a">
+<pre class="example" id="org754a497">
 &lt;kbd&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt;&lt;kbd&gt;+&lt;/kbd&gt;&lt;kbd&gt;SPC&lt;/kbd&gt;&lt;/kbd&gt;
 </pre>
 
@@ -1001,12 +1001,12 @@ similar, or acceptable, alternative exists.
 </div>
 </div>
 
-<div id="outline-container-orgc89572b" class="outline-3">
-<h3 id="orgc89572b"><span class="section-number-3">2.2.</span> Media Queries</h3>
+<div id="outline-container-orgdb6e8ae" class="outline-3">
+<h3 id="orgdb6e8ae"><span class="section-number-3">2.2.</span> Media Queries</h3>
 <div class="outline-text-3" id="text-2-2">
 </div>
-<div id="outline-container-orgc7bfcbf" class="outline-4">
-<h4 id="orgc7bfcbf"><span class="section-number-4">2.2.1.</span> Screen</h4>
+<div id="outline-container-orgf279a00" class="outline-4">
+<h4 id="orgf279a00"><span class="section-number-4">2.2.1.</span> Screen</h4>
 <div class="outline-text-4" id="text-2-2-1">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen <span style="color: #657b83;">{</span>
@@ -1150,8 +1150,8 @@ For large displays.
 </div>
 </div>
 
-<div id="outline-container-org5ddd9be" class="outline-4">
-<h4 id="org5ddd9be"><span class="section-number-4">2.2.2.</span> Print</h4>
+<div id="outline-container-org1d3df4e" class="outline-4">
+<h4 id="org1d3df4e"><span class="section-number-4">2.2.2.</span> Print</h4>
 <div class="outline-text-4" id="text-2-2-2">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
@@ -1266,12 +1266,12 @@ See also:
 </div>
 </div>
 
-<div id="outline-container-org7976136" class="outline-3">
-<h3 id="org7976136"><span class="section-number-3">2.3.</span> Lists</h3>
+<div id="outline-container-orge42ca7c" class="outline-3">
+<h3 id="orge42ca7c"><span class="section-number-3">2.3.</span> Lists</h3>
 <div class="outline-text-3" id="text-2-3">
 </div>
-<div id="outline-container-orgc797c82" class="outline-4">
-<h4 id="orgc797c82"><span class="section-number-4">2.3.1.</span> Ordered (Numbered) Lists</h4>
+<div id="outline-container-orgc3bd915" class="outline-4">
+<h4 id="orgc3bd915"><span class="section-number-4">2.3.1.</span> Ordered (Numbered) Lists</h4>
 <div class="outline-text-4" id="text-2-3-1">
 <p>
 Org-export applies the CSS class <code>org-ol</code>.
@@ -1286,8 +1286,8 @@ Org-export applies the CSS class <code>org-ol</code>.
 </div>
 </div>
 
-<div id="outline-container-org4033fe8" class="outline-4">
-<h4 id="org4033fe8"><span class="section-number-4">2.3.2.</span> Unordered (Bulleted) Lists</h4>
+<div id="outline-container-org6740abf" class="outline-4">
+<h4 id="org6740abf"><span class="section-number-4">2.3.2.</span> Unordered (Bulleted) Lists</h4>
 <div class="outline-text-4" id="text-2-3-2">
 <p>
 Org-export applies the CSS class <code>org-ul</code>.
@@ -1302,8 +1302,8 @@ Org-export applies the CSS class <code>org-ul</code>.
 </div>
 </div>
 
-<div id="outline-container-orgbe07ac8" class="outline-4">
-<h4 id="orgbe07ac8"><span class="section-number-4">2.3.3.</span> Definition Lists</h4>
+<div id="outline-container-orgf5b90f3" class="outline-4">
+<h4 id="orgf5b90f3"><span class="section-number-4">2.3.3.</span> Definition Lists</h4>
 <div class="outline-text-4" id="text-2-3-3">
 <p>
 Org-export applies the CSS class <code>org-dl</code>.
@@ -1362,12 +1362,12 @@ less definition space.
 </div>
 </div>
 
-<div id="outline-container-orgeda5847" class="outline-3">
-<h3 id="orgeda5847"><span class="section-number-3">2.4.</span> Blocks</h3>
+<div id="outline-container-orge6fcb6a" class="outline-3">
+<h3 id="orge6fcb6a"><span class="section-number-3">2.4.</span> Blocks</h3>
 <div class="outline-text-3" id="text-2-4">
 </div>
-<div id="outline-container-org928965a" class="outline-4">
-<h4 id="org928965a"><span class="section-number-4">2.4.1.</span> Abstract</h4>
+<div id="outline-container-org5fe6f4a" class="outline-4">
+<h4 id="org5fe6f4a"><span class="section-number-4">2.4.1.</span> Abstract</h4>
 <div class="outline-text-4" id="text-2-4-1">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">div.abstract, div.ABSTRACT</span> <span style="color: #657b83;">{</span>
@@ -1387,8 +1387,8 @@ less definition space.
 </div>
 </div>
 
-<div id="outline-container-org2f18a2f" class="outline-4">
-<h4 id="org2f18a2f"><span class="section-number-4">2.4.2.</span> Table of Contents</h4>
+<div id="outline-container-org8a2126f" class="outline-4">
+<h4 id="org8a2126f"><span class="section-number-4">2.4.2.</span> Table of Contents</h4>
 <div class="outline-text-4" id="text-2-4-2">
 <div class="org-src-container">
 <label class="org-src-name"><span class="listing-number">Listing 3: </span>Org-Exported TOC</label><pre class="src src-html">&lt;<span style="color: #b58900;">nav</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"table-of-contents"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-toc"</span>&gt;
@@ -1418,9 +1418,14 @@ less definition space.
 </div>
 </div>
 
-<div id="outline-container-orgef836f4" class="outline-4">
-<h4 id="orgef836f4"><span class="section-number-4">2.4.3.</span> Block Quotes</h4>
+<div id="outline-container-org3e25f45" class="outline-4">
+<h4 id="org3e25f45"><span class="section-number-4">2.4.3.</span> Block Quotes</h4>
 <div class="outline-text-4" id="text-2-4-3">
+<p>
+This section sets up the basics of a block quote with a simple margin all around but a larger padding left and right.
+This padding allows us later to adjust this in favor of other uses of the margin.
+</p>
+
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">blockquote</span> <span style="color: #657b83;">{</span>
     <span style="color: #859900;">display</span>: block;
@@ -1440,8 +1445,8 @@ less definition space.
 </div>
 
 <p>
-A <i>quoted</i> block will always be placed in italic, with a stylized open and close quote at the beginning and end.
-At this using <code>#+ATTR_HTML: :class quoted</code>.
+A <i>quoted</i> block will have it&rsquo;s text in italic, with a stylized open and close quote at the beginning and end.
+To enable this, use <code>#+ATTR_HTML: :class quoted</code>.
 </p>
 
 <div class="org-src-container">
@@ -1465,6 +1470,7 @@ blockquote.quoted p:last-child:after <span style="color: #657b83;">{</span>
 
 <p>
 A <i>leader</i> block has the initial character of the first paragraph turned into a drop character spanning two lines.
+To enable this, use <code>#+ATTR_HTML: :class leader</code>.
 </p>
 
 <div class="org-src-container">
@@ -1475,27 +1481,42 @@ A <i>leader</i> block has the initial character of the first paragraph turned in
 </pre>
 </div>
 
-<ol class="org-ol">
-<li>Swap margin for border.</li>
-</ol>
+<p>
+An <i>edged</i> block has a solid left border that clearly delineates the indented nature of the block and causes it to stand
+out from surrounding text.
+To enable this, use <code>#+ATTR_HTML: :class edged</code>.
+</p>
 
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">blockquote.edged</span>  <span style="color: #657b83;">{</span>
     <span style="color: #859900;">margin-left</span>: 0;
     <span style="color: #859900;">border-left-width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
     <span style="color: #859900;">border-left-style</span>: solid;
-    <span style="color: #859900;">border-left-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-border-color-dark</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border-left-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-border-color-light</span><span style="color: #2aa198;">)</span>;
 <span style="color: #657b83;">}</span>
 </pre>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc6e67a7" class="outline-4">
-<h4 id="orgc6e67a7"><span class="section-number-4">2.4.4.</span> Notes</h4>
+<div id="outline-container-org0e3d897" class="outline-4">
+<h4 id="org0e3d897"><span class="section-number-4">2.4.4.</span> Notes</h4>
 <div class="outline-text-4" id="text-2-4-4">
+<p>
+A note block denotes a call-out inline in the text.
+</p>
+
+<pre class="example" id="orgbeece2b">
+Here is an example note block in some org-mode document:
+
+#+BEGIN_NOTE
+Some text I want to appear as a note with a nice margin around it.
+#+END_NOTE
+</pre>
+
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">div.NOTE</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">display</span>: block;
     <span style="color: #859900;">margin</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
     <span style="color: #859900;">padding</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
     <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-width-thick</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-style</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--heading-color</span><span style="color: #2aa198;">)</span>;
@@ -1508,7 +1529,7 @@ A <i>leader</i> block has the initial character of the first paragraph turned in
 <span style="color: #657b83;">}</span>
 
 <span style="color: #b58900;">div.NOTE p::before</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"Note: "</span>;
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"</span><span style="color: #d0bf8f; font-weight: bold;">NOTE</span><span style="color: #2aa198;"> "</span>;
     <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
 <span style="color: #657b83;">}</span>
 </pre>
@@ -1517,8 +1538,8 @@ A <i>leader</i> block has the initial character of the first paragraph turned in
 </div>
 </div>
 
-<div id="outline-container-org56d7f1e" class="outline-3">
-<h3 id="org56d7f1e"><span class="section-number-3">2.5.</span> Images</h3>
+<div id="outline-container-orgfd57c0a" class="outline-3">
+<h3 id="orgfd57c0a"><span class="section-number-3">2.5.</span> Images</h3>
 <div class="outline-text-3" id="text-2-5">
 <p>
 Org-mode images are output by the HTML exporter according to the layout in the example shown below.
@@ -1575,8 +1596,8 @@ Bring the image and caption closer together.
 </div>
 </div>
 
-<div id="outline-container-org3dc92d3" class="outline-3">
-<h3 id="org3dc92d3"><span class="section-number-3">2.6.</span> Tables</h3>
+<div id="outline-container-org66a48b8" class="outline-3">
+<h3 id="org66a48b8"><span class="section-number-3">2.6.</span> Tables</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 Org-mode tables are output by the HTML exporter according to the layout in the example shown below.
@@ -1674,8 +1695,8 @@ Setup the caption for a table, this is a common set of properties for all captio
 </div>
 </div>
 
-<div id="outline-container-orgd51f73b" class="outline-3">
-<h3 id="orgd51f73b"><span class="section-number-3">2.7.</span> Code</h3>
+<div id="outline-container-orgac1f5e1" class="outline-3">
+<h3 id="orgac1f5e1"><span class="section-number-3">2.7.</span> Code</h3>
 <div class="outline-text-3" id="text-2-7">
 <p>
 Org-Export generates code of the following form. Note that it does not, as is more common, use a <code>&lt;code&gt;</code> element within
@@ -1788,8 +1809,8 @@ name of the form <code>src-{name}</code>.
 </div>
 </div>
 
-<div id="outline-container-org20b1dfc" class="outline-3">
-<h3 id="org20b1dfc"><span class="section-number-3">2.8.</span> Math (KaTeX)</h3>
+<div id="outline-container-org39c62ee" class="outline-3">
+<h3 id="org39c62ee"><span class="section-number-3">2.8.</span> Math (KaTeX)</h3>
 <div class="outline-text-3" id="text-2-8">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">:root</span> <span style="color: #657b83;">{</span>
@@ -1800,7 +1821,7 @@ name of the form <code>src-{name}</code>.
 </div>
 
 <p>
-The <i>math font size</i> is a specific value, not one of those defined in <a href="#org9107e15">2.1.2</a>, as it is very dependent on the math renderer
+The <i>math font size</i> is a specific value, not one of those defined in <a href="#orgbd929fb">2.1.2</a>, as it is very dependent on the math renderer
 (MathJax for example really needs a size less than <code>1.0em</code>) and some fine tuning as math fonts tend to have rounder
 characters and so bringing the vertical heights close results in wide looking text.
 </p>
@@ -1833,8 +1854,8 @@ Treat tags on equations in the same manner as captions.
 </div>
 </div>
 
-<div id="outline-container-orgceef2b5" class="outline-3">
-<h3 id="orgceef2b5"><span class="section-number-3">2.9.</span> Home and Up</h3>
+<div id="outline-container-orge07fb06" class="outline-3">
+<h3 id="orge07fb06"><span class="section-number-3">2.9.</span> Home and Up</h3>
 <div class="outline-text-3" id="text-2-9">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">div#org-div-home-and-up</span> <span style="color: #657b83;">{</span>
@@ -1847,8 +1868,8 @@ Treat tags on equations in the same manner as captions.
 </div>
 </div>
 
-<div id="outline-container-org5a571a1" class="outline-3">
-<h3 id="org5a571a1"><span class="section-number-3">2.10.</span> Footnotes and References</h3>
+<div id="outline-container-org499159a" class="outline-3">
+<h3 id="org499159a"><span class="section-number-3">2.10.</span> Footnotes and References</h3>
 <div class="outline-text-3" id="text-2-10">
 <div class="org-src-container">
 <label class="org-src-name"><span class="listing-number">Listing 6: </span>Generated Footnote section</label><pre class="src src-html">&lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"footnotes"</span>&gt;
@@ -1918,8 +1939,8 @@ use the CSS <code class="src src-css">:has<span style="color: #657b83;">()</span
 </div>
 </div>
 
-<div id="outline-container-orge283714" class="outline-3">
-<h3 id="orge283714"><span class="section-number-3">2.11.</span> Postamble</h3>
+<div id="outline-container-orgbaece0f" class="outline-3">
+<h3 id="orgbaece0f"><span class="section-number-3">2.11.</span> Postamble</h3>
 <div class="outline-text-3" id="text-2-11">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">div#postamble</span> <span style="color: #657b83;">{</span>
@@ -1949,8 +1970,8 @@ use the CSS <code class="src src-css">:has<span style="color: #657b83;">()</span
 </div>
 </div>
 
-<div id="outline-container-org7dbfaa4" class="outline-2">
-<h2 id="org7dbfaa4"><span class="section-number-2">3.</span> Javascript</h2>
+<div id="outline-container-org38c3da6" class="outline-2">
+<h2 id="org38c3da6"><span class="section-number-2">3.</span> Javascript</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #2aa198;">"use strict"</span>;
@@ -1958,8 +1979,8 @@ use the CSS <code class="src src-css">:has<span style="color: #657b83;">()</span
 </div>
 </div>
 
-<div id="outline-container-org8b86f91" class="outline-3">
-<h3 id="org8b86f91"><span class="section-number-3">3.1.</span> Math (KaTeX)</h3>
+<div id="outline-container-org8afe4cd" class="outline-3">
+<h3 id="org8afe4cd"><span class="section-number-3">3.1.</span> Math (KaTeX)</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 This allows you to add your own macros in the constant <code class="src src-js">KATEX_MACROS</code>.
@@ -1989,15 +2010,15 @@ This allows you to add your own macros in the constant <code class="src src-js">
 </div>
 </div>
 
-<div id="outline-container-org6b3be23" class="outline-2">
-<h2 id="org6b3be23"><span class="section-number-2">4.</span> Setup File</h2>
+<div id="outline-container-org56d52ad" class="outline-2">
+<h2 id="org56d52ad"><span class="section-number-2">4.</span> Setup File</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 This section creates the actual setup files used in document headers. This is easily referenced in an org-mode document
 in the following manner.
 </p>
 
-<pre class="example" id="org2cce602">
+<pre class="example" id="org4b604d9">
 #+TITLE: Fancy Document
 #+AUTHOR: Good Writer
 #+EMAIL: writes-good@example.com
@@ -2005,7 +2026,7 @@ in the following manner.
 #+SETUPFILE: https://simonkjohnston.life/org-export-themes/html/office/office.setup
 </pre>
 
-<table id="org82ca96f" border="0" cellspacing="0" cellpadding="6" rules="none" frame="none">
+<table id="org28c3748" border="0" cellspacing="0" cellpadding="6" rules="none" frame="none">
 
 
 <colgroup>
@@ -2089,8 +2110,8 @@ to speed up page rendering, and to automatically render math in text elements, i
 </div>
 </div>
 
-<div id="outline-container-org5d94a50" class="outline-3">
-<h3 id="org5d94a50"><span class="section-number-3">4.1.</span> Local Install</h3>
+<div id="outline-container-org8c97ce0" class="outline-3">
+<h3 id="org8c97ce0"><span class="section-number-3">4.1.</span> Local Install</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 This setup file assumes that all the resources required for your page are local to some web application. This assumes
@@ -2130,7 +2151,7 @@ that static resources such as javascript, css, or fonts, are in the path startin
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Simon Johnston</p>
-<p class="date">Created: 2024-12-20 Fri 17:02</p>
+<p class="date">Created: 2024-12-31 Tue 08:35</p>
 </div>
 </body>
 </html>
