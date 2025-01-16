@@ -1113,10 +1113,15 @@ div.NOTE p {
 }
 
 div.NOTE p:first-child:before {
-    content: "&#128457; NOTE ";
+    content: "\128457 NOTE ";
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
+
+| Block Style | Border Color | Headng Color | Icon            |
+|-------------+--------------+--------------+-----------------|
+| INFO        |              |              | 🛈 (=&#128712;=) |
+|             |              |              |               |
 
 ** Images
 
