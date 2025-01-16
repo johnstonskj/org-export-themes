@@ -1112,8 +1112,8 @@ div.NOTE p {
     margin-block-end: 0;
 }
 
-div.NOTE p::before {
-    content: "NOTE ";
+div.NOTE p:first:before {
+    content: " NOTE ";
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
