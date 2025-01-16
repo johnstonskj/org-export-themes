@@ -801,7 +801,7 @@ div.NOTE p {
 }
 
 div.NOTE p:first-child:before {
-    content: "\128457 NOTE ";
+    content: "\1F5C8 NOTE ";
     font-weight: var(--text-weight-heading);
 }
 

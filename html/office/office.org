@@ -1113,15 +1113,19 @@ div.NOTE p {
 }
 
 div.NOTE p:first-child:before {
-    content: "\128457 NOTE ";
+    content: "\1F5C8 NOTE ";
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
 
-| Block Style | Border Color | Headng Color | Icon            |
-|-------------+--------------+--------------+-----------------|
-| INFO        |              |              | 🛈 (=&#128712;=) |
-|             |              |              |               |
+| Block Style | Border Color | Headng Color | Icon       |
+|-------------+--------------+--------------+------------|
+| INFO        |              |              |  (=\f05a=)   |
+| WARNING     |              |              |   (=\f071=)  |
+| ERROR       |              |              |   (=\e654=) |
+| SUCCESS     |              |              | ✓ (=\2713=)  |
+| FAILURE     |              |              | ✗ (=\2717=)  |
+|             |              |              |            |
 
 ** Images
 
