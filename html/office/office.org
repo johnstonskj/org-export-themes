@@ -1136,6 +1136,7 @@ div.NOTE p {
 
 div.NOTE p:first-child:before {
     content: "\261E NOTE ";
+    color: var(--info-block-color);
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
@@ -1156,7 +1157,8 @@ div.INFO p {
 }
 
 div.INFO p:first-child:before {
-    content: "\2139 INFO ";
+    content: "\2139   INFO  ";
+    color: var(--info-block-color);
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
@@ -1172,7 +1174,8 @@ div.WARNING p {
 }
 
 div.WARNING p:first-child:before {
-    content: "\26A0 WARNING ";
+    content: "\26A0   WARNING  ";
+    color: var(--warning-block-color);
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
@@ -1188,7 +1191,8 @@ div.ERROR p {
 }
 
 div.ERROR p:first-child:before {
-    content: "\2A37 ERROR ";
+    content: "\2A37   ERROR  ";
+    color: var(--error-block-color);
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
@@ -1204,14 +1208,15 @@ div.SUCCESS p {
 }
 
 div.SUCCESS p:first-child:before {
-    content: "\2713 SUCCESS ";
+    content: "\2713   SUCCESS  ";
+    color: var(--success-block-color);
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
 
 #+BEGIN_SRC css
 div.FAILURE {
-    border-color: var(--FAILURE-block-color);
+    border-color: var(--error-block-color);
 }
 
 div.FAILURE p {
@@ -1220,7 +1225,8 @@ div.FAILURE p {
 }
 
 div.FAILURE p:first-child:before {
-    content: "\2717 FAILURE ";
+    content: "\2717   FAILURE  ";
+    color: var(--error-block-color);
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
