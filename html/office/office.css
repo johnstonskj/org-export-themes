@@ -43,6 +43,13 @@ html {
 }
 
 :root {
+    --info-block-color: var(--heading-color);
+    --success-block-color: #2aa198;
+    --warning-block-color: #b58900;
+    --error-block-color: #dc322f;
+}
+
+:root {
     --text-normal: 1.0em;
     --text-small: 0.8em;
     --text-smaller: 0.6em;
@@ -787,11 +794,11 @@ blockquote.edged  {
     border-left-color: var(--blockquote-border-color-light);
 }
 
-div.NOTE {
+div.NOTE, div.INFO, div.WARNING, div.ERROR, div.SUCCESS, div.FAILURE {
     display: block;
     margin: var(--text-normal);
     padding: var(--text-normal);
-    border: var(--border-width-thick) var(--border-style) var(--heading-color);
+    border: var(--border-width-thick) var(--border-style) var(--info-block-color);
     border-radius: var(--border-radius-normal);
 }
 
@@ -801,7 +808,73 @@ div.NOTE p {
 }
 
 div.NOTE p:first-child:before {
-    content: "\1F5C8 NOTE ";
+    content: "\261E NOTE ";
+    font-weight: var(--text-weight-heading);
+}
+
+div.INFO p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+div.INFO p:first-child:before {
+    content: "\2139 INFO ";
+    font-weight: var(--text-weight-heading);
+}
+
+div.WARNING {
+    border-color: var(--warning-block-color);
+}
+
+div.WARNING p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+div.WARNING p:first-child:before {
+    content: "\26A0 WARNING ";
+    font-weight: var(--text-weight-heading);
+}
+
+div.ERROR {
+    border-color: var(--error-block-color);
+}
+
+div.ERROR p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+div.ERROR p:first-child:before {
+    content: "\2A37 ERROR ";
+    font-weight: var(--text-weight-heading);
+}
+
+div.SUCCESS {
+    border-color: var(--success-block-color);
+}
+
+div.SUCCESS p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+div.SUCCESS p:first-child:before {
+    content: "\2713 SUCCESS ";
+    font-weight: var(--text-weight-heading);
+}
+
+div.FAILURE {
+    border-color: var(--FAILURE-block-color);
+}
+
+div.FAILURE p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+div.FAILURE p:first-child:before {
+    content: "\2717 FAILURE ";
     font-weight: var(--text-weight-heading);
 }
 
