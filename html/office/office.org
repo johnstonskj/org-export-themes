@@ -1135,7 +1135,7 @@ div.NOTE p {
 }
 
 div.NOTE p:first-child:before {
-    content: "\261E NOTE ";
+    content: "\261E   NOTE  ";
     color: var(--info-block-color);
     font-weight: var(--text-weight-heading);
 }
