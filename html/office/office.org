@@ -117,10 +117,14 @@ additional colors without *really good* reasons.
 
 #+BEGIN_SRC css
 :root {
-    --info-block-color: var(--heading-color);
+    --info-block-color: #268bd2;
+    --info-border-color: #6c71c4;
     --success-block-color: #2aa198;
+    --success-border-color: #859900;
     --warning-block-color: #b58900;
+    --warning-border-color: #cb4b16;
     --error-block-color: #dc322f;
+    --error-border-color: #d33682;
 }
 #+END_SRC
 
@@ -576,7 +580,7 @@ And we move tags to the right and de-emphasize.
 #+BEGIN_SRC css
 h1 span.tag, h2 span.tag, h3 span.tag, h4 span.tag, h5 span.tag {
     float:right;
-    font-weight: normal;
+    font-weight: var(--text-weight-light);
 }
 #+END_SRC
 
@@ -709,7 +713,7 @@ div.NOTE, div.INFO, div.WARNING, div.ERROR, div.SUCCESS, div.FAILURE {
     display: block;
     margin: var(--text-normal);
     padding: var(--text-normal);
-    border: var(--border-width-thick) var(--border-style) var(--info-block-color);
+    border: var(--border-width-thick) var(--border-style) var(--info-border-color);
     border-radius: var(--border-radius-normal);
 }
 
@@ -749,7 +753,7 @@ div.INFO p:first-child:before {
 
 #+BEGIN_SRC css
 div.WARNING {
-    border-color: var(--warning-block-color);
+    border-color: var(--warning-border-color);
 }
 
 div.WARNING p {
@@ -766,7 +770,7 @@ div.WARNING p:first-child:before {
 
 #+BEGIN_SRC css
 div.ERROR {
-    border-color: var(--error-block-color);
+    border-color: var(--error-border-color);
 }
 
 div.ERROR p {
@@ -783,7 +787,7 @@ div.ERROR p:first-child:before {
 
 #+BEGIN_SRC css
 div.SUCCESS {
-    border-color: var(--success-block-color);
+    border-color: var(--success-border-color);
 }
 
 div.SUCCESS p {
@@ -793,14 +797,14 @@ div.SUCCESS p {
 
 div.SUCCESS p:first-child:before {
     content: "\2713   SUCCESS  ";
-    color: var(--success-block-color);
+    color: var(--success-border-color);
     font-weight: var(--text-weight-heading);
 }
 #+END_SRC
 
 #+BEGIN_SRC css
 div.FAILURE {
-    border-color: var(--error-block-color);
+    border-color: var(--error-border-color);
 }
 
 div.FAILURE p {
