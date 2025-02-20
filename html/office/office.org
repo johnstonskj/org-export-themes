@@ -549,6 +549,8 @@ dl.org-dl > dd {
 ** Agenda
 *** Tasks
 
+This is the basics for styling Agenda lists rendered by org-html.
+
 #+BEGIN_SRC css
 :root {
     --state-border-radius: 0.125em;
@@ -557,8 +559,10 @@ dl.org-dl > dd {
 }
 #+END_SRC
 
+Here we style the TODO text (state) as a bordered block.
+
 #+BEGIN_SRC css
-h1, h2, h3, h4, h5 span.todo {
+h1 span.todo, h2 span.todo, h3 span.todo, h4 span.todo, h5 span.todo {
     border: var(--state-border);
     border-radius: var(--state-border-radius);
     padding-left: var(--state-border-padding);
@@ -567,8 +571,10 @@ h1, h2, h3, h4, h5 span.todo {
 }
 #+END_SRC
 
+And we move tags to the right and de-emphasize.
+
 #+BEGIN_SRC css
-h1, h2, h3, h4, h5 span.tag {
+h1 span.tag, h2 span.tag, h3 span.tag, h4 span.tag, h5 span.tag {
     float:right;
     font-weight: normal;
 }
