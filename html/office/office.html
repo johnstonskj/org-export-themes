@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2025-01-16 Thu 17:02 -->
+<!-- 2025-02-20 Thu 12:50 -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Office-like Org-export Template</title>
@@ -44,8 +44,8 @@ Generation of the files from this source is via the <code>org-babel-tangle</code
 blocks into corresponding CSS, JavaScript, and setup files.
 </p>
 
-<div id="outline-container-orga483ec1" class="outline-2">
-<h2 id="orga483ec1"><span class="section-number-2">1.</span> Overview of Generated HTML</h2>
+<div id="outline-container-orgf59b2c7" class="outline-2">
+<h2 id="orgf59b2c7"><span class="section-number-2">1.</span> Overview of Generated HTML</h2>
 <div class="outline-text-2" id="text-1">
 <div class="org-src-container">
 <label class="org-src-name"><span class="listing-number">Listing 1: </span>Org-Exported File</label><pre class="src src-html">&lt;<span style="color: #859900;">!DOCTYPE</span> html&gt;
@@ -66,8 +66,8 @@ blocks into corresponding CSS, JavaScript, and setup files.
 </div>
 </div>
 
-<div id="outline-container-org9572797" class="outline-2">
-<h2 id="org9572797"><span class="section-number-2">2.</span> CSS</h2>
+<div id="outline-container-org57f06c9" class="outline-2">
+<h2 id="org57f06c9"><span class="section-number-2">2.</span> CSS</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 All CSS content will be written to the file <code>office.css</code> which is referenced by the <code>office.setup</code> and <code>office-local.setup</code>
@@ -75,8 +75,8 @@ files.
 </p>
 </div>
 
-<div id="outline-container-orgb09b016" class="outline-3">
-<h3 id="orgb09b016"><span class="section-number-3">2.1.</span> Typography</h3>
+<div id="outline-container-orgccc10e6" class="outline-3">
+<h3 id="orgccc10e6"><span class="section-number-3">2.1.</span> Typography</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 This block imports the two major fonts used in this theme. It also sets up variables for the specific weights and their
@@ -117,8 +117,8 @@ This block is included to setup font features globally.
 </div>
 </div>
 
-<div id="outline-container-org30e3556" class="outline-4">
-<h4 id="org30e3556"><span class="section-number-4">2.1.1.</span> Colors</h4>
+<div id="outline-container-orgf6a5638" class="outline-4">
+<h4 id="orgf6a5638"><span class="section-number-4">2.1.1.</span> Colors</h4>
 <div class="outline-text-4" id="text-2-1-1">
 <p>
 These are the base colors used throughout; local names introduced in sections below should shadow these values not add
@@ -133,7 +133,7 @@ additional colors without <b>really good</b> reasons.
     <span style="color: #6c71c4;">--heading-color</span>: <span style="color: #ffffff; background-color: #4F81BD;">#4F81BD</span>;
     <span style="color: #6c71c4;">--border-color</span>: <span style="color: #ffffff; background-color: #586e75;">#586e75</span>;
     
-    --: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #6c71c4;">--code-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-color</span><span style="color: #2aa198;">)</span>;
     <span style="color: #6c71c4;">--code-background-color</span>: <span style="color: #000000; background-color: #eee8d5;">#eee8d5</span>;
     <span style="color: #6c71c4;">--code-light-background-color</span>: <span style="color: #000000; background-color: #fdf6e3;">#fdf6e3</span>;
     <span style="color: #6c71c4;">--code-border-color</span>: <span style="color: #000000; background-color: #93a1a1;">#93a1a1</span>;
@@ -164,9 +164,8 @@ additional colors without <b>really good</b> reasons.
 </div>
 </div>
 
-
-<div id="outline-container-org3631ec3" class="outline-4">
-<h4 id="org3631ec3"><span class="section-number-4">2.1.2.</span> <a id="org645cc66"></a>Relative Sizes</h4>
+<div id="outline-container-org20a5d56" class="outline-4">
+<h4 id="org20a5d56"><span class="section-number-4">2.1.2.</span> <a id="org370b50c"></a>Relative Sizes</h4>
 <div class="outline-text-4" id="text-2-1-2">
 <p>
 These may be used not only for font sizing but for margins and padding also.
@@ -195,8 +194,8 @@ These may be used not only for font sizing but for margins and padding also.
 </div>
 </div>
 
-<div id="outline-container-orga6d6025" class="outline-4">
-<h4 id="orga6d6025"><span class="section-number-4">2.1.3.</span> Body Content</h4>
+<div id="outline-container-org612cc65" class="outline-4">
+<h4 id="org612cc65"><span class="section-number-4">2.1.3.</span> Body Content</h4>
 <div class="outline-text-4" id="text-2-1-3">
 <div class="org-src-container">
 <pre class="src src-css"><span style="color: #b58900;">body</span> <span style="color: #657b83;">{</span>
@@ -217,8 +216,8 @@ These may be used not only for font sizing but for margins and padding also.
 </div>
 </div>
 
-<div id="outline-container-orgaa72cb2" class="outline-4">
-<h4 id="orgaa72cb2"><span class="section-number-4">2.1.4.</span> Text Styles</h4>
+<div id="outline-container-org10554d3" class="outline-4">
+<h4 id="org10554d3"><span class="section-number-4">2.1.4.</span> Text Styles</h4>
 <div class="outline-text-4" id="text-2-1-4">
 <p>
 Set what it means to be bold.
@@ -233,8 +232,8 @@ Set what it means to be bold.
 </div>
 </div>
 
-<div id="outline-container-org20b1e39" class="outline-4">
-<h4 id="org20b1e39"><span class="section-number-4">2.1.5.</span> Headings</h4>
+<div id="outline-container-orgeb1fb1d" class="outline-4">
+<h4 id="orgeb1fb1d"><span class="section-number-4">2.1.5.</span> Headings</h4>
 <div class="outline-text-4" id="text-2-1-5">
 <div class="org-src-container">
 <label class="org-src-name"><span class="listing-number">Listing 2: </span>Org-Exported Header</label><pre class="src src-html">&lt;<span style="color: #b58900;">header</span>&gt;
@@ -287,8 +286,8 @@ The rest of the headings should share common colors and weight only.
 </div>
 </div>
 
-<div id="outline-container-org0555dcc" class="outline-4">
-<h4 id="org0555dcc"><span class="section-number-4">2.1.6.</span> Captions</h4>
+<div id="outline-container-org48cb45b" class="outline-4">
+<h4 id="org48cb45b"><span class="section-number-4">2.1.6.</span> Captions</h4>
 <div class="outline-text-4" id="text-2-1-6">
 <p>
 As these properties are used to construct code, figure/image, and table captions it&rsquo;s worth naming them specifically.
@@ -305,8 +304,8 @@ As these properties are used to construct code, figure/image, and table captions
 </div>
 </div>
 
-<div id="outline-container-orgd9177ed" class="outline-4">
-<h4 id="orgd9177ed"><span class="section-number-4">2.1.7.</span> Borders and Rules</h4>
+<div id="outline-container-org872a322" class="outline-4">
+<h4 id="org872a322"><span class="section-number-4">2.1.7.</span> Borders and Rules</h4>
 <div class="outline-text-4" id="text-2-1-7">
 <p>
 These are some simple reusable values across table and block borders as well as <code>&lt;hr&gt;</code> elements.
@@ -327,15 +326,1174 @@ These are some simple reusable values across table and block borders as well as 
 </div>
 </div>
 </div>
+</div>
 
-<div id="outline-container-org153895a" class="outline-4">
-<h4 id="org153895a"><span class="section-number-4">2.1.8.</span> Keyboard elements</h4>
-<div class="outline-text-4" id="text-2-1-8">
+<div id="outline-container-org62b8f26" class="outline-3">
+<h3 id="org62b8f26"><span class="section-number-3">2.2.</span> Media Queries</h3>
+<div class="outline-text-3" id="text-2-2">
+</div>
+<div id="outline-container-org70dbc85" class="outline-4">
+<h4 id="org70dbc85"><span class="section-number-4">2.2.1.</span> Screen</h4>
+<div class="outline-text-4" id="text-2-2-1">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">:root</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #6c71c4;">--root-font-size-small</span>: 14px;
+        <span style="color: #6c71c4;">--root-font-size-normal</span>: 16px;
+        <span style="color: #6c71c4;">--root-font-size-large</span>: 18px;
+        <span style="color: #6c71c4;">--abstract-margin</span>: calc<span style="color: #b58900;">(</span>var<span style="color: #859900;">(</span><span style="color: #6c71c4;">--text-huge</span><span style="color: #859900;">)</span> * 2<span style="color: #b58900;">)</span>;;
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">body</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">min-height</span>: 100%;
+    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">h1.title</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-smaller</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+For mobile devices.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 320px<span style="color: #657b83;">)</span> and <span style="color: #657b83;">(</span>max-width: 480px<span style="color: #657b83;">)</span> <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-small</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-left</span>: auto;
+        <span style="color: #859900;">margin-right</span>: auto;
+        <span style="color: #859900;">min-width</span>: 21em;
+        <span style="color: #859900;">max-width</span>: 30em;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">max-width</span>: 420px;
+        <span style="color: #859900;">height</span>: auto;
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+For common tablet devices.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 481px<span style="color: #657b83;">)</span> and <span style="color: #657b83;">(</span>max-width: 768px<span style="color: #657b83;">)</span>  <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-small</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-left</span>: auto;
+        <span style="color: #859900;">margin-right</span>: auto;
+        <span style="color: #859900;">min-width</span>: 30em;
+        <span style="color: #859900;">max-width</span>: 48em;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">max-width</span>: 640px;
+        <span style="color: #859900;">height</span>: auto;
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+For small laptop or large tablet devices.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 769px<span style="color: #657b83;">)</span> and <span style="color: #657b83;">(</span>max-width: 1024px<span style="color: #657b83;">)</span>  <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-normal</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-left</span>: auto;
+        <span style="color: #859900;">margin-right</span>: auto;
+        <span style="color: #859900;">min-width</span>: 28em;
+        <span style="color: #859900;">max-width</span>: 58em;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">max-width</span>: 100%;
+        <span style="color: #859900;">height</span>: auto;
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+For large laptop or desktop devices.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 1025px<span style="color: #657b83;">)</span> and <span style="color: #657b83;">(</span>max-width: 2048px<span style="color: #657b83;">)</span> <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-large</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-left</span>: auto;
+        <span style="color: #859900;">margin-right</span>: auto;
+          <span style="color: #859900;">min-width</span>: 52em;
+        <span style="color: #859900;">max-width</span>: 68em;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">max-width</span>: 100%;
+        <span style="color: #859900;">height</span>: auto;
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+For large displays.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 2049px<span style="color: #657b83;">)</span> <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-large</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-left</span>: auto;
+        <span style="color: #859900;">margin-right</span>: auto;
+        <span style="color: #859900;">min-width</span>: 68em;
+        <span style="color: #859900;">max-width</span>: 72em;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">max-width</span>: 100%;
+        <span style="color: #859900;">height</span>: auto;
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1dd4bb0" class="outline-4">
+<h4 id="org1dd4bb0"><span class="section-number-4">2.2.2.</span> Print</h4>
+<div class="outline-text-4" id="text-2-2-2">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">:root</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #6c71c4;">--root-font-size-small</span>: 12px;
+        <span style="color: #6c71c4;">--root-font-size-normal</span>: 14px;
+        <span style="color: #6c71c4;">--root-font-size-large</span>: 16px;
+        <span style="color: #6c71c4;">--print-margin-inner</span>: 4cm;
+        <span style="color: #6c71c4;">--print-margin-outer</span>: 2cm;
+        <span style="color: #6c71c4;">--print-margin-top</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-outer</span><span style="color: #b58900;">)</span>;
+        <span style="color: #6c71c4;">--print-margin-bottom</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-inner</span><span style="color: #b58900;">)</span>;
+        <span style="color: #6c71c4;">--print-margin-equal</span>: calc<span style="color: #b58900;">(</span><span style="color: #859900;">(</span>var<span style="color: #268bd2;">(</span><span style="color: #6c71c4;">--print-margin-outer</span><span style="color: #268bd2;">)</span> + var<span style="color: #268bd2;">(</span><span style="color: #6c71c4;">--print-margin-inner</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> / 2<span style="color: #b58900;">)</span>;
+        <span style="color: #6c71c4;">--abstract-margin</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-huge</span><span style="color: #b58900;">)</span>
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-text-color</span><span style="color: #b58900;">)</span> <span style="color: #6c71c4;">!important</span>;
+        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-normal</span><span style="color: #b58900;">)</span> <span style="color: #6c71c4;">!important</span>;
+        <span style="color: #859900;">padding</span>: 0 <span style="color: #6c71c4;">!important</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">body.small-print</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-small</span><span style="color: #b58900;">)</span> <span style="color: #6c71c4;">!important</span>;
+        <span style="color: #859900;">padding</span>: 0 <span style="color: #6c71c4;">!important</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">body.large-print</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-large</span><span style="color: #b58900;">)</span> <span style="color: #6c71c4;">!important</span>;
+        <span style="color: #859900;">padding</span>: 0 <span style="color: #6c71c4;">!important</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">header &gt; h1.title</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-top</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-huge</span><span style="color: #b58900;">)</span>;
+        <span style="color: #859900;">margin-bottom</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">header &gt; p.subtitle</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-top</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--line-height-none</span><span style="color: #b58900;">)</span>;
+        <span style="color: #859900;">margin-bottom</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">div#org-div-home-and-up</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">display</span>: none;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">nav#table-of-contents</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">display</span>: none;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">max-width</span>: 100%;
+        <span style="color: #859900;">height</span>: auto;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin</span>: auto;
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">h1.title</span> <span style="color: #2aa198;">{</span> 
+        <span style="color: #859900;">string-set</span>: doctitle content<span style="color: #b58900;">()</span>; 
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">header, div.figure, td, th</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">page-break-inside</span>: avoid;
+    <span style="color: #2aa198;">}</span> 
+    <span style="color: #6c71c4;">@page</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">size</span>: letter portrait;
+        <span style="color: #859900;">margin-top</span>:var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-top</span><span style="color: #b58900;">)</span>;
+        <span style="color: #859900;">margin-bottom</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-equal</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #6c71c4;">@page</span> :first <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-left</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-equal</span><span style="color: #b58900;">)</span>;
+        <span style="color: #859900;">margin-right</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-equal</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #6c71c4;">@page</span> :left <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-left</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-outer</span><span style="color: #b58900;">)</span>;
+        <span style="color: #859900;">margin-right</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-inner</span><span style="color: #b58900;">)</span>;
+        <span style="color: #6c71c4;">@bottom-left</span> <span style="color: #b58900;">{</span>
+            <span style="color: #859900;">content</span>: counter<span style="color: #859900;">(</span>page<span style="color: #859900;">)</span>;
+        <span style="color: #b58900;">}</span>
+        <span style="color: #6c71c4;">@top-left</span> <span style="color: #b58900;">{</span>
+            <span style="color: #859900;">content</span>: string<span style="color: #859900;">(</span>doctitle<span style="color: #859900;">)</span>;
+        <span style="color: #b58900;">}</span>
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #6c71c4;">@page</span> :right <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">margin-left</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-inner</span><span style="color: #b58900;">)</span>;
+        <span style="color: #859900;">margin-right</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-outer</span><span style="color: #b58900;">)</span>;
+        <span style="color: #6c71c4;">@bottom-right</span> <span style="color: #b58900;">{</span>
+            <span style="color: #859900;">content</span>: counter<span style="color: #859900;">(</span>page<span style="color: #859900;">)</span>;
+        <span style="color: #b58900;">}</span>
+        <span style="color: #6c71c4;">@top-right</span> <span style="color: #b58900;">{</span>
+            <span style="color: #859900;">content</span>: string<span style="color: #859900;">(</span>doctitle<span style="color: #859900;">)</span>;
+        <span style="color: #b58900;">}</span>
+    <span style="color: #2aa198;">}</span>
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+See also:
+</p>
+
+<ul class="org-ul">
+<li><a href="https://www.w3.org/TR/css-page-3/#margin-boxes">https://www.w3.org/TR/css-page-3/#margin-boxes</a></li>
+<li><a href="https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/">https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/</a></li>
+<li><a href="https://printcss.net/articles/page-margin-boxes">https://printcss.net/articles/page-margin-boxes</a></li>
+<li><a href="https://printcss.net/articles/running-headers-and-footers">https://printcss.net/articles/running-headers-and-footers</a></li>
+<li><a href="https://pagedjs.org/documentation/">https://pagedjs.org/documentation/</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org1ca297e" class="outline-3">
+<h3 id="org1ca297e"><span class="section-number-3">2.3.</span> Lists</h3>
+<div class="outline-text-3" id="text-2-3">
+</div>
+<div id="outline-container-org6083be8" class="outline-4">
+<h4 id="org6083be8"><span class="section-number-4">2.3.1.</span> Ordered (Numbered) Lists</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<p>
+Org-export applies the CSS class <code>org-ol</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">ol li:last-child</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge2686fe" class="outline-4">
+<h4 id="orge2686fe"><span class="section-number-4">2.3.2.</span> Unordered (Bulleted) Lists</h4>
+<div class="outline-text-4" id="text-2-3-2">
+<p>
+Org-export applies the CSS class <code>org-ul</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">ul li:last-child</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0a970c6" class="outline-4">
+<h4 id="org0a970c6"><span class="section-number-4">2.3.3.</span> Definition Lists</h4>
+<div class="outline-text-4" id="text-2-3-3">
+<p>
+Org-export applies the CSS class <code>org-dl</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">:root</span> <span style="color: #657b83;">{</span>
+    <span style="color: #6c71c4;">--dl-term-width-normal</span>: 8em;
+    <span style="color: #6c71c4;">--dl-term-width-wide</span>: calc<span style="color: #2aa198;">(</span>var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--dl-term-width-normal</span><span style="color: #b58900;">)</span> * 2<span style="color: #2aa198;">)</span>;
+
+    <span style="color: #6c71c4;">--dl-padding-normal</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+Set the outer <code class="src src-html">&lt;<span style="color: #b58900;">dl</span>&gt;</code> to use a grid layout, this allows easy setup of a one-row per definition
+layout. While the CSS attribute is actually <code>gap</code> here we use a <i>padding</i> variable as it seems more generic.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">dl.org-dl</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">display</span>: grid;
+    <span style="color: #859900;">grid-template-columns</span>: max-content auto;
+    <span style="color: #859900;">gap</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--dl-padding-normal</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+Highlight the definition text, allowing for the CSS class <code>wide</code> to override the default width for more term and
+less definition space.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">dl.org-dl &gt; dt</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">grid-column-start</span>: 1;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-weight-semibold</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">text-align</span>: left;
+    <span style="color: #859900;">width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--dl-term-width-normal</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">dl.org-dl.wide &gt; dt</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--dl-term-width-wide</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">dl.org-dl &gt; dd</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">grid-column-start</span>: 2;
+    <span style="color: #859900;">margin-left</span>: 0;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb75b5c7" class="outline-3">
+<h3 id="orgb75b5c7"><span class="section-number-3">2.4.</span> Agenda</h3>
+<div class="outline-text-3" id="text-2-4">
+</div>
+<div id="outline-container-org231b3ca" class="outline-4">
+<h4 id="org231b3ca"><span class="section-number-4">2.4.1.</span> Tasks</h4>
+<div class="outline-text-4" id="text-2-4-1">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">:root</span> <span style="color: #657b83;">{</span>
+    <span style="color: #6c71c4;">--state-border-radius</span>: 0.125em;
+    <span style="color: #6c71c4;">--state-border-padding</span>: 0.25em;
+    <span style="color: #6c71c4;">--state-border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-width</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-style</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--title-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">h1, h2, h3, h4, h5 span.todo</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--state-border</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border-radius</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--state-border-radius</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--state-border-padding</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--state-border-padding</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-light-background-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">h1, h2, h3, h4, h5 span.tag</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">float</span>:right;
+    <span style="color: #859900;">font-weight</span>: normal;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7e40ecd" class="outline-3">
+<h3 id="org7e40ecd"><span class="section-number-3">2.5.</span> Blocks</h3>
+<div class="outline-text-3" id="text-2-5">
+</div>
+<div id="outline-container-orgfe0fb1b" class="outline-4">
+<h4 id="orgfe0fb1b"><span class="section-number-4">2.5.1.</span> Abstract</h4>
+<div class="outline-text-4" id="text-2-5-1">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.abstract, div.ABSTRACT</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-huge</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">margin-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--abstract-margin</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">margin-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--abstract-margin</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">div.abstract &gt; p::before, div.ABSTRACT &gt; p::before</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"Abstract: "</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb641ae8" class="outline-4">
+<h4 id="orgb641ae8"><span class="section-number-4">2.5.2.</span> Table of Contents</h4>
+<div class="outline-text-4" id="text-2-5-2">
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 3: </span>Org-Exported TOC</label><pre class="src src-html">&lt;<span style="color: #b58900;">nav</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"table-of-contents"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-toc"</span>&gt;
+  &lt;<span style="color: #b58900;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Table of Contents</span>&lt;/<span style="color: #b58900;">h2</span>&gt;
+  &lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"text-table-of-contents"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-toc"</span>&gt;
+    &lt;<span style="color: #b58900;">ul</span>&gt;
+      &lt;<span style="color: #b58900;">li</span>&gt;&lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#org289a925"</span>&gt;1. Basic Terms&lt;/<span style="color: #b58900;">a</span>&gt;
+        &lt;<span style="color: #b58900;">ul</span>&gt;
+          &lt;<span style="color: #b58900;">li</span>&gt;&lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#org98111a5"</span>&gt;1.1. Data Model&lt;/<span style="color: #b58900;">a</span>&gt;&lt;/<span style="color: #b58900;">li</span>&gt;
+        &lt;/<span style="color: #b58900;">ul</span>&gt;
+      &lt;/<span style="color: #b58900;">li</span>&gt;
+      &lt;<span style="color: #b58900;">li</span>&gt;&lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#org7bc4e5f"</span>&gt;2. Collection Resources&lt;/<span style="color: #b58900;">a</span>&gt;&lt;/<span style="color: #b58900;">li</span>&gt;
+    &lt;/<span style="color: #b58900;">ul</span>&gt;
+  &lt;/<span style="color: #b58900;">div</span>&gt;
+&lt;/<span style="color: #b58900;">nav</span>&gt;
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">nav#table-of-contents &gt; div#text-table-of-contents ul</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">list-style-type</span>: none;
+    <span style="color: #859900;">margin-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding</span>: 0;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcf4f71a" class="outline-4">
+<h4 id="orgcf4f71a"><span class="section-number-4">2.5.3.</span> Block Quotes</h4>
+<div class="outline-text-4" id="text-2-5-3">
+<p>
+This section sets up the basics of a block quote with a simple margin all around but a larger padding left and right.
+This padding allows us later to adjust this in favor of other uses of the margin.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">blockquote</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">display</span>: block;
+    <span style="color: #859900;">margin</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border</span>: 0;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">:root</span> <span style="color: #657b83;">{</span>
+    <span style="color: #6c71c4;">--blockquote-leader-linespan</span>: 2;
+    <span style="color: #6c71c4;">--blockquote-decoration-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--subtitle-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #6c71c4;">--blockquote-border-color-dark</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--heading-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #6c71c4;">--blockquote-border-color-light</span>: color-mix<span style="color: #2aa198;">(</span>in srgb, var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--blockquote-border-color-dark</span><span style="color: #b58900;">)</span> 10%, <span style="color: #000000; background-color: #ffffff;">white</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+A <i>quoted</i> block will have it&rsquo;s text in italic, with a stylized open and close quote at the beginning and end.
+To enable this, use <code>#+ATTR_HTML: :class quoted</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">blockquote.quoted p</span> <span style="color: #657b83;">{</span>
+     <span style="color: #859900;">font-style</span>: italic;
+<span style="color: #657b83;">}</span>
+blockquote.quoted p:first-child:before <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: open-quote;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-bold</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-decoration-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+blockquote.quoted p:last-child:after <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: close-quote;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-bold</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-decoration-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+A <i>leader</i> block has the initial character of the first paragraph turned into a drop character spanning two lines.
+To enable this, use <code>#+ATTR_HTML: :class leader</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css">blockquote.leader p:first-child:first-letter <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">initial-letter</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-leader-linespan</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-decoration-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+An <i>edged</i> block has a solid left border that clearly delineates the indented nature of the block and causes it to stand
+out from surrounding text.
+To enable this, use <code>#+ATTR_HTML: :class edged</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">blockquote.edged</span>  <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-left</span>: 0;
+    <span style="color: #859900;">border-left-width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border-left-style</span>: solid;
+    <span style="color: #859900;">border-left-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-border-color-light</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbfd757b" class="outline-4">
+<h4 id="orgbfd757b"><span class="section-number-4">2.5.4.</span> Notes</h4>
+<div class="outline-text-4" id="text-2-5-4">
+<p>
+A note block denotes a call-out inline in the text.
+</p>
+
+<pre class="example" id="org79df669">
+Here is an example note block in some org-mode document:
+
+#+BEGIN_NOTE
+Some text I want to appear as a note with a nice margin around it.
+#+END_NOTE
+</pre>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.NOTE, div.INFO, div.WARNING, div.ERROR, div.SUCCESS, div.FAILURE</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">display</span>: block;
+    <span style="color: #859900;">margin</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-width-thick</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-style</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--info-block-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border-radius</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-radius-normal</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">div.NOTE p</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-block-start</span>: 0;
+    <span style="color: #859900;">margin-block-end</span>: 0;
+<span style="color: #657b83;">}</span>
+
+div.NOTE p:first-child:before <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\261E&#8239;&#8239;&#8239;</span><span style="color: #d0bf8f; font-weight: bold;">NOTE</span><span style="color: #2aa198;">&#8239;&#8239;"</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--info-block-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<table>
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Block Style</th>
+<th scope="col" class="org-left">Border/Heading Color</th>
+<th scope="col" class="org-left">Icon</th>
+<th scope="col" class="org-left">CSS Code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">NOTE</td>
+<td class="org-left"><code>--info-block-color</code></td>
+<td class="org-left">☞</td>
+<td class="org-left">(<code>\261E</code>)</td>
+</tr>
+
+<tr>
+<td class="org-left">INFO</td>
+<td class="org-left"><code>--info-block-color</code></td>
+<td class="org-left">ℹ</td>
+<td class="org-left">(<code>\2139</code>)</td>
+</tr>
+
+<tr>
+<td class="org-left">WARNING</td>
+<td class="org-left"><code>--warning-block-color</code></td>
+<td class="org-left">⚠</td>
+<td class="org-left">(<code>\26A0</code>)</td>
+</tr>
+
+<tr>
+<td class="org-left">ERROR</td>
+<td class="org-left"><code>--error-block-color</code></td>
+<td class="org-left">⨷</td>
+<td class="org-left">(<code>\2A37</code>)</td>
+</tr>
+
+<tr>
+<td class="org-left">SUCCESS</td>
+<td class="org-left"><code>--success-block-color</code></td>
+<td class="org-left">✓</td>
+<td class="org-left">(<code>\2713</code>)</td>
+</tr>
+
+<tr>
+<td class="org-left">FAILURE</td>
+<td class="org-left"><code>--error-block-color</code></td>
+<td class="org-left">✗</td>
+<td class="org-left">(<code>\2717</code>)</td>
+</tr>
+</tbody>
+</table>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.INFO p</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-block-start</span>: 0;
+    <span style="color: #859900;">margin-block-end</span>: 0;
+<span style="color: #657b83;">}</span>
+
+div.INFO p:first-child:before <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\2139&#8239;&#8239;&#8239;INFO&#8239;&#8239;"</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--info-block-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.WARNING</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">border-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--warning-block-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">div.WARNING p</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-block-start</span>: 0;
+    <span style="color: #859900;">margin-block-end</span>: 0;
+<span style="color: #657b83;">}</span>
+
+div.WARNING p:first-child:before <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\26A0&#8239;&#8239;&#8239;WARNING&#8239;&#8239;"</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--warning-block-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.ERROR</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">border-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--error-block-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">div.ERROR p</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-block-start</span>: 0;
+    <span style="color: #859900;">margin-block-end</span>: 0;
+<span style="color: #657b83;">}</span>
+
+div.ERROR p:first-child:before <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\2A37&#8239;&#8239;&#8239;ERROR&#8239;&#8239;"</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--error-block-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.SUCCESS</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">border-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--success-block-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">div.SUCCESS p</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-block-start</span>: 0;
+    <span style="color: #859900;">margin-block-end</span>: 0;
+<span style="color: #657b83;">}</span>
+
+div.SUCCESS p:first-child:before <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\2713&#8239;&#8239;&#8239;SUCCESS&#8239;&#8239;"</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--success-block-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.FAILURE</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">border-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--error-block-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">div.FAILURE p</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-block-start</span>: 0;
+    <span style="color: #859900;">margin-block-end</span>: 0;
+<span style="color: #657b83;">}</span>
+
+div.FAILURE p:first-child:before <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\2717&#8239;&#8239;&#8239;FAILURE&#8239;&#8239;"</span>;
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--error-block-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org433d03c" class="outline-3">
+<h3 id="org433d03c"><span class="section-number-3">2.6.</span> Images</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Org-mode images are output by the HTML exporter according to the layout in the example shown below.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 4: </span>Org-Exported Figure</label><pre class="src src-html">&lt;<span style="color: #b58900;">figure</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"org559bb8e"</span>&gt;
+  &lt;<span style="color: #b58900;">img</span> <span style="color: #6c71c4;">src</span>=<span style="color: #2aa198;">"amethyst-ia.svg"</span> <span style="color: #6c71c4;">alt</span>=<span style="color: #2aa198;">"amethyst-ia.svg"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-svg"</span>&gt;
+  &lt;<span style="color: #b58900;">figcaption</span>&gt;
+    &lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"figure-number"</span>&gt;Figure 1: &lt;/<span style="color: #b58900;">span</span>&gt;Amethyst Information Architecture
+  &lt;/<span style="color: #b58900;">figcaption</span>&gt;
+&lt;/<span style="color: #b58900;">figure</span>&gt;
+</pre>
+</div>
+
+<p>
+First, we want all elements of the figure to be centered.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">figure</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">text-align</span>: center;
+    <span style="color: #859900;">break-inside</span>: avoid;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+Setup the text style of the caption.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">figure &gt; figcaption</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-size</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-style</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-style</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-weight</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+Bring the image and caption closer together.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">figure &gt; img</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">figure &gt; figcaption</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-top</span>: 0;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgadb3be3" class="outline-3">
+<h3 id="orgadb3be3"><span class="section-number-3">2.7.</span> Tables</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+Org-mode tables are output by the HTML exporter according to the layout in the example shown below.
+</p>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 5: </span>Org-Exported Table</label><pre class="src src-html">&lt;<span style="color: #b58900;">table</span> <span style="color: #6c71c4;">border</span>=<span style="color: #2aa198;">"0"</span> <span style="color: #6c71c4;">cellspacing</span>=<span style="color: #2aa198;">"0"</span> <span style="color: #6c71c4;">cellpadding</span>=<span style="color: #2aa198;">"6"</span> <span style="color: #6c71c4;">rules</span>=<span style="color: #2aa198;">"none"</span> <span style="color: #6c71c4;">frame</span>=<span style="color: #2aa198;">"none"</span>&gt;
+  &lt;<span style="color: #b58900;">caption</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"t-above"</span>&gt;
+    &lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"table-number"</span>&gt;Table 2:&lt;/<span style="color: #b58900;">span</span>&gt; Some Table&lt;/<span style="color: #b58900;">caption</span>&gt;
+  &lt;<span style="color: #b58900;">colgroup</span>&gt;
+    &lt;<span style="color: #b58900;">col</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;
+    &lt;<span style="color: #b58900;">col</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;
+  &lt;/<span style="color: #b58900;">colgroup</span>&gt;
+  &lt;<span style="color: #b58900;">thead</span>&gt;
+    &lt;<span style="color: #b58900;">tr</span>&gt;
+      &lt;<span style="color: #b58900;">th</span> <span style="color: #6c71c4;">scope</span>=<span style="color: #2aa198;">"col"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;Key&lt;/<span style="color: #b58900;">th</span>&gt;
+      &lt;<span style="color: #b58900;">th</span> <span style="color: #6c71c4;">scope</span>=<span style="color: #2aa198;">"col"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;Value&lt;/<span style="color: #b58900;">th</span>&gt;
+    &lt;/<span style="color: #b58900;">tr</span>&gt;
+  &lt;/<span style="color: #b58900;">thead</span>&gt;
+  &lt;<span style="color: #b58900;">tbody</span>&gt;
+    &lt;<span style="color: #b58900;">tr</span>&gt;
+      &lt;<span style="color: #b58900;">td</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;key-1&lt;/<span style="color: #b58900;">td</span>&gt;
+      &lt;<span style="color: #b58900;">td</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;value-1&lt;/<span style="color: #b58900;">td</span>&gt;
+    &lt;/<span style="color: #b58900;">tr</span>&gt;
+  &lt;/<span style="color: #b58900;">tbody</span>&gt;
+&lt;/<span style="color: #b58900;">table</span>&gt;
+</pre>
+</div>
+
+<p>
+Unlike the default exporter, and LaTeX style, <i>and</i> general readability guidance, we put borders back on tables. It is
+also generally useful to reduce the size of the font in tables.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">table</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--table-border</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border-collapse</span>: collapse;
+    <span style="color: #859900;">margin-left</span>: auto;
+    <span style="color: #859900;">margin-right</span>: auto;
+    <span style="color: #859900;">min-width</span>: 50%;
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">line-height</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-height-compressed</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">break-inside</span>: avoid; 
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">table &gt; thead</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--heading-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">table &gt; thead th,</span>
+<span style="color: #b58900;">table &gt; tbody td</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">padding-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-smaller</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-bottom</span>: calc<span style="color: #2aa198;">(</span>var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #b58900;">)</span> * 0.5<span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-smaller</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--table-border</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+These classes are useful as hints to set column alignment.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">table &gt; thead th.org-left,</span>
+<span style="color: #b58900;">table &gt; tbody td.org-left</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">text-align</span>: left;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">table &gt; thead th.org-center,</span>
+<span style="color: #b58900;">table &gt; tbody td.org-center</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">text-align</span>: center;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">table &gt; thead th.org-right,</span>
+<span style="color: #b58900;">table &gt; tbody td.org-right</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">text-align</span>: right;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+Setup the caption for a table, this is a common set of properties for all captions.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">table caption</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-size</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-style</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-style</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-weight</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgce8a81d" class="outline-3">
+<h3 id="orgce8a81d"><span class="section-number-3">2.8.</span> Code</h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+Org-Export generates code of the following form. Note that it does not, as is more common, use a <code>&lt;code&gt;</code> element within
+the <code>&lt;pre&gt;</code>. The class <code>src</code> is common to all source blocks and any language specified on the source block generates a class
+name of the form <code>src-{name}</code>.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-html">&lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-src-container"</span>&gt;
+  &lt;<span style="color: #b58900;">label</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-src-name"</span>&gt;
+    &lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"listing-number"</span>&gt;Listing 2: &lt;/<span style="color: #b58900;">span</span>&gt;Directory-Local Variables
+  &lt;/<span style="color: #b58900;">label</span>&gt;
+  &lt;<span style="color: #b58900;">pre</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"</span><span style="color: #2aa198; text-decoration: underline;">src src</span><span style="color: #2aa198;">-elisp"</span>&gt; 
+    &lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">style</span>=<span style="color: #2aa198;">"color: #657b83;"</span>&gt;(&lt;/<span style="color: #b58900;">span</span>&gt;&lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">style</span>=<span style="color: #2aa198;">"color: #657b83;"</span>&gt;)&lt;/<span style="color: #b58900;">span</span>&gt;
+  &lt;/<span style="color: #b58900;">pre</span>&gt;
+&lt;/<span style="color: #b58900;">div</span>&gt;
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">pre, code</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-family</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-font-family</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-weight-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">line-height</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-height-code</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.org-src-container</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">break-inside</span>: avoid;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.org-src-container &gt; pre.src</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-background-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-width</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-style</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-border-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border-radius</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-radius-small</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">overflow-x</span>: hidden;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">div.org-src-container &gt; pre.src:hover</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-light-background-color</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.org-src-container &gt; pre.src.scroll</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">overflow-x</span>: scroll;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">p code, li code, dt code, dd code</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-background-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-extension-compressed</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-extension-compressed</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div.org-src-container &gt; label.org-src-name</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-size</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-style</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-style</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-weight</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">pre.example</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-background-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-width</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-style</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-border-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">border-radius</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-radius-small</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">overflow-x</span>: hidden;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">pre.example:hover</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">filter</span>: brightness<span style="color: #2aa198;">(</span>var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--code-hover-brightness</span><span style="color: #b58900;">)</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
+    <span style="color: #b58900;">pre, code</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-code-color</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>
+    <span style="color: #b58900;">div.org-src-container &gt; pre.src</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">background-color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-code-background-color</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>       
+    <span style="color: #b58900;">p code, li code, dt code, dd code</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">background-color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-code-background-color</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>  
+    <span style="color: #b58900;">pre.example</span> <span style="color: #2aa198;">{</span>
+        <span style="color: #859900;">background-color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-code-background-color</span><span style="color: #b58900;">)</span>;
+    <span style="color: #2aa198;">}</span>   
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org02d572c" class="outline-3">
+<h3 id="org02d572c"><span class="section-number-3">2.9.</span> Math (KaTeX)</h3>
+<div class="outline-text-3" id="text-2-9">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">:root</span> <span style="color: #657b83;">{</span>
+    <span style="color: #6c71c4;">--math-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #6c71c4;">--math-font-size</span>: 1.1em;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+The <i>math font size</i> is a specific value, not one of those defined in <a href="#org370b50c">2.1.2</a>, as it is very dependent on the math renderer
+(MathJax for example really needs a size less than <code>1.0em</code>) and some fine tuning as math fonts tend to have rounder
+characters and so bringing the vertical heights close results in wide looking text.
+</p>
+
+<p>
+The math color should match the body text color, by default it&rsquo;s black and tends to jump out,m especially as the weight
+of the math font tends to be heavier.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">.katex</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--math-color</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--math-font-size</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+Treat tags on equations in the same manner as captions.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">.katex .tag</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-size</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-style</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-style</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-weight</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5086b9c" class="outline-3">
+<h3 id="org5086b9c"><span class="section-number-3">2.10.</span> Home and Up</h3>
+<div class="outline-text-3" id="text-2-10">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div#org-div-home-and-up</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">text-align</span>: right;
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-smaller</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">white-space</span>: nowrap;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge3383b0" class="outline-3">
+<h3 id="orge3383b0"><span class="section-number-3">2.11.</span> Footnotes and References</h3>
+<div class="outline-text-3" id="text-2-11">
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 6: </span>Generated Footnote section</label><pre class="src src-html">&lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"footnotes"</span>&gt;
+  &lt;<span style="color: #b58900;">h2</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footnotes"</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Footnotes: </span>&lt;/<span style="color: #b58900;">h2</span>&gt;
+  &lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"text-footnotes"</span>&gt;
+    &lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footdef"</span>&gt;
+      &lt;<span style="color: #b58900;">sup</span>&gt;
+        &lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"fn.1"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footnum"</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#fnr.1"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-backlink"</span>&gt;1&lt;/<span style="color: #b58900;">a</span>&gt;
+      &lt;/<span style="color: #b58900;">sup</span>&gt;
+      &lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footpara"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-footnote"</span>&gt;
+        &lt;<span style="color: #b58900;">p</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footpara"</span>&gt;
+          Some text
+        &lt;/<span style="color: #b58900;">p</span>&gt;
+      &lt;/<span style="color: #b58900;">div</span>&gt;
+    &lt;/<span style="color: #b58900;">div</span>&gt;
+  &lt;/<span style="color: #b58900;">div</span>&gt;
+&lt;/<span style="color: #b58900;">div</span>&gt;
+</pre>
+</div>
+
+<div class="org-src-container">
+<label class="org-src-name"><span class="listing-number">Listing 7: </span>Generated Footnote reference</label><pre class="src src-html">&lt;<span style="color: #b58900;">sup</span>&gt;
+  &lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"fnr.1"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footref"</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#fn.1"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-backlink"</span>&gt;1&lt;/<span style="color: #b58900;">a</span>&gt;
+&lt;/<span style="color: #b58900;">sup</span>&gt;
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div#footnotes</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">border-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--section-border</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">div#footnotes &gt; div#text-footnotes div.footdef</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">display</span>: grid;
+    <span style="color: #859900;">grid-template-columns</span>: max-content auto;
+    <span style="color: #859900;">gap</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--dl-padding-normal</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">div#footnotes &gt; div#text-footnotes div.footdef &gt; sup</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">grid-column-start</span>: 1;
+    <span style="color: #859900;">width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">div#footnotes &gt; div#text-footnotes div.footdef &gt; div.footpara</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">grid-column-start</span>: 2;
+    <span style="color: #859900;">margin</span>: 0;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">div#footnotes &gt; div#text-footnotes div.footdef &gt; div.footpara p.footpara</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">margin</span>: 0;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<p>
+Here we want to style the footnote reference, but want to add the &ldquo;[&rdquo; and &ldquo;]&rdquo; <i>around</i> the <code class="src src-html">&lt;<span style="color: #b58900;">a</span>&gt;</code>
+and not a part of the clickable link. So, we want to style the parent <code class="src src-html">&lt;<span style="color: #b58900;">sup</span>&gt;</code> element and have to
+use the CSS <code class="src src-css">:has<span style="color: #657b83;">()</span></code> selector.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #859900;">sup</span>:has<span style="color: #657b83;">(</span>a.footref<span style="color: #657b83;">)</span>::before <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"["</span>;
+<span style="color: #657b83;">}</span>
+<span style="color: #859900;">sup</span>:has<span style="color: #657b83;">(</span>a.footref<span style="color: #657b83;">)</span>::after <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"]"</span>;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4c77b68" class="outline-3">
+<h3 id="org4c77b68"><span class="section-number-3">2.12.</span> Postamble</h3>
+<div class="outline-text-3" id="text-2-12">
+<div class="org-src-container">
+<pre class="src src-css"><span style="color: #b58900;">div#postamble</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">border-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--section-border</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">padding-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-light</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
+<span style="color: #657b83;">}</span>
+<span style="color: #b58900;">div#postamble &gt; p</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">line-height</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-height-compressed</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
+    <span style="color: #859900;">margin-bottom</span>: 0;
+<span style="color: #657b83;">}</span>
+
+<span style="color: #b58900;">div#postamble &gt; p.validation</span> <span style="color: #657b83;">{</span>
+    <span style="color: #859900;">display</span>: none;
+<span style="color: #657b83;">}</span>
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-css">
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9cd625f" class="outline-3">
+<h3 id="org9cd625f"><span class="section-number-3">2.13.</span> Keyboard elements</h3>
+<div class="outline-text-3" id="text-2-13">
 <p>
 Keyboard elements are wrapped in the <code>kbd</code> tag, and represent pressed keys, as in the following,
 </p>
 
-<pre class="example" id="org5544b6f">
+<pre class="example" id="org7c584f6">
 &lt;kbd&gt;SPC&lt;/kbd&gt;
 </pre>
 
@@ -343,7 +1501,7 @@ Keyboard elements are wrapped in the <code>kbd</code> tag, and represent pressed
 or as a sequence of key presses together, as in the following.
 </p>
 
-<pre class="example" id="org7e8317f">
+<pre class="example" id="org6cbfcf4">
 &lt;kbd&gt;&lt;kbd&gt;Ctrl&lt;/kbd&gt;&lt;kbd&gt;+&lt;/kbd&gt;&lt;kbd&gt;SPC&lt;/kbd&gt;&lt;/kbd&gt;
 </pre>
 
@@ -816,1129 +1974,8 @@ similar, or acceptable, alternative exists.
 </div>
 </div>
 
-<div id="outline-container-orgc0ebdc3" class="outline-3">
-<h3 id="orgc0ebdc3"><span class="section-number-3">2.2.</span> Media Queries</h3>
-<div class="outline-text-3" id="text-2-2">
-</div>
-<div id="outline-container-orgad84cd9" class="outline-4">
-<h4 id="orgad84cd9"><span class="section-number-4">2.2.1.</span> Screen</h4>
-<div class="outline-text-4" id="text-2-2-1">
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">:root</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #6c71c4;">--root-font-size-small</span>: 14px;
-        <span style="color: #6c71c4;">--root-font-size-normal</span>: 16px;
-        <span style="color: #6c71c4;">--root-font-size-large</span>: 18px;
-        <span style="color: #6c71c4;">--abstract-margin</span>: calc<span style="color: #b58900;">(</span>var<span style="color: #859900;">(</span><span style="color: #6c71c4;">--text-huge</span><span style="color: #859900;">)</span> * 2<span style="color: #b58900;">)</span>;;
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">body</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">min-height</span>: 100%;
-    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">h1.title</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-smaller</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-For mobile devices.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 320px<span style="color: #657b83;">)</span> and <span style="color: #657b83;">(</span>max-width: 480px<span style="color: #657b83;">)</span> <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-small</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-left</span>: auto;
-        <span style="color: #859900;">margin-right</span>: auto;
-        <span style="color: #859900;">min-width</span>: 21em;
-        <span style="color: #859900;">max-width</span>: 30em;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">max-width</span>: 420px;
-        <span style="color: #859900;">height</span>: auto;
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-For common tablet devices.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 481px<span style="color: #657b83;">)</span> and <span style="color: #657b83;">(</span>max-width: 768px<span style="color: #657b83;">)</span>  <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-small</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-left</span>: auto;
-        <span style="color: #859900;">margin-right</span>: auto;
-        <span style="color: #859900;">min-width</span>: 30em;
-        <span style="color: #859900;">max-width</span>: 48em;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">max-width</span>: 640px;
-        <span style="color: #859900;">height</span>: auto;
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-For small laptop or large tablet devices.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 769px<span style="color: #657b83;">)</span> and <span style="color: #657b83;">(</span>max-width: 1024px<span style="color: #657b83;">)</span>  <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-normal</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-left</span>: auto;
-        <span style="color: #859900;">margin-right</span>: auto;
-        <span style="color: #859900;">min-width</span>: 28em;
-        <span style="color: #859900;">max-width</span>: 58em;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">max-width</span>: 100%;
-        <span style="color: #859900;">height</span>: auto;
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-For large laptop or desktop devices.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 1025px<span style="color: #657b83;">)</span> and <span style="color: #657b83;">(</span>max-width: 2048px<span style="color: #657b83;">)</span> <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-large</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-left</span>: auto;
-        <span style="color: #859900;">margin-right</span>: auto;
-          <span style="color: #859900;">min-width</span>: 52em;
-        <span style="color: #859900;">max-width</span>: 68em;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">max-width</span>: 100%;
-        <span style="color: #859900;">height</span>: auto;
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-For large displays.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> screen and <span style="color: #657b83;">(</span>min-width: 2049px<span style="color: #657b83;">)</span> <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-large</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-left</span>: auto;
-        <span style="color: #859900;">margin-right</span>: auto;
-        <span style="color: #859900;">min-width</span>: 68em;
-        <span style="color: #859900;">max-width</span>: 72em;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">max-width</span>: 100%;
-        <span style="color: #859900;">height</span>: auto;
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgae4c270" class="outline-4">
-<h4 id="orgae4c270"><span class="section-number-4">2.2.2.</span> Print</h4>
-<div class="outline-text-4" id="text-2-2-2">
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">:root</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #6c71c4;">--root-font-size-small</span>: 12px;
-        <span style="color: #6c71c4;">--root-font-size-normal</span>: 14px;
-        <span style="color: #6c71c4;">--root-font-size-large</span>: 16px;
-        <span style="color: #6c71c4;">--print-margin-inner</span>: 4cm;
-        <span style="color: #6c71c4;">--print-margin-outer</span>: 2cm;
-        <span style="color: #6c71c4;">--print-margin-top</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-outer</span><span style="color: #b58900;">)</span>;
-        <span style="color: #6c71c4;">--print-margin-bottom</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-inner</span><span style="color: #b58900;">)</span>;
-        <span style="color: #6c71c4;">--print-margin-equal</span>: calc<span style="color: #b58900;">(</span><span style="color: #859900;">(</span>var<span style="color: #268bd2;">(</span><span style="color: #6c71c4;">--print-margin-outer</span><span style="color: #268bd2;">)</span> + var<span style="color: #268bd2;">(</span><span style="color: #6c71c4;">--print-margin-inner</span><span style="color: #268bd2;">)</span><span style="color: #859900;">)</span> / 2<span style="color: #b58900;">)</span>;
-        <span style="color: #6c71c4;">--abstract-margin</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-huge</span><span style="color: #b58900;">)</span>
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">body</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-text-color</span><span style="color: #b58900;">)</span> <span style="color: #6c71c4;">!important</span>;
-        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-normal</span><span style="color: #b58900;">)</span> <span style="color: #6c71c4;">!important</span>;
-        <span style="color: #859900;">padding</span>: 0 <span style="color: #6c71c4;">!important</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">body.small-print</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-small</span><span style="color: #b58900;">)</span> <span style="color: #6c71c4;">!important</span>;
-        <span style="color: #859900;">padding</span>: 0 <span style="color: #6c71c4;">!important</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">body.large-print</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">font-size</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--root-font-size-large</span><span style="color: #b58900;">)</span> <span style="color: #6c71c4;">!important</span>;
-        <span style="color: #859900;">padding</span>: 0 <span style="color: #6c71c4;">!important</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">header &gt; h1.title</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-top</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-huge</span><span style="color: #b58900;">)</span>;
-        <span style="color: #859900;">margin-bottom</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">header &gt; p.subtitle</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-top</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--line-height-none</span><span style="color: #b58900;">)</span>;
-        <span style="color: #859900;">margin-bottom</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">div#org-div-home-and-up</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">display</span>: none;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">nav#table-of-contents</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">display</span>: none;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">img</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">max-width</span>: 100%;
-        <span style="color: #859900;">height</span>: auto;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">div#content</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin</span>: auto;
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">h1.title</span> <span style="color: #2aa198;">{</span> 
-        <span style="color: #859900;">string-set</span>: doctitle content<span style="color: #b58900;">()</span>; 
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">header, div.figure, td, th</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">page-break-inside</span>: avoid;
-    <span style="color: #2aa198;">}</span> 
-    <span style="color: #6c71c4;">@page</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">size</span>: letter portrait;
-        <span style="color: #859900;">margin-top</span>:var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-top</span><span style="color: #b58900;">)</span>;
-        <span style="color: #859900;">margin-bottom</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-equal</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #6c71c4;">@page</span> :first <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-left</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-equal</span><span style="color: #b58900;">)</span>;
-        <span style="color: #859900;">margin-right</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-equal</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #6c71c4;">@page</span> :left <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-left</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-outer</span><span style="color: #b58900;">)</span>;
-        <span style="color: #859900;">margin-right</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-inner</span><span style="color: #b58900;">)</span>;
-        <span style="color: #6c71c4;">@bottom-left</span> <span style="color: #b58900;">{</span>
-            <span style="color: #859900;">content</span>: counter<span style="color: #859900;">(</span>page<span style="color: #859900;">)</span>;
-        <span style="color: #b58900;">}</span>
-        <span style="color: #6c71c4;">@top-left</span> <span style="color: #b58900;">{</span>
-            <span style="color: #859900;">content</span>: string<span style="color: #859900;">(</span>doctitle<span style="color: #859900;">)</span>;
-        <span style="color: #b58900;">}</span>
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #6c71c4;">@page</span> :right <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">margin-left</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-inner</span><span style="color: #b58900;">)</span>;
-        <span style="color: #859900;">margin-right</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-margin-outer</span><span style="color: #b58900;">)</span>;
-        <span style="color: #6c71c4;">@bottom-right</span> <span style="color: #b58900;">{</span>
-            <span style="color: #859900;">content</span>: counter<span style="color: #859900;">(</span>page<span style="color: #859900;">)</span>;
-        <span style="color: #b58900;">}</span>
-        <span style="color: #6c71c4;">@top-right</span> <span style="color: #b58900;">{</span>
-            <span style="color: #859900;">content</span>: string<span style="color: #859900;">(</span>doctitle<span style="color: #859900;">)</span>;
-        <span style="color: #b58900;">}</span>
-    <span style="color: #2aa198;">}</span>
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-See also:
-</p>
-
-<ul class="org-ul">
-<li><a href="https://www.w3.org/TR/css-page-3/#margin-boxes">https://www.w3.org/TR/css-page-3/#margin-boxes</a></li>
-<li><a href="https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/">https://www.smashingmagazine.com/2015/01/designing-for-print-with-css/</a></li>
-<li><a href="https://printcss.net/articles/page-margin-boxes">https://printcss.net/articles/page-margin-boxes</a></li>
-<li><a href="https://printcss.net/articles/running-headers-and-footers">https://printcss.net/articles/running-headers-and-footers</a></li>
-<li><a href="https://pagedjs.org/documentation/">https://pagedjs.org/documentation/</a></li>
-</ul>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgec7dcb8" class="outline-3">
-<h3 id="orgec7dcb8"><span class="section-number-3">2.3.</span> Lists</h3>
-<div class="outline-text-3" id="text-2-3">
-</div>
-<div id="outline-container-org0c72adb" class="outline-4">
-<h4 id="org0c72adb"><span class="section-number-4">2.3.1.</span> Ordered (Numbered) Lists</h4>
-<div class="outline-text-4" id="text-2-3-1">
-<p>
-Org-export applies the CSS class <code>org-ol</code>.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">ol li:last-child</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org371670f" class="outline-4">
-<h4 id="org371670f"><span class="section-number-4">2.3.2.</span> Unordered (Bulleted) Lists</h4>
-<div class="outline-text-4" id="text-2-3-2">
-<p>
-Org-export applies the CSS class <code>org-ul</code>.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">ul li:last-child</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgfe51be8" class="outline-4">
-<h4 id="orgfe51be8"><span class="section-number-4">2.3.3.</span> Definition Lists</h4>
-<div class="outline-text-4" id="text-2-3-3">
-<p>
-Org-export applies the CSS class <code>org-dl</code>.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">:root</span> <span style="color: #657b83;">{</span>
-    <span style="color: #6c71c4;">--dl-term-width-normal</span>: 8em;
-    <span style="color: #6c71c4;">--dl-term-width-wide</span>: calc<span style="color: #2aa198;">(</span>var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--dl-term-width-normal</span><span style="color: #b58900;">)</span> * 2<span style="color: #2aa198;">)</span>;
-
-    <span style="color: #6c71c4;">--dl-padding-normal</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-Set the outer <code class="src src-html">&lt;<span style="color: #b58900;">dl</span>&gt;</code> to use a grid layout, this allows easy setup of a one-row per definition
-layout. While the CSS attribute is actually <code>gap</code> here we use a <i>padding</i> variable as it seems more generic.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">dl.org-dl</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">display</span>: grid;
-    <span style="color: #859900;">grid-template-columns</span>: max-content auto;
-    <span style="color: #859900;">gap</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--dl-padding-normal</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-Highlight the definition text, allowing for the CSS class <code>wide</code> to override the default width for more term and
-less definition space.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">dl.org-dl &gt; dt</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">grid-column-start</span>: 1;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-weight-semibold</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">text-align</span>: left;
-    <span style="color: #859900;">width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--dl-term-width-normal</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">dl.org-dl.wide &gt; dt</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--dl-term-width-wide</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">dl.org-dl &gt; dd</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">grid-column-start</span>: 2;
-    <span style="color: #859900;">margin-left</span>: 0;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orged78768" class="outline-3">
-<h3 id="orged78768"><span class="section-number-3">2.4.</span> Blocks</h3>
-<div class="outline-text-3" id="text-2-4">
-</div>
-<div id="outline-container-orgbfae9ec" class="outline-4">
-<h4 id="orgbfae9ec"><span class="section-number-4">2.4.1.</span> Abstract</h4>
-<div class="outline-text-4" id="text-2-4-1">
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.abstract, div.ABSTRACT</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-huge</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">margin-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--abstract-margin</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">margin-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--abstract-margin</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">div.abstract &gt; p::before, div.ABSTRACT &gt; p::before</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"Abstract: "</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org086d352" class="outline-4">
-<h4 id="org086d352"><span class="section-number-4">2.4.2.</span> Table of Contents</h4>
-<div class="outline-text-4" id="text-2-4-2">
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 3: </span>Org-Exported TOC</label><pre class="src src-html">&lt;<span style="color: #b58900;">nav</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"table-of-contents"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-toc"</span>&gt;
-  &lt;<span style="color: #b58900;">h2</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Table of Contents</span>&lt;/<span style="color: #b58900;">h2</span>&gt;
-  &lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"text-table-of-contents"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-toc"</span>&gt;
-    &lt;<span style="color: #b58900;">ul</span>&gt;
-      &lt;<span style="color: #b58900;">li</span>&gt;&lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#org289a925"</span>&gt;1. Basic Terms&lt;/<span style="color: #b58900;">a</span>&gt;
-        &lt;<span style="color: #b58900;">ul</span>&gt;
-          &lt;<span style="color: #b58900;">li</span>&gt;&lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#org98111a5"</span>&gt;1.1. Data Model&lt;/<span style="color: #b58900;">a</span>&gt;&lt;/<span style="color: #b58900;">li</span>&gt;
-        &lt;/<span style="color: #b58900;">ul</span>&gt;
-      &lt;/<span style="color: #b58900;">li</span>&gt;
-      &lt;<span style="color: #b58900;">li</span>&gt;&lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#org7bc4e5f"</span>&gt;2. Collection Resources&lt;/<span style="color: #b58900;">a</span>&gt;&lt;/<span style="color: #b58900;">li</span>&gt;
-    &lt;/<span style="color: #b58900;">ul</span>&gt;
-  &lt;/<span style="color: #b58900;">div</span>&gt;
-&lt;/<span style="color: #b58900;">nav</span>&gt;
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">nav#table-of-contents &gt; div#text-table-of-contents ul</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">list-style-type</span>: none;
-    <span style="color: #859900;">margin-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding</span>: 0;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgc2de99e" class="outline-4">
-<h4 id="orgc2de99e"><span class="section-number-4">2.4.3.</span> Block Quotes</h4>
-<div class="outline-text-4" id="text-2-4-3">
-<p>
-This section sets up the basics of a block quote with a simple margin all around but a larger padding left and right.
-This padding allows us later to adjust this in favor of other uses of the margin.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">blockquote</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">display</span>: block;
-    <span style="color: #859900;">margin</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border</span>: 0;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">:root</span> <span style="color: #657b83;">{</span>
-    <span style="color: #6c71c4;">--blockquote-leader-linespan</span>: 2;
-    <span style="color: #6c71c4;">--blockquote-decoration-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--subtitle-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #6c71c4;">--blockquote-border-color-dark</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--heading-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #6c71c4;">--blockquote-border-color-light</span>: color-mix<span style="color: #2aa198;">(</span>in srgb, var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--blockquote-border-color-dark</span><span style="color: #b58900;">)</span> 10%, <span style="color: #000000; background-color: #ffffff;">white</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-A <i>quoted</i> block will have it&rsquo;s text in italic, with a stylized open and close quote at the beginning and end.
-To enable this, use <code>#+ATTR_HTML: :class quoted</code>.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">blockquote.quoted p</span> <span style="color: #657b83;">{</span>
-     <span style="color: #859900;">font-style</span>: italic;
-<span style="color: #657b83;">}</span>
-blockquote.quoted p:first-child:before <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: open-quote;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-bold</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-decoration-color</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-blockquote.quoted p:last-child:after <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: close-quote;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-bold</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-large</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-decoration-color</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-A <i>leader</i> block has the initial character of the first paragraph turned into a drop character spanning two lines.
-To enable this, use <code>#+ATTR_HTML: :class leader</code>.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css">blockquote.leader p:first-child:first-letter <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">initial-letter</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-leader-linespan</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-decoration-color</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-An <i>edged</i> block has a solid left border that clearly delineates the indented nature of the block and causes it to stand
-out from surrounding text.
-To enable this, use <code>#+ATTR_HTML: :class edged</code>.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">blockquote.edged</span>  <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-left</span>: 0;
-    <span style="color: #859900;">border-left-width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border-left-style</span>: solid;
-    <span style="color: #859900;">border-left-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--blockquote-border-color-light</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org4a8afbb" class="outline-4">
-<h4 id="org4a8afbb"><span class="section-number-4">2.4.4.</span> Notes</h4>
-<div class="outline-text-4" id="text-2-4-4">
-<p>
-A note block denotes a call-out inline in the text.
-</p>
-
-<pre class="example" id="org223df2b">
-Here is an example note block in some org-mode document:
-
-#+BEGIN_NOTE
-Some text I want to appear as a note with a nice margin around it.
-#+END_NOTE
-</pre>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.NOTE, div.INFO, div.WARNING, div.ERROR, div.SUCCESS, div.FAILURE</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">display</span>: block;
-    <span style="color: #859900;">margin</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-width-thick</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-style</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--info-block-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border-radius</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-radius-normal</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">div.NOTE p</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-block-start</span>: 0;
-    <span style="color: #859900;">margin-block-end</span>: 0;
-<span style="color: #657b83;">}</span>
-
-div.NOTE p:first-child:before <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\261E </span><span style="color: #d0bf8f; font-weight: bold;">NOTE</span><span style="color: #2aa198;"> "</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--info-block-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<table>
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Block Style</th>
-<th scope="col" class="org-left">Border/Heading Color</th>
-<th scope="col" class="org-left">Icon</th>
-<th scope="col" class="org-left">CSS Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">NOTE</td>
-<td class="org-left"><code>--info-block-color</code></td>
-<td class="org-left">☞</td>
-<td class="org-left">(<code>\261E</code>)</td>
-</tr>
-
-<tr>
-<td class="org-left">INFO</td>
-<td class="org-left"><code>--info-block-color</code></td>
-<td class="org-left">ℹ</td>
-<td class="org-left">(<code>\2139</code>)</td>
-</tr>
-
-<tr>
-<td class="org-left">WARNING</td>
-<td class="org-left"><code>--warning-block-color</code></td>
-<td class="org-left">⚠</td>
-<td class="org-left">(<code>\26A0</code>)</td>
-</tr>
-
-<tr>
-<td class="org-left">ERROR</td>
-<td class="org-left"><code>--error-block-color</code></td>
-<td class="org-left">⨷</td>
-<td class="org-left">(<code>\2A37</code>)</td>
-</tr>
-
-<tr>
-<td class="org-left">SUCCESS</td>
-<td class="org-left"><code>--success-block-color</code></td>
-<td class="org-left">✓</td>
-<td class="org-left">(<code>\2713</code>)</td>
-</tr>
-
-<tr>
-<td class="org-left">FAILURE</td>
-<td class="org-left"><code>--error-block-color</code></td>
-<td class="org-left">✗</td>
-<td class="org-left">(<code>\2717</code>)</td>
-</tr>
-</tbody>
-</table>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.INFO p</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-block-start</span>: 0;
-    <span style="color: #859900;">margin-block-end</span>: 0;
-<span style="color: #657b83;">}</span>
-
-div.INFO p:first-child:before <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\2139&#8239;&#8239;&#8239;INFO&#8239;&#8239;"</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--info-block-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.WARNING</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">border-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--warning-block-color</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">div.WARNING p</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-block-start</span>: 0;
-    <span style="color: #859900;">margin-block-end</span>: 0;
-<span style="color: #657b83;">}</span>
-
-div.WARNING p:first-child:before <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\26A0&#8239;&#8239;&#8239;WARNING&#8239;&#8239;"</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--warning-block-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.ERROR</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">border-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--error-block-color</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">div.ERROR p</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-block-start</span>: 0;
-    <span style="color: #859900;">margin-block-end</span>: 0;
-<span style="color: #657b83;">}</span>
-
-div.ERROR p:first-child:before <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\2A37&#8239;&#8239;&#8239;ERROR&#8239;&#8239;"</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--error-block-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.SUCCESS</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">border-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--success-block-color</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">div.SUCCESS p</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-block-start</span>: 0;
-    <span style="color: #859900;">margin-block-end</span>: 0;
-<span style="color: #657b83;">}</span>
-
-div.SUCCESS p:first-child:before <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\2713&#8239;&#8239;&#8239;SUCCESS&#8239;&#8239;"</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--success-block-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.FAILURE</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">border-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--error-block-color</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">div.FAILURE p</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-block-start</span>: 0;
-    <span style="color: #859900;">margin-block-end</span>: 0;
-<span style="color: #657b83;">}</span>
-
-div.FAILURE p:first-child:before <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"\2717&#8239;&#8239;&#8239;FAILURE&#8239;&#8239;"</span>;
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--error-block-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org7e80745" class="outline-3">
-<h3 id="org7e80745"><span class="section-number-3">2.5.</span> Images</h3>
-<div class="outline-text-3" id="text-2-5">
-<p>
-Org-mode images are output by the HTML exporter according to the layout in the example shown below.
-</p>
-
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 4: </span>Org-Exported Figure</label><pre class="src src-html">&lt;<span style="color: #b58900;">figure</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"org559bb8e"</span>&gt;
-  &lt;<span style="color: #b58900;">img</span> <span style="color: #6c71c4;">src</span>=<span style="color: #2aa198;">"amethyst-ia.svg"</span> <span style="color: #6c71c4;">alt</span>=<span style="color: #2aa198;">"amethyst-ia.svg"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-svg"</span>&gt;
-  &lt;<span style="color: #b58900;">figcaption</span>&gt;
-    &lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"figure-number"</span>&gt;Figure 1: &lt;/<span style="color: #b58900;">span</span>&gt;Amethyst Information Architecture
-  &lt;/<span style="color: #b58900;">figcaption</span>&gt;
-&lt;/<span style="color: #b58900;">figure</span>&gt;
-</pre>
-</div>
-
-<p>
-First, we want all elements of the figure to be centered.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">figure</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">text-align</span>: center;
-    <span style="color: #859900;">break-inside</span>: avoid;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-Setup the text style of the caption.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">figure &gt; figcaption</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-size</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-style</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-style</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-weight</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-Bring the image and caption closer together.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">figure &gt; img</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-bottom</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">figure &gt; figcaption</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-top</span>: 0;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgb6490e3" class="outline-3">
-<h3 id="orgb6490e3"><span class="section-number-3">2.6.</span> Tables</h3>
-<div class="outline-text-3" id="text-2-6">
-<p>
-Org-mode tables are output by the HTML exporter according to the layout in the example shown below.
-</p>
-
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 5: </span>Org-Exported Table</label><pre class="src src-html">&lt;<span style="color: #b58900;">table</span> <span style="color: #6c71c4;">border</span>=<span style="color: #2aa198;">"0"</span> <span style="color: #6c71c4;">cellspacing</span>=<span style="color: #2aa198;">"0"</span> <span style="color: #6c71c4;">cellpadding</span>=<span style="color: #2aa198;">"6"</span> <span style="color: #6c71c4;">rules</span>=<span style="color: #2aa198;">"none"</span> <span style="color: #6c71c4;">frame</span>=<span style="color: #2aa198;">"none"</span>&gt;
-  &lt;<span style="color: #b58900;">caption</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"t-above"</span>&gt;
-    &lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"table-number"</span>&gt;Table 2:&lt;/<span style="color: #b58900;">span</span>&gt; Some Table&lt;/<span style="color: #b58900;">caption</span>&gt;
-  &lt;<span style="color: #b58900;">colgroup</span>&gt;
-    &lt;<span style="color: #b58900;">col</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;
-    &lt;<span style="color: #b58900;">col</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;
-  &lt;/<span style="color: #b58900;">colgroup</span>&gt;
-  &lt;<span style="color: #b58900;">thead</span>&gt;
-    &lt;<span style="color: #b58900;">tr</span>&gt;
-      &lt;<span style="color: #b58900;">th</span> <span style="color: #6c71c4;">scope</span>=<span style="color: #2aa198;">"col"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;Key&lt;/<span style="color: #b58900;">th</span>&gt;
-      &lt;<span style="color: #b58900;">th</span> <span style="color: #6c71c4;">scope</span>=<span style="color: #2aa198;">"col"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;Value&lt;/<span style="color: #b58900;">th</span>&gt;
-    &lt;/<span style="color: #b58900;">tr</span>&gt;
-  &lt;/<span style="color: #b58900;">thead</span>&gt;
-  &lt;<span style="color: #b58900;">tbody</span>&gt;
-    &lt;<span style="color: #b58900;">tr</span>&gt;
-      &lt;<span style="color: #b58900;">td</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;key-1&lt;/<span style="color: #b58900;">td</span>&gt;
-      &lt;<span style="color: #b58900;">td</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-left"</span>&gt;value-1&lt;/<span style="color: #b58900;">td</span>&gt;
-    &lt;/<span style="color: #b58900;">tr</span>&gt;
-  &lt;/<span style="color: #b58900;">tbody</span>&gt;
-&lt;/<span style="color: #b58900;">table</span>&gt;
-</pre>
-</div>
-
-<p>
-Unlike the default exporter, and LaTeX style, <i>and</i> general readability guidance, we put borders back on tables. It is
-also generally useful to reduce the size of the font in tables.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">table</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--table-border</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border-collapse</span>: collapse;
-    <span style="color: #859900;">margin-left</span>: auto;
-    <span style="color: #859900;">margin-right</span>: auto;
-    <span style="color: #859900;">min-width</span>: 50%;
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">line-height</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-height-compressed</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">break-inside</span>: avoid; 
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">table &gt; thead</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--heading-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-heading</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">table &gt; thead th,</span>
-<span style="color: #b58900;">table &gt; tbody td</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">padding-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-smaller</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-bottom</span>: calc<span style="color: #2aa198;">(</span>var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #b58900;">)</span> * 0.5<span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-smaller</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--table-border</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-These classes are useful as hints to set column alignment.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">table &gt; thead th.org-left,</span>
-<span style="color: #b58900;">table &gt; tbody td.org-left</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">text-align</span>: left;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">table &gt; thead th.org-center,</span>
-<span style="color: #b58900;">table &gt; tbody td.org-center</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">text-align</span>: center;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">table &gt; thead th.org-right,</span>
-<span style="color: #b58900;">table &gt; tbody td.org-right</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">text-align</span>: right;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-Setup the caption for a table, this is a common set of properties for all captions.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">table caption</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-size</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-style</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-style</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-weight</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org85ca434" class="outline-3">
-<h3 id="org85ca434"><span class="section-number-3">2.7.</span> Code</h3>
-<div class="outline-text-3" id="text-2-7">
-<p>
-Org-Export generates code of the following form. Note that it does not, as is more common, use a <code>&lt;code&gt;</code> element within
-the <code>&lt;pre&gt;</code>. The class <code>src</code> is common to all source blocks and any language specified on the source block generates a class
-name of the form <code>src-{name}</code>.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-html">&lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-src-container"</span>&gt;
-  &lt;<span style="color: #b58900;">label</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"org-src-name"</span>&gt;
-    &lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"listing-number"</span>&gt;Listing 2: &lt;/<span style="color: #b58900;">span</span>&gt;Directory-Local Variables
-  &lt;/<span style="color: #b58900;">label</span>&gt;
-  &lt;<span style="color: #b58900;">pre</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"</span><span style="color: #dc322f; background-color: #ffe4e1; font-weight: bold;">src src</span><span style="color: #2aa198;">-elisp"</span>&gt; 
-    &lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">style</span>=<span style="color: #2aa198;">"color: #657b83;"</span>&gt;(&lt;/<span style="color: #b58900;">span</span>&gt;&lt;<span style="color: #b58900;">span</span> <span style="color: #6c71c4;">style</span>=<span style="color: #2aa198;">"color: #657b83;"</span>&gt;)&lt;/<span style="color: #b58900;">span</span>&gt;
-  &lt;/<span style="color: #b58900;">pre</span>&gt;
-&lt;/<span style="color: #b58900;">div</span>&gt;
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">pre, code</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-family</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-font-family</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-weight-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">line-height</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-height-code</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.org-src-container</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">break-inside</span>: avoid;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.org-src-container &gt; pre.src</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-background-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-width</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-style</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-border-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border-radius</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-radius-small</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">overflow-x</span>: hidden;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">div.org-src-container &gt; pre.src:hover</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-light-background-color</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.org-src-container &gt; pre.src.scroll</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">overflow-x</span>: scroll;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">p code, li code, dt code, dd code</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-background-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-left</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-extension-compressed</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-right</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-extension-compressed</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div.org-src-container &gt; label.org-src-name</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-size</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-style</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-style</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-weight</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">pre.example</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">background-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-background-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-width</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-style</span><span style="color: #2aa198;">)</span> var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--code-border-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">border-radius</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--border-radius-small</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">overflow-x</span>: hidden;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">pre.example:hover</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">filter</span>: brightness<span style="color: #2aa198;">(</span>var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--code-hover-brightness</span><span style="color: #b58900;">)</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #6c71c4;">@media</span> print <span style="color: #657b83;">{</span>
-    <span style="color: #b58900;">pre, code</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-code-color</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>
-    <span style="color: #b58900;">div.org-src-container &gt; pre.src</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">background-color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-code-background-color</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>       
-    <span style="color: #b58900;">p code, li code, dt code, dd code</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">background-color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-code-background-color</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>  
-    <span style="color: #b58900;">pre.example</span> <span style="color: #2aa198;">{</span>
-        <span style="color: #859900;">background-color</span>: var<span style="color: #b58900;">(</span><span style="color: #6c71c4;">--print-code-background-color</span><span style="color: #b58900;">)</span>;
-    <span style="color: #2aa198;">}</span>   
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgfd92032" class="outline-3">
-<h3 id="orgfd92032"><span class="section-number-3">2.8.</span> Math (KaTeX)</h3>
-<div class="outline-text-3" id="text-2-8">
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">:root</span> <span style="color: #657b83;">{</span>
-    <span style="color: #6c71c4;">--math-color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #6c71c4;">--math-font-size</span>: 1.1em;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-The <i>math font size</i> is a specific value, not one of those defined in <a href="#org645cc66">2.1.2</a>, as it is very dependent on the math renderer
-(MathJax for example really needs a size less than <code>1.0em</code>) and some fine tuning as math fonts tend to have rounder
-characters and so bringing the vertical heights close results in wide looking text.
-</p>
-
-<p>
-The math color should match the body text color, by default it&rsquo;s black and tends to jump out,m especially as the weight
-of the math font tends to be heavier.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">.katex</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">color</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--math-color</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--math-font-size</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-Treat tags on equations in the same manner as captions.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">.katex .tag</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-size</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-style</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-style</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--caption-font-weight</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org92f822e" class="outline-3">
-<h3 id="org92f822e"><span class="section-number-3">2.9.</span> Home and Up</h3>
-<div class="outline-text-3" id="text-2-9">
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div#org-div-home-and-up</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">text-align</span>: right;
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-smaller</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">white-space</span>: nowrap;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org5752e06" class="outline-3">
-<h3 id="org5752e06"><span class="section-number-3">2.10.</span> Footnotes and References</h3>
-<div class="outline-text-3" id="text-2-10">
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 6: </span>Generated Footnote section</label><pre class="src src-html">&lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"footnotes"</span>&gt;
-  &lt;<span style="color: #b58900;">h2</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footnotes"</span>&gt;<span style="font-weight: bold; font-style: italic; text-decoration: underline;">Footnotes: </span>&lt;/<span style="color: #b58900;">h2</span>&gt;
-  &lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"text-footnotes"</span>&gt;
-    &lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footdef"</span>&gt;
-      &lt;<span style="color: #b58900;">sup</span>&gt;
-        &lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"fn.1"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footnum"</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#fnr.1"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-backlink"</span>&gt;1&lt;/<span style="color: #b58900;">a</span>&gt;
-      &lt;/<span style="color: #b58900;">sup</span>&gt;
-      &lt;<span style="color: #b58900;">div</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footpara"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-footnote"</span>&gt;
-        &lt;<span style="color: #b58900;">p</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footpara"</span>&gt;
-          Some text
-        &lt;/<span style="color: #b58900;">p</span>&gt;
-      &lt;/<span style="color: #b58900;">div</span>&gt;
-    &lt;/<span style="color: #b58900;">div</span>&gt;
-  &lt;/<span style="color: #b58900;">div</span>&gt;
-&lt;/<span style="color: #b58900;">div</span>&gt;
-</pre>
-</div>
-
-<div class="org-src-container">
-<label class="org-src-name"><span class="listing-number">Listing 7: </span>Generated Footnote reference</label><pre class="src src-html">&lt;<span style="color: #b58900;">sup</span>&gt;
-  &lt;<span style="color: #b58900;">a</span> <span style="color: #6c71c4;">id</span>=<span style="color: #2aa198;">"fnr.1"</span> <span style="color: #6c71c4;">class</span>=<span style="color: #2aa198;">"footref"</span> <span style="color: #6c71c4;">href</span>=<span style="color: #2aa198;">"#fn.1"</span> <span style="color: #6c71c4;">role</span>=<span style="color: #2aa198;">"doc-backlink"</span>&gt;1&lt;/<span style="color: #b58900;">a</span>&gt;
-&lt;/<span style="color: #b58900;">sup</span>&gt;
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div#footnotes</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">border-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--section-border</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">div#footnotes &gt; div#text-footnotes div.footdef</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">display</span>: grid;
-    <span style="color: #859900;">grid-template-columns</span>: max-content auto;
-    <span style="color: #859900;">gap</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--dl-padding-normal</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">div#footnotes &gt; div#text-footnotes div.footdef &gt; sup</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">grid-column-start</span>: 1;
-    <span style="color: #859900;">width</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">div#footnotes &gt; div#text-footnotes div.footdef &gt; div.footpara</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">grid-column-start</span>: 2;
-    <span style="color: #859900;">margin</span>: 0;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">div#footnotes &gt; div#text-footnotes div.footdef &gt; div.footpara p.footpara</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">margin</span>: 0;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<p>
-Here we want to style the footnote reference, but want to add the &ldquo;[&rdquo; and &ldquo;]&rdquo; <i>around</i> the <code class="src src-html">&lt;<span style="color: #b58900;">a</span>&gt;</code>
-and not a part of the clickable link. So, we want to style the parent <code class="src src-html">&lt;<span style="color: #b58900;">sup</span>&gt;</code> element and have to
-use the CSS <code class="src src-css">:has<span style="color: #657b83;">()</span></code> selector.
-</p>
-
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #859900;">sup</span>:has<span style="color: #657b83;">(</span>a.footref<span style="color: #657b83;">)</span>::before <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"["</span>;
-<span style="color: #657b83;">}</span>
-<span style="color: #859900;">sup</span>:has<span style="color: #657b83;">(</span>a.footref<span style="color: #657b83;">)</span>::after <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">content</span>: <span style="color: #2aa198;">"]"</span>;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org4eb271c" class="outline-3">
-<h3 id="org4eb271c"><span class="section-number-3">2.11.</span> Postamble</h3>
-<div class="outline-text-3" id="text-2-11">
-<div class="org-src-container">
-<pre class="src src-css"><span style="color: #b58900;">div#postamble</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">border-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--section-border</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-larger</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">padding-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-normal</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-weight</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-weight-light</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">font-size</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-small</span><span style="color: #2aa198;">)</span>;
-<span style="color: #657b83;">}</span>
-<span style="color: #b58900;">div#postamble &gt; p</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">line-height</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--line-height-compressed</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">margin-top</span>: var<span style="color: #2aa198;">(</span><span style="color: #6c71c4;">--text-tiny</span><span style="color: #2aa198;">)</span>;
-    <span style="color: #859900;">margin-bottom</span>: 0;
-<span style="color: #657b83;">}</span>
-
-<span style="color: #b58900;">div#postamble &gt; p.validation</span> <span style="color: #657b83;">{</span>
-    <span style="color: #859900;">display</span>: none;
-<span style="color: #657b83;">}</span>
-</pre>
-</div>
-
-<div class="org-src-container">
-<pre class="src src-css">
-</pre>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org7f064b5" class="outline-2">
-<h2 id="org7f064b5"><span class="section-number-2">3.</span> Javascript</h2>
+<div id="outline-container-org29e5909" class="outline-2">
+<h2 id="org29e5909"><span class="section-number-2">3.</span> Javascript</h2>
 <div class="outline-text-2" id="text-3">
 <div class="org-src-container">
 <pre class="src src-js"><span style="color: #2aa198;">"use strict"</span>;
@@ -1946,8 +1983,8 @@ use the CSS <code class="src src-css">:has<span style="color: #657b83;">()</span
 </div>
 </div>
 
-<div id="outline-container-orgb6047fc" class="outline-3">
-<h3 id="orgb6047fc"><span class="section-number-3">3.1.</span> Math (KaTeX)</h3>
+<div id="outline-container-orgc4d8696" class="outline-3">
+<h3 id="orgc4d8696"><span class="section-number-3">3.1.</span> Math (KaTeX)</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 This allows you to add your own macros in the constant <code class="src src-js">KATEX_MACROS</code>.
@@ -1977,15 +2014,15 @@ This allows you to add your own macros in the constant <code class="src src-js">
 </div>
 </div>
 
-<div id="outline-container-org352fcb0" class="outline-2">
-<h2 id="org352fcb0"><span class="section-number-2">4.</span> Setup File</h2>
+<div id="outline-container-orga472783" class="outline-2">
+<h2 id="orga472783"><span class="section-number-2">4.</span> Setup File</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 This section creates the actual setup files used in document headers. This is easily referenced in an org-mode document
 in the following manner.
 </p>
 
-<pre class="example" id="orge5d4681">
+<pre class="example" id="orgd3f3b04">
 #+TITLE: Fancy Document
 #+AUTHOR: Good Writer
 #+EMAIL: writes-good@example.com
@@ -1993,7 +2030,7 @@ in the following manner.
 #+SETUPFILE: https://simonkjohnston.life/org-export-themes/html/office/office.setup
 </pre>
 
-<table id="orgf48fdc4">
+<table id="org5f378d0">
 
 
 <colgroup>
@@ -2077,8 +2114,8 @@ to speed up page rendering, and to automatically render math in text elements, i
 </div>
 </div>
 
-<div id="outline-container-orgd803767" class="outline-3">
-<h3 id="orgd803767"><span class="section-number-3">4.1.</span> Local Install</h3>
+<div id="outline-container-org67d4263" class="outline-3">
+<h3 id="org67d4263"><span class="section-number-3">4.1.</span> Local Install</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 This setup file assumes that all the resources required for your page are local to some web application. This assumes
@@ -2119,7 +2156,7 @@ that static resources such as javascript, css, or fonts, are in the path startin
 <div id="postamble" class="status">
 <p class="author">Author: Simon Johnston</p>
 <p class="email">Email: <a href="mailto:johnstonskj@gmail.com">johnstonskj@gmail.com</a></p>
-<p class="date">Created: 2025-01-16 Thu 17:02</p>
+<p class="date">Created: 2025-02-20 Thu 12:50</p>
 </div>
 </body>
 </html>
